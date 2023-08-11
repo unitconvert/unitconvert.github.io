@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Radiation-Activity Converter</title>
+	<meta name="description" content="Free online radiation-activity converter - converts between 16 units of radiation-activity, including becquerel [Bq], terabecquerel [TBq], gigabecquerel [GBq], megabecquerel [MBq], etc. Also, explore many other unit converters or learn more about radiation-activity unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='radiology-converters.html'>Radiology Converters</a> / Radiation-Activity Converter</div>
+		<h1>Radiation-Activity Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="becquerel [Bq] [1.0E+22]" selected>becquerel [Bq]</option>
+<option value="terabecquerel [TBq] [10000000000]">terabecquerel [TBq]</option>
+<option value="gigabecquerel [GBq] [10000000000000]">gigabecquerel [GBq]</option>
+<option value="megabecquerel [MBq] [1.0E+16]">megabecquerel [MBq]</option>
+<option value="kilobecquerel [kBq] [1.0E+19]">kilobecquerel [kBq]</option>
+<option value="millibecquerel [mBq] [1.0E+25]">millibecquerel [mBq]</option>
+<option value="curie [Ci] [270270270270.27]">curie [Ci]</option>
+<option value="kilocurie [kCi] [270270270.27027]">kilocurie [kCi]</option>
+<option value="millicurie [mCi] [2.7027027027027E+14]">millicurie [mCi]</option>
+<option value="microcurie [&#181;Ci] [2.7027027027027E+17]">microcurie [&#181;Ci]</option>
+<option value="nanocurie [nCi] [2.7027027027027E+20]">nanocurie [nCi]</option>
+<option value="picocurie [pCi] [2.7027027027027E+23]">picocurie [pCi]</option>
+<option value="rutherford [1.0E+16]">rutherford</option>
+<option value="one/second [1/s] [1.0E+22]">one/second [1/s]</option>
+<option value="disintegrations/second [1.0E+22]">disintegrations/second</option>
+<option value="disintegrations/minute [6.0E+23]">disintegrations/minute</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="becquerel [Bq] [1.0E+22]">becquerel [Bq]</option>
+<option value="terabecquerel [TBq] [10000000000]" selected>terabecquerel [TBq]</option>
+<option value="gigabecquerel [GBq] [10000000000000]">gigabecquerel [GBq]</option>
+<option value="megabecquerel [MBq] [1.0E+16]">megabecquerel [MBq]</option>
+<option value="kilobecquerel [kBq] [1.0E+19]">kilobecquerel [kBq]</option>
+<option value="millibecquerel [mBq] [1.0E+25]">millibecquerel [mBq]</option>
+<option value="curie [Ci] [270270270270.27]">curie [Ci]</option>
+<option value="kilocurie [kCi] [270270270.27027]">kilocurie [kCi]</option>
+<option value="millicurie [mCi] [2.7027027027027E+14]">millicurie [mCi]</option>
+<option value="microcurie [&#181;Ci] [2.7027027027027E+17]">microcurie [&#181;Ci]</option>
+<option value="nanocurie [nCi] [2.7027027027027E+20]">nanocurie [nCi]</option>
+<option value="picocurie [pCi] [2.7027027027027E+23]">picocurie [pCi]</option>
+<option value="rutherford [1.0E+16]">rutherford</option>
+<option value="one/second [1/s] [1.0E+22]">one/second [1/s]</option>
+<option value="disintegrations/second [1.0E+22]">disintegrations/second</option>
+<option value="disintegrations/minute [6.0E+23]">disintegrations/minute</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Complete list of radiation-activity units for conversion</h3>
+<ul class="allunits"><li>becquerel [Bq]</li>
+<li>1 terabecquerel [TBq] = 1000000000000 becquerel [Bq]<div>
+<a href="radiation-activity/terabecquerel-to-becquerel.html">terabecquerel to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-terabecquerel.html">becquerel to terabecquerel</a></div></li>
+<li>1 gigabecquerel [GBq] = 1000000000 becquerel [Bq]<div>
+<a href="radiation-activity/gigabecquerel-to-becquerel.html">gigabecquerel to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-gigabecquerel.html">becquerel to gigabecquerel</a></div></li>
+<li>1 megabecquerel [MBq] = 1000000 becquerel [Bq]<div>
+<a href="radiation-activity/megabecquerel-to-becquerel.html">megabecquerel to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-megabecquerel.html">becquerel to megabecquerel</a></div></li>
+<li>1 kilobecquerel [kBq] = 1000 becquerel [Bq]<div>
+<a href="radiation-activity/kilobecquerel-to-becquerel.html">kilobecquerel to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-kilobecquerel.html">becquerel to kilobecquerel</a></div></li>
+<li>1 millibecquerel [mBq] = 0.001 becquerel [Bq]<div>
+<a href="radiation-activity/millibecquerel-to-becquerel.html">millibecquerel to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-millibecquerel.html">becquerel to millibecquerel</a></div></li>
+<li>1 curie [Ci] = 37000000000 becquerel [Bq]<div>
+<a href="radiation-activity/curie-to-becquerel.html">curie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-curie.html">becquerel to curie</a></div></li>
+<li>1 kilocurie [kCi] = 37000000000000 becquerel [Bq]<div>
+<a href="radiation-activity/kilocurie-to-becquerel.html">kilocurie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-kilocurie.html">becquerel to kilocurie</a></div></li>
+<li>1 millicurie [mCi] = 37000000 becquerel [Bq]<div>
+<a href="radiation-activity/millicurie-to-becquerel.html">millicurie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-millicurie.html">becquerel to millicurie</a></div></li>
+<li>1 microcurie [&#181;Ci] = 37000 becquerel [Bq]<div>
+<a href="radiation-activity/microcurie-to-becquerel.html">microcurie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-microcurie.html">becquerel to microcurie</a></div></li>
+<li>1 nanocurie [nCi] = 37 becquerel [Bq]<div>
+<a href="radiation-activity/nanocurie-to-becquerel.html">nanocurie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-nanocurie.html">becquerel to nanocurie</a></div></li>
+<li>1 picocurie [pCi] = 0.037 becquerel [Bq]<div>
+<a href="radiation-activity/picocurie-to-becquerel.html">picocurie to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-picocurie.html">becquerel to picocurie</a></div></li>
+<li>1 rutherford = 1000000 becquerel [Bq]<div>
+<a href="radiation-activity/rutherford-to-becquerel.html">rutherford to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-rutherford.html">becquerel to rutherford</a></div></li>
+<li>1 one/second [1/s] = 1 becquerel [Bq]<div>
+<a href="radiation-activity/one-second-to-becquerel.html">one/second to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-one-second.html">becquerel to one/second</a></div></li>
+<li>1 disintegrations/second = 1 becquerel [Bq]<div>
+<a href="radiation-activity/disintegrations-second-to-becquerel.html">disintegrations/second to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-disintegrations-second.html">becquerel to disintegrations/second</a></div></li>
+<li>1 disintegrations/minute = 0.0166666667 becquerel [Bq]<div>
+<a href="radiation-activity/disintegrations-minute-to-becquerel.html">disintegrations/minute to becquerel</a>, &nbsp; <a href="radiation-activity/becquerel-to-disintegrations-minute.html">becquerel to disintegrations/minute</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Radiology Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

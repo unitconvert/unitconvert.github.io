@@ -1,0 +1,9 @@
+User-Agent:  *
+Sitemap: https://unitconverter.upboardmaster.com/sitemap.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0001.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0002.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0003.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0004.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0005.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0006.xml
+Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0007.xml

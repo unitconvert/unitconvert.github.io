@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Energy Converter</title>
+	<meta name="description" content="Free online energy converter - converts between 55 units of energy, including joule [J], kilojoule [kJ], kilowatt-hour [kW*h], watt-hour [W*h], etc. Also, explore many other unit converters or learn more about energy unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Energy Converter</div>
+		<h1>Energy Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="joule [J] [1.0E+26]" selected>joule [J]</option>
+<option value="kilojoule [kJ] [1.0E+23]">kilojoule [kJ]</option>
+<option value="kilowatt-hour [kW*h] [2.7777777777778E+19]">kilowatt-hour [kW*h]</option>
+<option value="watt-hour [W*h] [2.7777777777778E+22]">watt-hour [W*h]</option>
+<option value="calorie (nutritional) [2.388458966275E+22]">calorie (nutritional)</option>
+<option value="horsepower (metric) hour [3.7767267147331E+19]">horsepower (metric) hour</option>
+<option value="Btu (IT) [Btu (IT), Btu] [9.4781712031332E+22]">Btu (IT) [Btu (IT), Btu]</option>
+<option value="Btu (th) [Btu (th)] [9.484516527E+22]">Btu (th) [Btu (th)]</option>
+<option value="gigajoule [GJ] [1.0E+17]">gigajoule [GJ]</option>
+<option value="megajoule [MJ] [1.0E+20]">megajoule [MJ]</option>
+<option value="millijoule [mJ] [1.0E+29]">millijoule [mJ]</option>
+<option value="microjoule [&#181;J] [1.0E+32]">microjoule [&#181;J]</option>
+<option value="nanojoule [nJ] [1.0E+35]">nanojoule [nJ]</option>
+<option value="attojoule [aJ] [1.0E+44]">attojoule [aJ]</option>
+<option value="megaelectron-volt [MeV] [6.241509074461E+38]">megaelectron-volt [MeV]</option>
+<option value="kiloelectron-volt [keV] [6.241509074461E+41]">kiloelectron-volt [keV]</option>
+<option value="electron-volt [eV] [6.241509074461E+44]">electron-volt [eV]</option>
+<option value="erg [1.0E+33]">erg</option>
+<option value="gigawatt-hour [GW*h] [27777777777778]">gigawatt-hour [GW*h]</option>
+<option value="megawatt-hour [MW*h] [2.7777777777778E+16]">megawatt-hour [MW*h]</option>
+<option value="kilowatt-second [kW*s] [1.0E+23]">kilowatt-second [kW*s]</option>
+<option value="watt-second [W*s] [1.0E+26]">watt-second [W*s]</option>
+<option value="newton meter [N*m] [1.0E+26]">newton meter [N*m]</option>
+<option value="horsepower hour [hp*h] [3.725061361111E+19]">horsepower hour [hp*h]</option>
+<option value="kilocalorie (IT) [kcal (IT)] [2.388458966275E+22]">kilocalorie (IT) [kcal (IT)]</option>
+<option value="kilocalorie (th) [kcal (th)] [2.3900573613767E+22]">kilocalorie (th) [kcal (th)]</option>
+<option value="calorie (IT) [cal (IT), cal] [2.388458966275E+25]">calorie (IT) [cal (IT), cal]</option>
+<option value="calorie (th) [cal (th)] [2.3900573613767E+25]">calorie (th) [cal (th)]</option>
+<option value="mega Btu (IT) [MBtu (IT)] [9.4781712031332E+16]">mega Btu (IT) [MBtu (IT)]</option>
+<option value="ton-hour (refrigeration) [7.898476002611E+18]">ton-hour (refrigeration)</option>
+<option value="fuel oil equivalent @kiloliter [2.4877089772003E+15]">fuel oil equivalent @kiloliter</option>
+<option value="fuel oil equivalent @barrel (US) [1.5666398682865E+16]">fuel oil equivalent @barrel (US)</option>
+<option value="gigaton [Gton] [23900573.613767]">gigaton [Gton]</option>
+<option value="megaton [Mton] [23900573613.767]">megaton [Mton]</option>
+<option value="kiloton [kton] [23900573613767]">kiloton [kton]</option>
+<option value="ton (explosives) [2.3900573613767E+16]">ton (explosives)</option>
+<option value="dyne centimeter [dyn*cm] [1.0E+33]">dyne centimeter [dyn*cm]</option>
+<option value="gram-force meter [gf*m] [1.0197162130094E+28]">gram-force meter [gf*m]</option>
+<option value="gram-force centimeter [1.0197162130094E+30]">gram-force centimeter</option>
+<option value="kilogram-force centimeter [1.0197162130094E+27]">kilogram-force centimeter</option>
+<option value="kilogram-force meter [1.0197162130094E+25]">kilogram-force meter</option>
+<option value="kilopond meter [kp*m] [1.0197162130094E+25]">kilopond meter [kp*m]</option>
+<option value="pound-force foot [lbf*ft] [7.375621493E+25]">pound-force foot [lbf*ft]</option>
+<option value="pound-force inch [lbf*in] [8.8507457916E+26]">pound-force inch [lbf*in]</option>
+<option value="ounce-force inch [ozf*in] [1.416119326656E+28]">ounce-force inch [ozf*in]</option>
+<option value="foot-pound [ft*lbf] [7.375621493E+25]">foot-pound [ft*lbf]</option>
+<option value="inch-pound [in*lbf] [8.8507457916E+26]">inch-pound [in*lbf]</option>
+<option value="inch-ounce [in*ozf] [1.416119326656E+28]">inch-ounce [in*ozf]</option>
+<option value="poundal foot [pdl*ft] [2.37303604571E+27]">poundal foot [pdl*ft]</option>
+<option value="therm [9.4781698791344E+17]">therm</option>
+<option value="therm (EC) [9.4781698791344E+17]">therm (EC)</option>
+<option value="therm (US) [9.4804342797336E+17]">therm (US)</option>
+<option value="Hartree energy [2.2937104486906E+43]">Hartree energy</option>
+<option value="Rydberg constant [4.5874208973812E+43]">Rydberg constant</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="joule [J] [1.0E+26]">joule [J]</option>
+<option value="kilojoule [kJ] [1.0E+23]" selected>kilojoule [kJ]</option>
+<option value="kilowatt-hour [kW*h] [2.7777777777778E+19]">kilowatt-hour [kW*h]</option>
+<option value="watt-hour [W*h] [2.7777777777778E+22]">watt-hour [W*h]</option>
+<option value="calorie (nutritional) [2.388458966275E+22]">calorie (nutritional)</option>
+<option value="horsepower (metric) hour [3.7767267147331E+19]">horsepower (metric) hour</option>
+<option value="Btu (IT) [Btu (IT), Btu] [9.4781712031332E+22]">Btu (IT) [Btu (IT), Btu]</option>
+<option value="Btu (th) [Btu (th)] [9.484516527E+22]">Btu (th) [Btu (th)]</option>
+<option value="gigajoule [GJ] [1.0E+17]">gigajoule [GJ]</option>
+<option value="megajoule [MJ] [1.0E+20]">megajoule [MJ]</option>
+<option value="millijoule [mJ] [1.0E+29]">millijoule [mJ]</option>
+<option value="microjoule [&#181;J] [1.0E+32]">microjoule [&#181;J]</option>
+<option value="nanojoule [nJ] [1.0E+35]">nanojoule [nJ]</option>
+<option value="attojoule [aJ] [1.0E+44]">attojoule [aJ]</option>
+<option value="megaelectron-volt [MeV] [6.241509074461E+38]">megaelectron-volt [MeV]</option>
+<option value="kiloelectron-volt [keV] [6.241509074461E+41]">kiloelectron-volt [keV]</option>
+<option value="electron-volt [eV] [6.241509074461E+44]">electron-volt [eV]</option>
+<option value="erg [1.0E+33]">erg</option>
+<option value="gigawatt-hour [GW*h] [27777777777778]">gigawatt-hour [GW*h]</option>
+<option value="megawatt-hour [MW*h] [2.7777777777778E+16]">megawatt-hour [MW*h]</option>
+<option value="kilowatt-second [kW*s] [1.0E+23]">kilowatt-second [kW*s]</option>
+<option value="watt-second [W*s] [1.0E+26]">watt-second [W*s]</option>
+<option value="newton meter [N*m] [1.0E+26]">newton meter [N*m]</option>
+<option value="horsepower hour [hp*h] [3.725061361111E+19]">horsepower hour [hp*h]</option>
+<option value="kilocalorie (IT) [kcal (IT)] [2.388458966275E+22]">kilocalorie (IT) [kcal (IT)]</option>
+<option value="kilocalorie (th) [kcal (th)] [2.3900573613767E+22]">kilocalorie (th) [kcal (th)]</option>
+<option value="calorie (IT) [cal (IT), cal] [2.388458966275E+25]">calorie (IT) [cal (IT), cal]</option>
+<option value="calorie (th) [cal (th)] [2.3900573613767E+25]">calorie (th) [cal (th)]</option>
+<option value="mega Btu (IT) [MBtu (IT)] [9.4781712031332E+16]">mega Btu (IT) [MBtu (IT)]</option>
+<option value="ton-hour (refrigeration) [7.898476002611E+18]">ton-hour (refrigeration)</option>
+<option value="fuel oil equivalent @kiloliter [2.4877089772003E+15]">fuel oil equivalent @kiloliter</option>
+<option value="fuel oil equivalent @barrel (US) [1.5666398682865E+16]">fuel oil equivalent @barrel (US)</option>
+<option value="gigaton [Gton] [23900573.613767]">gigaton [Gton]</option>
+<option value="megaton [Mton] [23900573613.767]">megaton [Mton]</option>
+<option value="kiloton [kton] [23900573613767]">kiloton [kton]</option>
+<option value="ton (explosives) [2.3900573613767E+16]">ton (explosives)</option>
+<option value="dyne centimeter [dyn*cm] [1.0E+33]">dyne centimeter [dyn*cm]</option>
+<option value="gram-force meter [gf*m] [1.0197162130094E+28]">gram-force meter [gf*m]</option>
+<option value="gram-force centimeter [1.0197162130094E+30]">gram-force centimeter</option>
+<option value="kilogram-force centimeter [1.0197162130094E+27]">kilogram-force centimeter</option>
+<option value="kilogram-force meter [1.0197162130094E+25]">kilogram-force meter</option>
+<option value="kilopond meter [kp*m] [1.0197162130094E+25]">kilopond meter [kp*m]</option>
+<option value="pound-force foot [lbf*ft] [7.375621493E+25]">pound-force foot [lbf*ft]</option>
+<option value="pound-force inch [lbf*in] [8.8507457916E+26]">pound-force inch [lbf*in]</option>
+<option value="ounce-force inch [ozf*in] [1.416119326656E+28]">ounce-force inch [ozf*in]</option>
+<option value="foot-pound [ft*lbf] [7.375621493E+25]">foot-pound [ft*lbf]</option>
+<option value="inch-pound [in*lbf] [8.8507457916E+26]">inch-pound [in*lbf]</option>
+<option value="inch-ounce [in*ozf] [1.416119326656E+28]">inch-ounce [in*ozf]</option>
+<option value="poundal foot [pdl*ft] [2.37303604571E+27]">poundal foot [pdl*ft]</option>
+<option value="therm [9.4781698791344E+17]">therm</option>
+<option value="therm (EC) [9.4781698791344E+17]">therm (EC)</option>
+<option value="therm (US) [9.4804342797336E+17]">therm (US)</option>
+<option value="Hartree energy [2.2937104486906E+43]">Hartree energy</option>
+<option value="Rydberg constant [4.5874208973812E+43]">Rydberg constant</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular energy unit conversions</h3>
+<div id="toother"><div>
+<a href="energy/kj-to-kcal.html">kJ to kcal</a></div>
+<div>
+<a href="energy/kcal-to-kj.html">kcal to kJ</a></div>
+<div>
+<a href="energy/kcal-to-cal.html">kcal to cal</a></div>
+<div>
+<a href="energy/cal-to-kcal.html">cal to kcal</a></div>
+<div>
+<a href="energy/j-to-kj.html">J to kJ</a></div>
+<div>
+<a href="energy/kj-to-j.html">kJ to J</a></div>
+<div>
+<a href="energy/cal-to-j.html">cal to J</a></div>
+<div>
+<a href="energy/j-to-cal.html">J to cal</a></div>
+<div>
+<a href="energy/ft-lb-to-nm.html">ft lb to Nm</a></div>
+<div>
+<a href="energy/nm-to-ft-lb.html">Nm to ft lb</a></div></div>
+<br>
+<h3>Complete list of energy units for conversion</h3>
+<ul class="allunits"><li>joule [J]</li>
+<li>1 kilojoule [kJ] = 1000 joule [J]<div>
+<a href="energy/kj-to-j.html">kilojoule to joule</a>, &nbsp; <a href="energy/j-to-kj.html">joule to kilojoule</a></div></li>
+<li>1 kilowatt-hour [kW*h] = 3600000 joule [J]<div>
+<a href="energy/kilowatt-hour-to-joule.html">kilowatt-hour to joule</a>, &nbsp; <a href="energy/joule-to-kilowatt-hour.html">joule to kilowatt-hour</a></div></li>
+<li>1 watt-hour [W*h] = 3600 joule [J]<div>
+<a href="energy/watt-hour-to-joule.html">watt-hour to joule</a>, &nbsp; <a href="energy/joule-to-watt-hour.html">joule to watt-hour</a></div></li>
+<li>1 calorie (nutritional) = 4186.8 joule [J]<div>
+<a href="energy/calorie-nutritional-to-joule.html">calorie (nutritional) to joule</a>, &nbsp; <a href="energy/joule-to-calorie-nutritional.html">joule to calorie (nutritional)</a></div></li>
+<li>1 horsepower (metric) hour = 2647795.5 joule [J]<div>
+<a href="energy/horsepower-metric-hour-to-joule.html">horsepower (metric) hour to joule</a>, &nbsp; <a href="energy/joule-to-horsepower-metric-hour.html">joule to horsepower (metric) hour</a></div></li>
+<li>1 Btu (IT) [Btu (IT), Btu] = 1055.05585262 joule [J]<div>
+<a href="energy/btu-it-to-joule.html">Btu (IT) to joule</a>, &nbsp; <a href="energy/joule-to-btu-it.html">joule to Btu (IT)</a></div></li>
+<li>1 Btu (th) [Btu (th)] = 1054.3499999744 joule [J]<div>
+<a href="energy/btu-th-to-joule.html">Btu (th) to joule</a>, &nbsp; <a href="energy/joule-to-btu-th.html">joule to Btu (th)</a></div></li>
+<li>1 gigajoule [GJ] = 1000000000 joule [J]<div>
+<a href="energy/gigajoule-to-joule.html">gigajoule to joule</a>, &nbsp; <a href="energy/joule-to-gigajoule.html">joule to gigajoule</a></div></li>
+<li>1 megajoule [MJ] = 1000000 joule [J]<div>
+<a href="energy/megajoule-to-joule.html">megajoule to joule</a>, &nbsp; <a href="energy/joule-to-megajoule.html">joule to megajoule</a></div></li>
+<li>1 millijoule [mJ] = 0.001 joule [J]<div>
+<a href="energy/millijoule-to-joule.html">millijoule to joule</a>, &nbsp; <a href="energy/joule-to-millijoule.html">joule to millijoule</a></div></li>
+<li>1 microjoule [&#181;J] = 1.0E-6 joule [J]<div>
+<a href="energy/microjoule-to-joule.html">microjoule to joule</a>, &nbsp; <a href="energy/joule-to-microjoule.html">joule to microjoule</a></div></li>
+<li>1 nanojoule [nJ] = 1.0E-9 joule [J]<div>
+<a href="energy/nanojoule-to-joule.html">nanojoule to joule</a>, &nbsp; <a href="energy/joule-to-nanojoule.html">joule to nanojoule</a></div></li>
+<li>1 attojoule [aJ] = 1.0E-18 joule [J]<div>
+<a href="energy/attojoule-to-joule.html">attojoule to joule</a>, &nbsp; <a href="energy/joule-to-attojoule.html">joule to attojoule</a></div></li>
+<li>1 megaelectron-volt [MeV] = 1.6021766339999E-13 joule [J]<div>
+<a href="energy/megaelectron-volt-to-joule.html">megaelectron-volt to joule</a>, &nbsp; <a href="energy/joule-to-megaelectron-volt.html">joule to megaelectron-volt</a></div></li>
+<li>1 kiloelectron-volt [keV] = 1.6021766339999E-16 joule [J]<div>
+<a href="energy/kiloelectron-volt-to-joule.html">kiloelectron-volt to joule</a>, &nbsp; <a href="energy/joule-to-kiloelectron-volt.html">joule to kiloelectron-volt</a></div></li>
+<li>1 electron-volt [eV] = 1.6021766339999E-19 joule [J]<div>
+<a href="energy/electron-volt-to-joule.html">electron-volt to joule</a>, &nbsp; <a href="energy/joule-to-electron-volt.html">joule to electron-volt</a></div></li>
+<li>1 erg = 1.0E-7 joule [J]<div>
+<a href="energy/erg-to-joule.html">erg to joule</a>, &nbsp; <a href="energy/joule-to-erg.html">joule to erg</a></div></li>
+<li>1 gigawatt-hour [GW*h] = 3600000000000 joule [J]<div>
+<a href="energy/gigawatt-hour-to-joule.html">gigawatt-hour to joule</a>, &nbsp; <a href="energy/joule-to-gigawatt-hour.html">joule to gigawatt-hour</a></div></li>
+<li>1 megawatt-hour [MW*h] = 3600000000 joule [J]<div>
+<a href="energy/megawatt-hour-to-joule.html">megawatt-hour to joule</a>, &nbsp; <a href="energy/joule-to-megawatt-hour.html">joule to megawatt-hour</a></div></li>
+<li>1 kilowatt-second [kW*s] = 1000 joule [J]<div>
+<a href="energy/kilowatt-second-to-joule.html">kilowatt-second to joule</a>, &nbsp; <a href="energy/joule-to-kilowatt-second.html">joule to kilowatt-second</a></div></li>
+<li>1 watt-second [W*s] = 1 joule [J]<div>
+<a href="energy/watt-second-to-joule.html">watt-second to joule</a>, &nbsp; <a href="energy/joule-to-watt-second.html">joule to watt-second</a></div></li>
+<li>1 newton meter [N*m] = 1 joule [J]<div>
+<a href="energy/newton-meter-to-joule.html">newton meter to joule</a>, &nbsp; <a href="energy/joule-to-newton-meter.html">joule to newton meter</a></div></li>
+<li>1 horsepower hour [hp*h] = 2684519.5368856 joule [J]<div>
+<a href="energy/horsepower-hour-to-joule.html">horsepower hour to joule</a>, &nbsp; <a href="energy/joule-to-horsepower-hour.html">joule to horsepower hour</a></div></li>
+<li>1 kilocalorie (IT) [kcal (IT)] = 4186.8 joule [J]<div>
+<a href="energy/kilocalorie-it-to-joule.html">kilocalorie (IT) to joule</a>, &nbsp; <a href="energy/joule-to-kilocalorie-it.html">joule to kilocalorie (IT)</a></div></li>
+<li>1 kilocalorie (th) [kcal (th)] = 4184 joule [J]<div>
+<a href="energy/kilocalorie-th-to-joule.html">kilocalorie (th) to joule</a>, &nbsp; <a href="energy/joule-to-kilocalorie-th.html">joule to kilocalorie (th)</a></div></li>
+<li>1 calorie (IT) [cal (IT), cal] = 4.1868 joule [J]<div>
+<a href="energy/calorie-it-to-joule.html">calorie (IT) to joule</a>, &nbsp; <a href="energy/joule-to-calorie-it.html">joule to calorie (IT)</a></div></li>
+<li>1 calorie (th) [cal (th)] = 4.184 joule [J]<div>
+<a href="energy/cal-to-j.html">calorie (th) to joule</a>, &nbsp; <a href="energy/j-to-cal.html">joule to calorie (th)</a></div></li>
+<li>1 mega Btu (IT) [MBtu (IT)] = 1055055852.62 joule [J]<div>
+<a href="energy/mega-btu-it-to-joule.html">mega Btu (IT) to joule</a>, &nbsp; <a href="energy/joule-to-mega-btu-it.html">joule to mega Btu (IT)</a></div></li>
+<li>1 ton-hour (refrigeration) = 12660670.23144 joule [J]<div>
+<a href="energy/ton-hour-refrigeration-to-joule.html">ton-hour (refrigeration) to joule</a>, &nbsp; <a href="energy/joule-to-ton-hour-refrigeration.html">joule to ton-hour (refrigeration)</a></div></li>
+<li>1 fuel oil equivalent @kiloliter = 40197627984.822 joule [J]<div>
+<a href="energy/fuel-oil-equivalent-kiloliter-to-joule.html">fuel oil equivalent @kiloliter to joule</a>, &nbsp; <a href="energy/joule-to-fuel-oil-equivalent-kiloliter.html">joule to fuel oil equivalent @kiloliter</a></div></li>
+<li>1 fuel oil equivalent @barrel (US) = 6383087908.3509 joule [J]<div>
+<a href="energy/fuel-oil-equivalent-barrel-us-to-joule.html">fuel oil equivalent @barrel (US) to joule</a>, &nbsp; <a href="energy/joule-to-fuel-oil-equivalent-barrel-us.html">joule to fuel oil equivalent @barrel (US)</a></div></li>
+<li>1 gigaton [Gton] = 4.184E+18 joule [J]<div>
+<a href="energy/gigaton-to-joule.html">gigaton to joule</a>, &nbsp; <a href="energy/joule-to-gigaton.html">joule to gigaton</a></div></li>
+<li>1 megaton [Mton] = 4.184E+15 joule [J]<div>
+<a href="energy/megaton-to-joule.html">megaton to joule</a>, &nbsp; <a href="energy/joule-to-megaton.html">joule to megaton</a></div></li>
+<li>1 kiloton [kton] = 4184000000000 joule [J]<div>
+<a href="energy/kiloton-to-joule.html">kiloton to joule</a>, &nbsp; <a href="energy/joule-to-kiloton.html">joule to kiloton</a></div></li>
+<li>1 ton (explosives) = 4184000000 joule [J]<div>
+<a href="energy/ton-explosives-to-joule.html">ton (explosives) to joule</a>, &nbsp; <a href="energy/joule-to-ton-explosives.html">joule to ton (explosives)</a></div></li>
+<li>1 dyne centimeter [dyn*cm] = 1.0E-7 joule [J]<div>
+<a href="energy/dyne-centimeter-to-joule.html">dyne centimeter to joule</a>, &nbsp; <a href="energy/joule-to-dyne-centimeter.html">joule to dyne centimeter</a></div></li>
+<li>1 gram-force meter [gf*m] = 0.00980665 joule [J]<div>
+<a href="energy/gram-force-meter-to-joule.html">gram-force meter to joule</a>, &nbsp; <a href="energy/joule-to-gram-force-meter.html">joule to gram-force meter</a></div></li>
+<li>1 gram-force centimeter = 9.80665E-5 joule [J]<div>
+<a href="energy/gram-force-centimeter-to-joule.html">gram-force centimeter to joule</a>, &nbsp; <a href="energy/joule-to-gram-force-centimeter.html">joule to gram-force centimeter</a></div></li>
+<li>1 kilogram-force centimeter = 0.0980665 joule [J]<div>
+<a href="energy/kilogram-force-centimeter-to-joule.html">kilogram-force centimeter to joule</a>, &nbsp; <a href="energy/joule-to-kilogram-force-centimeter.html">joule to kilogram-force centimeter</a></div></li>
+<li>1 kilogram-force meter = 9.8066499997 joule [J]<div>
+<a href="energy/kilogram-force-meter-to-joule.html">kilogram-force meter to joule</a>, &nbsp; <a href="energy/joule-to-kilogram-force-meter.html">joule to kilogram-force meter</a></div></li>
+<li>1 kilopond meter [kp*m] = 9.8066499997 joule [J]<div>
+<a href="energy/kilopond-meter-to-joule.html">kilopond meter to joule</a>, &nbsp; <a href="energy/joule-to-kilopond-meter.html">joule to kilopond meter</a></div></li>
+<li>1 pound-force foot [lbf*ft] = 1.3558179483 joule [J]<div>
+<a href="energy/pound-force-foot-to-joule.html">pound-force foot to joule</a>, &nbsp; <a href="energy/joule-to-pound-force-foot.html">joule to pound-force foot</a></div></li>
+<li>1 pound-force inch [lbf*in] = 0.112984829 joule [J]<div>
+<a href="energy/pound-force-inch-to-joule.html">pound-force inch to joule</a>, &nbsp; <a href="energy/joule-to-pound-force-inch.html">joule to pound-force inch</a></div></li>
+<li>1 ounce-force inch [ozf*in] = 0.0070615518 joule [J]<div>
+<a href="energy/ounce-force-inch-to-joule.html">ounce-force inch to joule</a>, &nbsp; <a href="energy/joule-to-ounce-force-inch.html">joule to ounce-force inch</a></div></li>
+<li>1 foot-pound [ft*lbf] = 1.3558179483 joule [J]<div>
+<a href="energy/foot-pound-to-joule.html">foot-pound to joule</a>, &nbsp; <a href="energy/joule-to-foot-pound.html">joule to foot-pound</a></div></li>
+<li>1 inch-pound [in*lbf] = 0.112984829 joule [J]<div>
+<a href="energy/inch-pound-to-joule.html">inch-pound to joule</a>, &nbsp; <a href="energy/joule-to-inch-pound.html">joule to inch-pound</a></div></li>
+<li>1 inch-ounce [in*ozf] = 0.0070615518 joule [J]<div>
+<a href="energy/inch-ounce-to-joule.html">inch-ounce to joule</a>, &nbsp; <a href="energy/joule-to-inch-ounce.html">joule to inch-ounce</a></div></li>
+<li>1 poundal foot [pdl*ft] = 0.04214011 joule [J]<div>
+<a href="energy/poundal-foot-to-joule.html">poundal foot to joule</a>, &nbsp; <a href="energy/joule-to-poundal-foot.html">joule to poundal foot</a></div></li>
+<li>1 therm = 105505600 joule [J]<div>
+<a href="energy/therm-to-joule.html">therm to joule</a>, &nbsp; <a href="energy/joule-to-therm.html">joule to therm</a></div></li>
+<li>1 therm (EC) = 105505600 joule [J]<div>
+<a href="energy/therm-ec-to-joule.html">therm (EC) to joule</a>, &nbsp; <a href="energy/joule-to-therm-ec.html">joule to therm (EC)</a></div></li>
+<li>1 therm (US) = 105480400 joule [J]<div>
+<a href="energy/therm-us-to-joule.html">therm (US) to joule</a>, &nbsp; <a href="energy/joule-to-therm-us.html">joule to therm (US)</a></div></li>
+<li>1 Hartree energy = 4.3597482E-18 joule [J]<div>
+<a href="energy/hartree-energy-to-joule.html">Hartree energy to joule</a>, &nbsp; <a href="energy/joule-to-hartree-energy.html">joule to Hartree energy</a></div></li>
+<li>1 Rydberg constant = 2.1798741E-18 joule [J]<div>
+<a href="energy/rydberg-constant-to-joule.html">Rydberg constant to joule</a>, &nbsp; <a href="energy/joule-to-rydberg-constant.html">joule to Rydberg constant</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

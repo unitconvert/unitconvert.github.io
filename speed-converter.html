@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Speed Converter</title>
+	<meta name="description" content="Free online speed converter - converts between 33 units of speed, including meter/second [m/s], kilometer/hour [km/h], mile/hour [mi/h], break, etc. Also, explore many other unit converters or learn more about speed unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Speed Converter</div>
+		<h1>Speed Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="meter/second [m/s] [2777777777777.8]" selected>meter/second [m/s]</option>
+<option value="kilometer/hour [km/h] [10000000000000]">kilometer/hour [km/h]</option>
+<option value="mile/hour [mi/h] [6213711922373.3]">mile/hour [mi/h]</option>
+<option value="meter/hour [m/h] [1.0E+16]">meter/hour [m/h]</option>
+<option value="meter/minute [m/min] [1.6666666666667E+14]">meter/minute [m/min]</option>
+<option value="kilometer/minute [km/min] [166666666666.67]">kilometer/minute [km/min]</option>
+<option value="kilometer/second [km/s] [2777777777.7778]">kilometer/second [km/s]</option>
+<option value="centimeter/hour [cm/h] [1.0E+18]">centimeter/hour [cm/h]</option>
+<option value="centimeter/minute [cm/min] [1.6666666666667E+16]">centimeter/minute [cm/min]</option>
+<option value="centimeter/second [cm/s] [2.7777777777778E+14]">centimeter/second [cm/s]</option>
+<option value="millimeter/hour [mm/h] [1.0E+19]">millimeter/hour [mm/h]</option>
+<option value="millimeter/minute [mm/min] [1.6666666666667E+17]">millimeter/minute [mm/min]</option>
+<option value="millimeter/second [mm/s] [2.7777777777778E+15]">millimeter/second [mm/s]</option>
+<option value="foot/hour [ft/h] [3.2808398950131E+16]">foot/hour [ft/h]</option>
+<option value="foot/minute [ft/min] [5.4680664916885E+14]">foot/minute [ft/min]</option>
+<option value="foot/second [ft/s] [9113444152814.2]">foot/second [ft/s]</option>
+<option value="yard/hour [yd/h] [1.0936132983377E+16]">yard/hour [yd/h]</option>
+<option value="yard/minute [yd/min] [1.8226888305628E+14]">yard/minute [yd/min]</option>
+<option value="yard/second [yd/s] [3037814717604.7]">yard/second [yd/s]</option>
+<option value="mile/minute [mi/min] [103561865372.89]">mile/minute [mi/min]</option>
+<option value="mile/second [mi/s] [1726031089.5482]">mile/second [mi/s]</option>
+<option value="knot [kt, kn] [5399568034557.2]">knot [kt, kn]</option>
+<option value="knot (UK) [kt (UK)] [5396118248376.8]">knot (UK) [kt (UK)]</option>
+<option value="Velocity of light in vacuum [9265.6693110598]">Velocity of light in vacuum</option>
+<option value="Cosmic velocity - first [351617440.22504]">Cosmic velocity - first</option>
+<option value="Cosmic velocity - second [248015873.01587]">Cosmic velocity - second</option>
+<option value="Cosmic velocity - third [166633339.99867]">Cosmic velocity - third</option>
+<option value="Earth's velocity [93323627.676055]">Earth's velocity</option>
+<option value="Velocity of sound in pure water [1873459079.907]">Velocity of sound in pure water</option>
+<option value="Velocity of sound in sea water (20&#176;C, 10 meter deep) [1825563734.0811]">Velocity of sound in sea water (20&#176;C, 10 meter deep)</option>
+<option value="Mach (20&#176;C, 1 atm) [8084335790.9714]">Mach (20&#176;C, 1 atm)</option>
+<option value="Mach (SI standard) [9414715033.89]">Mach (SI standard)</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="meter/second [m/s] [2777777777777.8]">meter/second [m/s]</option>
+<option value="kilometer/hour [km/h] [10000000000000]" selected>kilometer/hour [km/h]</option>
+<option value="mile/hour [mi/h] [6213711922373.3]">mile/hour [mi/h]</option>
+<option value="meter/hour [m/h] [1.0E+16]">meter/hour [m/h]</option>
+<option value="meter/minute [m/min] [1.6666666666667E+14]">meter/minute [m/min]</option>
+<option value="kilometer/minute [km/min] [166666666666.67]">kilometer/minute [km/min]</option>
+<option value="kilometer/second [km/s] [2777777777.7778]">kilometer/second [km/s]</option>
+<option value="centimeter/hour [cm/h] [1.0E+18]">centimeter/hour [cm/h]</option>
+<option value="centimeter/minute [cm/min] [1.6666666666667E+16]">centimeter/minute [cm/min]</option>
+<option value="centimeter/second [cm/s] [2.7777777777778E+14]">centimeter/second [cm/s]</option>
+<option value="millimeter/hour [mm/h] [1.0E+19]">millimeter/hour [mm/h]</option>
+<option value="millimeter/minute [mm/min] [1.6666666666667E+17]">millimeter/minute [mm/min]</option>
+<option value="millimeter/second [mm/s] [2.7777777777778E+15]">millimeter/second [mm/s]</option>
+<option value="foot/hour [ft/h] [3.2808398950131E+16]">foot/hour [ft/h]</option>
+<option value="foot/minute [ft/min] [5.4680664916885E+14]">foot/minute [ft/min]</option>
+<option value="foot/second [ft/s] [9113444152814.2]">foot/second [ft/s]</option>
+<option value="yard/hour [yd/h] [1.0936132983377E+16]">yard/hour [yd/h]</option>
+<option value="yard/minute [yd/min] [1.8226888305628E+14]">yard/minute [yd/min]</option>
+<option value="yard/second [yd/s] [3037814717604.7]">yard/second [yd/s]</option>
+<option value="mile/minute [mi/min] [103561865372.89]">mile/minute [mi/min]</option>
+<option value="mile/second [mi/s] [1726031089.5482]">mile/second [mi/s]</option>
+<option value="knot [kt, kn] [5399568034557.2]">knot [kt, kn]</option>
+<option value="knot (UK) [kt (UK)] [5396118248376.8]">knot (UK) [kt (UK)]</option>
+<option value="Velocity of light in vacuum [9265.6693110598]">Velocity of light in vacuum</option>
+<option value="Cosmic velocity - first [351617440.22504]">Cosmic velocity - first</option>
+<option value="Cosmic velocity - second [248015873.01587]">Cosmic velocity - second</option>
+<option value="Cosmic velocity - third [166633339.99867]">Cosmic velocity - third</option>
+<option value="Earth's velocity [93323627.676055]">Earth's velocity</option>
+<option value="Velocity of sound in pure water [1873459079.907]">Velocity of sound in pure water</option>
+<option value="Velocity of sound in sea water (20&#176;C, 10 meter deep) [1825563734.0811]">Velocity of sound in sea water (20&#176;C, 10 meter deep)</option>
+<option value="Mach (20&#176;C, 1 atm) [8084335790.9714]">Mach (20&#176;C, 1 atm)</option>
+<option value="Mach (SI standard) [9414715033.89]">Mach (SI standard)</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular speed unit conversions</h3>
+<div id="toother"><div>
+<a href="speed/mph-to-kph.html">mph to kph</a></div>
+<div>
+<a href="speed/kph-to-mph.html">kph to mph</a></div>
+<div>
+<a href="speed/meters-per-second-to-miles-per-hour.html">meters per second to miles per hour</a></div>
+<div>
+<a href="speed/miles-per-hour-to-meters-per-second.html">miles per hour to meters per second</a></div>
+<div>
+<a href="speed/knot-to-mph.html">knot to mph</a></div>
+<div>
+<a href="speed/mph-to-knot.html">mph to knot</a></div>
+<div>
+<a href="speed/feet-per-second-to-mph.html">feet per second to mph</a></div>
+<div>
+<a href="speed/mph-to-feet-per-second.html">mph to feet per second</a></div>
+<div>
+<a href="speed/meters-per-second-to-kph.html">meters per second to kph</a></div>
+<div>
+<a href="speed/kph-to-meters-per-second.html">kph to meters per second</a></div></div>
+<br>
+<h3>Complete list of speed units for conversion</h3>
+<ul class="allunits"><li>meter/second [m/s]</li>
+<li>1 kilometer/hour [km/h] = 0.2777777778 meter/second [m/s]<div>
+<a href="speed/kph-to-meters-per-second.html">kilometer/hour to meter/second</a>, &nbsp; <a href="speed/meters-per-second-to-kph.html">meter/second to kilometer/hour</a></div></li>
+<li>1 mile/hour [mi/h] = 0.44704 meter/second [m/s]<div>
+<a href="speed/miles-per-hour-to-meters-per-second.html">mile/hour to meter/second</a>, &nbsp; <a href="speed/meters-per-second-to-miles-per-hour.html">meter/second to mile/hour</a></div></li>
+<li>1 meter/hour [m/h] = 0.0002777778 meter/second [m/s]<div>
+<a href="speed/meter-hour-to-meter-second.html">meter/hour to meter/second</a>, &nbsp; <a href="speed/meter-second-to-meter-hour.html">meter/second to meter/hour</a></div></li>
+<li>1 meter/minute [m/min] = 0.0166666667 meter/second [m/s]<div>
+<a href="speed/meter-minute-to-meter-second.html">meter/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-meter-minute.html">meter/second to meter/minute</a></div></li>
+<li>1 kilometer/minute [km/min] = 16.6666666667 meter/second [m/s]<div>
+<a href="speed/kilometer-minute-to-meter-second.html">kilometer/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-kilometer-minute.html">meter/second to kilometer/minute</a></div></li>
+<li>1 kilometer/second [km/s] = 1000 meter/second [m/s]<div>
+<a href="speed/kilometer-second-to-meter-second.html">kilometer/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-kilometer-second.html">meter/second to kilometer/second</a></div></li>
+<li>1 centimeter/hour [cm/h] = 2.7777777777778E-6 meter/second [m/s]<div>
+<a href="speed/centimeter-hour-to-meter-second.html">centimeter/hour to meter/second</a>, &nbsp; <a href="speed/meter-second-to-centimeter-hour.html">meter/second to centimeter/hour</a></div></li>
+<li>1 centimeter/minute [cm/min] = 0.0001666667 meter/second [m/s]<div>
+<a href="speed/centimeter-minute-to-meter-second.html">centimeter/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-centimeter-minute.html">meter/second to centimeter/minute</a></div></li>
+<li>1 centimeter/second [cm/s] = 0.01 meter/second [m/s]<div>
+<a href="speed/centimeter-second-to-meter-second.html">centimeter/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-centimeter-second.html">meter/second to centimeter/second</a></div></li>
+<li>1 millimeter/hour [mm/h] = 2.7777777777778E-7 meter/second [m/s]<div>
+<a href="speed/millimeter-hour-to-meter-second.html">millimeter/hour to meter/second</a>, &nbsp; <a href="speed/meter-second-to-millimeter-hour.html">meter/second to millimeter/hour</a></div></li>
+<li>1 millimeter/minute [mm/min] = 1.66667E-5 meter/second [m/s]<div>
+<a href="speed/millimeter-minute-to-meter-second.html">millimeter/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-millimeter-minute.html">meter/second to millimeter/minute</a></div></li>
+<li>1 millimeter/second [mm/s] = 0.001 meter/second [m/s]<div>
+<a href="speed/millimeter-second-to-meter-second.html">millimeter/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-millimeter-second.html">meter/second to millimeter/second</a></div></li>
+<li>1 foot/hour [ft/h] = 8.46667E-5 meter/second [m/s]<div>
+<a href="speed/foot-hour-to-meter-second.html">foot/hour to meter/second</a>, &nbsp; <a href="speed/meter-second-to-foot-hour.html">meter/second to foot/hour</a></div></li>
+<li>1 foot/minute [ft/min] = 0.00508 meter/second [m/s]<div>
+<a href="speed/foot-minute-to-meter-second.html">foot/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-foot-minute.html">meter/second to foot/minute</a></div></li>
+<li>1 foot/second [ft/s] = 0.3048 meter/second [m/s]<div>
+<a href="speed/foot-second-to-meter-second.html">foot/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-foot-second.html">meter/second to foot/second</a></div></li>
+<li>1 yard/hour [yd/h] = 0.000254 meter/second [m/s]<div>
+<a href="speed/yard-hour-to-meter-second.html">yard/hour to meter/second</a>, &nbsp; <a href="speed/meter-second-to-yard-hour.html">meter/second to yard/hour</a></div></li>
+<li>1 yard/minute [yd/min] = 0.01524 meter/second [m/s]<div>
+<a href="speed/yard-minute-to-meter-second.html">yard/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-yard-minute.html">meter/second to yard/minute</a></div></li>
+<li>1 yard/second [yd/s] = 0.9144 meter/second [m/s]<div>
+<a href="speed/yard-second-to-meter-second.html">yard/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-yard-second.html">meter/second to yard/second</a></div></li>
+<li>1 mile/minute [mi/min] = 26.8224 meter/second [m/s]<div>
+<a href="speed/mile-minute-to-meter-second.html">mile/minute to meter/second</a>, &nbsp; <a href="speed/meter-second-to-mile-minute.html">meter/second to mile/minute</a></div></li>
+<li>1 mile/second [mi/s] = 1609.344 meter/second [m/s]<div>
+<a href="speed/mile-second-to-meter-second.html">mile/second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-mile-second.html">meter/second to mile/second</a></div></li>
+<li>1 knot [kt, kn] = 0.5144444444 meter/second [m/s]<div>
+<a href="speed/knot-to-meter-second.html">knot to meter/second</a>, &nbsp; <a href="speed/meter-second-to-knot.html">meter/second to knot</a></div></li>
+<li>1 knot (UK) [kt (UK)] = 0.5147733333 meter/second [m/s]<div>
+<a href="speed/knot-uk-to-meter-second.html">knot (UK) to meter/second</a>, &nbsp; <a href="speed/meter-second-to-knot-uk.html">meter/second to knot (UK)</a></div></li>
+<li>1 Velocity of light in vacuum = 299792458 meter/second [m/s]<div>
+<a href="speed/velocity-of-light-in-vacuum-to-meter-second.html">Velocity of light in vacuum to meter/second</a>, &nbsp; <a href="speed/meter-second-to-velocity-of-light-in-vacuum.html">meter/second to Velocity of light in vacuum</a></div></li>
+<li>1 Cosmic velocity - first = 7899.9999999999 meter/second [m/s]<div>
+<a href="speed/cosmic-velocity-first-to-meter-second.html">Cosmic velocity - first to meter/second</a>, &nbsp; <a href="speed/meter-second-to-cosmic-velocity-first.html">meter/second to Cosmic velocity - first</a></div></li>
+<li>1 Cosmic velocity - second = 11200 meter/second [m/s]<div>
+<a href="speed/cosmic-velocity-second-to-meter-second.html">Cosmic velocity - second to meter/second</a>, &nbsp; <a href="speed/meter-second-to-cosmic-velocity-second.html">meter/second to Cosmic velocity - second</a></div></li>
+<li>1 Cosmic velocity - third = 16670 meter/second [m/s]<div>
+<a href="speed/cosmic-velocity-third-to-meter-second.html">Cosmic velocity - third to meter/second</a>, &nbsp; <a href="speed/meter-second-to-cosmic-velocity-third.html">meter/second to Cosmic velocity - third</a></div></li>
+<li>1 Earth's velocity = 29765 meter/second [m/s]<div>
+<a href="speed/earth-s-velocity-to-meter-second.html">Earth's velocity to meter/second</a>, &nbsp; <a href="speed/meter-second-to-earth-s-velocity.html">meter/second to Earth's velocity</a></div></li>
+<li>1 Velocity of sound in pure water = 1482.6999999998 meter/second [m/s]<div>
+<a href="speed/velocity-of-sound-in-pure-water-to-meter-second.html">Velocity of sound in pure water to meter/second</a>, &nbsp; <a href="speed/meter-second-to-velocity-of-sound-in-pure-water.html">meter/second to Velocity of sound in pure water</a></div></li>
+<li>1 Velocity of sound in sea water (20&#176;C, 10 meter deep) = 1521.6 meter/second [m/s]<div>
+<a href="speed/velocity-of-sound-in-sea-water-20-176-c-10-meter-deep-to-meter-second.html">Velocity of sound in sea water (20&#176;C, 10 meter deep) to meter/second</a>, &nbsp; <a href="speed/meter-second-to-velocity-of-sound-in-sea-water-20-176-c-10-meter-deep.html">meter/second to Velocity of sound in sea water (20&#176;C, 10 meter deep)</a></div></li>
+<li>1 Mach (20&#176;C, 1 atm) = 343.6 meter/second [m/s]<div>
+<a href="speed/mach-20-176-c-1-atm-to-meter-second.html">Mach (20&#176;C, 1 atm) to meter/second</a>, &nbsp; <a href="speed/meter-second-to-mach-20-176-c-1-atm.html">meter/second to Mach (20&#176;C, 1 atm)</a></div></li>
+<li>1 Mach (SI standard) = 295.0464000003 meter/second [m/s]<div>
+<a href="speed/mach-si-standard-to-meter-second.html">Mach (SI standard) to meter/second</a>, &nbsp; <a href="speed/meter-second-to-mach-si-standard.html">meter/second to Mach (SI standard)</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

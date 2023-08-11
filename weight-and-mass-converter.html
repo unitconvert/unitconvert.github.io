@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Weight and Mass Converter</title>
+	<meta name="description" content="Free online weight and mass converter - converts between 70 units of weight and mass, including kilogram [kg], gram [g], milligram [mg], ton (metric) [t], etc. Also, explore many other unit converters or learn more about weight and mass unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Weight and Mass Converter</div>
+		<h1>Weight and Mass Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="kilogram [kg] [1.0E+15]" selected>kilogram [kg]</option>
+<option value="gram [g] [1.0E+18]">gram [g]</option>
+<option value="milligram [mg] [1.0E+21]">milligram [mg]</option>
+<option value="ton (metric) [t] [1000000000000]">ton (metric) [t]</option>
+<option value="pound [lbs] [2.2046226218488E+15]">pound [lbs]</option>
+<option value="ounce [oz] [3.527396194958E+16]">ounce [oz]</option>
+<option value="carat [car, ct] [5.0E+18]">carat [car, ct]</option>
+<option value="ton (short) [ton (US)] [1102311310924.4]">ton (short) [ton (US)]</option>
+<option value="ton (long) [ton (UK)] [984206527611.06]">ton (long) [ton (UK)]</option>
+<option value="Atomic mass unit [u] [6.0221366516752E+41]">Atomic mass unit [u]</option>
+<option value="exagram [Eg] [1]">exagram [Eg]</option>
+<option value="petagram [Pg] [1000]">petagram [Pg]</option>
+<option value="teragram [Tg] [1000000]">teragram [Tg]</option>
+<option value="gigagram [Gg] [1000000000]">gigagram [Gg]</option>
+<option value="megagram [Mg] [1000000000000]">megagram [Mg]</option>
+<option value="hectogram [hg] [1.0E+16]">hectogram [hg]</option>
+<option value="dekagram [dag] [1.0E+17]">dekagram [dag]</option>
+<option value="decigram [dg] [1.0E+19]">decigram [dg]</option>
+<option value="centigram [cg] [1.0E+20]">centigram [cg]</option>
+<option value="microgram [&#181;g] [1.0E+24]">microgram [&#181;g]</option>
+<option value="nanogram [ng] [1.0E+27]">nanogram [ng]</option>
+<option value="picogram [pg] [1.0E+30]">picogram [pg]</option>
+<option value="femtogram [fg] [1.0E+33]">femtogram [fg]</option>
+<option value="attogram [ag] [1.0E+36]">attogram [ag]</option>
+<option value="dalton [6.02217364335E+41]">dalton</option>
+<option value="kilogram-force square second/meter [1.0197162129779E+14]">kilogram-force square second/meter</option>
+<option value="kilopound [kip] [2204622621848.8]">kilopound [kip]</option>
+<option value="kip [2204622621848.8]">kip</option>
+<option value="slug [68521765856800]">slug</option>
+<option value="pound-force square second/foot [68521765856792]">pound-force square second/foot</option>
+<option value="pound (troy or apothecary) [2.679228880719E+15]">pound (troy or apothecary)</option>
+<option value="poundal [pdl] [7.09888484236E+16]">poundal [pdl]</option>
+<option value="ton (assay) (US) [AT (US)] [3.4285710367347E+16]">ton (assay) (US) [AT (US)]</option>
+<option value="ton (assay) (UK) [AT (UK)] [3.061224489796E+16]">ton (assay) (UK) [AT (UK)]</option>
+<option value="kiloton (metric) [kt] [1000000000]">kiloton (metric) [kt]</option>
+<option value="quintal (metric) [cwt] [10000000000000]">quintal (metric) [cwt]</option>
+<option value="hundredweight (US) [22046226218488]">hundredweight (US)</option>
+<option value="hundredweight (UK) [19684130552221]">hundredweight (UK)</option>
+<option value="quarter (US) [qr (US)] [88184904873951]">quarter (US) [qr (US)]</option>
+<option value="quarter (UK) [qr (UK)] [78736522208885]">quarter (UK) [qr (UK)]</option>
+<option value="stone (US) [1.763698097479E+14]">stone (US)</option>
+<option value="stone (UK) [1.5747304441777E+14]">stone (UK)</option>
+<option value="tonne [t] [1000000000000]">tonne [t]</option>
+<option value="pennyweight [pwt] [6.4301493137083E+17]">pennyweight [pwt]</option>
+<option value="scruple (apothecary) [s.ap] [7.71617917645E+17]">scruple (apothecary) [s.ap]</option>
+<option value="grain [gr] [1.54323583529E+19]">grain [gr]</option>
+<option value="gamma [1.0E+24]">gamma</option>
+<option value="talent (Biblical Hebrew) [29239766081871]">talent (Biblical Hebrew)</option>
+<option value="mina (Biblical Hebrew) [1.7543859649123E+15]">mina (Biblical Hebrew)</option>
+<option value="shekel (Biblical Hebrew) [8.7719298245614E+16]">shekel (Biblical Hebrew)</option>
+<option value="bekan (Biblical Hebrew) [1.7543859649123E+17]">bekan (Biblical Hebrew)</option>
+<option value="gerah (Biblical Hebrew) [1.7543859649123E+18]">gerah (Biblical Hebrew)</option>
+<option value="talent (Biblical Greek) [49019607843137]">talent (Biblical Greek)</option>
+<option value="mina (Biblical Greek) [2.9411764705882E+15]">mina (Biblical Greek)</option>
+<option value="tetradrachma (Biblical Greek) [7.3529411764706E+16]">tetradrachma (Biblical Greek)</option>
+<option value="didrachma (Biblical Greek) [1.4705882352941E+17]">didrachma (Biblical Greek)</option>
+<option value="drachma (Biblical Greek) [2.9411764705882E+17]">drachma (Biblical Greek)</option>
+<option value="denarius (Biblical Roman) [2.5974025974026E+17]">denarius (Biblical Roman)</option>
+<option value="assarion (Biblical Roman) [4.1558441558442E+18]">assarion (Biblical Roman)</option>
+<option value="quadrans (Biblical Roman) [1.6623376623377E+19]">quadrans (Biblical Roman)</option>
+<option value="lepton (Biblical Roman) [3.3246753246753E+19]">lepton (Biblical Roman)</option>
+<option value="Planck mass [4.5940892447777E+22]">Planck mass</option>
+<option value="Electron mass (rest) [1.0977683828808E+45]">Electron mass (rest)</option>
+<option value="Muon mass [5.3091724927313E+42]">Muon mass</option>
+<option value="Proton mass [5.9786332019449E+41]">Proton mass</option>
+<option value="Neutron mass [5.9704037533301E+41]">Neutron mass</option>
+<option value="Deuteron mass [2.9908008946084E+41]">Deuteron mass</option>
+<option value="Earth's mass [1.673360107095E-10]">Earth's mass</option>
+<option value="Sun's mass [5.0E-16]">Sun's mass</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="kilogram [kg] [1.0E+15]">kilogram [kg]</option>
+<option value="gram [g] [1.0E+18]" selected>gram [g]</option>
+<option value="milligram [mg] [1.0E+21]">milligram [mg]</option>
+<option value="ton (metric) [t] [1000000000000]">ton (metric) [t]</option>
+<option value="pound [lbs] [2.2046226218488E+15]">pound [lbs]</option>
+<option value="ounce [oz] [3.527396194958E+16]">ounce [oz]</option>
+<option value="carat [car, ct] [5.0E+18]">carat [car, ct]</option>
+<option value="ton (short) [ton (US)] [1102311310924.4]">ton (short) [ton (US)]</option>
+<option value="ton (long) [ton (UK)] [984206527611.06]">ton (long) [ton (UK)]</option>
+<option value="Atomic mass unit [u] [6.0221366516752E+41]">Atomic mass unit [u]</option>
+<option value="exagram [Eg] [1]">exagram [Eg]</option>
+<option value="petagram [Pg] [1000]">petagram [Pg]</option>
+<option value="teragram [Tg] [1000000]">teragram [Tg]</option>
+<option value="gigagram [Gg] [1000000000]">gigagram [Gg]</option>
+<option value="megagram [Mg] [1000000000000]">megagram [Mg]</option>
+<option value="hectogram [hg] [1.0E+16]">hectogram [hg]</option>
+<option value="dekagram [dag] [1.0E+17]">dekagram [dag]</option>
+<option value="decigram [dg] [1.0E+19]">decigram [dg]</option>
+<option value="centigram [cg] [1.0E+20]">centigram [cg]</option>
+<option value="microgram [&#181;g] [1.0E+24]">microgram [&#181;g]</option>
+<option value="nanogram [ng] [1.0E+27]">nanogram [ng]</option>
+<option value="picogram [pg] [1.0E+30]">picogram [pg]</option>
+<option value="femtogram [fg] [1.0E+33]">femtogram [fg]</option>
+<option value="attogram [ag] [1.0E+36]">attogram [ag]</option>
+<option value="dalton [6.02217364335E+41]">dalton</option>
+<option value="kilogram-force square second/meter [1.0197162129779E+14]">kilogram-force square second/meter</option>
+<option value="kilopound [kip] [2204622621848.8]">kilopound [kip]</option>
+<option value="kip [2204622621848.8]">kip</option>
+<option value="slug [68521765856800]">slug</option>
+<option value="pound-force square second/foot [68521765856792]">pound-force square second/foot</option>
+<option value="pound (troy or apothecary) [2.679228880719E+15]">pound (troy or apothecary)</option>
+<option value="poundal [pdl] [7.09888484236E+16]">poundal [pdl]</option>
+<option value="ton (assay) (US) [AT (US)] [3.4285710367347E+16]">ton (assay) (US) [AT (US)]</option>
+<option value="ton (assay) (UK) [AT (UK)] [3.061224489796E+16]">ton (assay) (UK) [AT (UK)]</option>
+<option value="kiloton (metric) [kt] [1000000000]">kiloton (metric) [kt]</option>
+<option value="quintal (metric) [cwt] [10000000000000]">quintal (metric) [cwt]</option>
+<option value="hundredweight (US) [22046226218488]">hundredweight (US)</option>
+<option value="hundredweight (UK) [19684130552221]">hundredweight (UK)</option>
+<option value="quarter (US) [qr (US)] [88184904873951]">quarter (US) [qr (US)]</option>
+<option value="quarter (UK) [qr (UK)] [78736522208885]">quarter (UK) [qr (UK)]</option>
+<option value="stone (US) [1.763698097479E+14]">stone (US)</option>
+<option value="stone (UK) [1.5747304441777E+14]">stone (UK)</option>
+<option value="tonne [t] [1000000000000]">tonne [t]</option>
+<option value="pennyweight [pwt] [6.4301493137083E+17]">pennyweight [pwt]</option>
+<option value="scruple (apothecary) [s.ap] [7.71617917645E+17]">scruple (apothecary) [s.ap]</option>
+<option value="grain [gr] [1.54323583529E+19]">grain [gr]</option>
+<option value="gamma [1.0E+24]">gamma</option>
+<option value="talent (Biblical Hebrew) [29239766081871]">talent (Biblical Hebrew)</option>
+<option value="mina (Biblical Hebrew) [1.7543859649123E+15]">mina (Biblical Hebrew)</option>
+<option value="shekel (Biblical Hebrew) [8.7719298245614E+16]">shekel (Biblical Hebrew)</option>
+<option value="bekan (Biblical Hebrew) [1.7543859649123E+17]">bekan (Biblical Hebrew)</option>
+<option value="gerah (Biblical Hebrew) [1.7543859649123E+18]">gerah (Biblical Hebrew)</option>
+<option value="talent (Biblical Greek) [49019607843137]">talent (Biblical Greek)</option>
+<option value="mina (Biblical Greek) [2.9411764705882E+15]">mina (Biblical Greek)</option>
+<option value="tetradrachma (Biblical Greek) [7.3529411764706E+16]">tetradrachma (Biblical Greek)</option>
+<option value="didrachma (Biblical Greek) [1.4705882352941E+17]">didrachma (Biblical Greek)</option>
+<option value="drachma (Biblical Greek) [2.9411764705882E+17]">drachma (Biblical Greek)</option>
+<option value="denarius (Biblical Roman) [2.5974025974026E+17]">denarius (Biblical Roman)</option>
+<option value="assarion (Biblical Roman) [4.1558441558442E+18]">assarion (Biblical Roman)</option>
+<option value="quadrans (Biblical Roman) [1.6623376623377E+19]">quadrans (Biblical Roman)</option>
+<option value="lepton (Biblical Roman) [3.3246753246753E+19]">lepton (Biblical Roman)</option>
+<option value="Planck mass [4.5940892447777E+22]">Planck mass</option>
+<option value="Electron mass (rest) [1.0977683828808E+45]">Electron mass (rest)</option>
+<option value="Muon mass [5.3091724927313E+42]">Muon mass</option>
+<option value="Proton mass [5.9786332019449E+41]">Proton mass</option>
+<option value="Neutron mass [5.9704037533301E+41]">Neutron mass</option>
+<option value="Deuteron mass [2.9908008946084E+41]">Deuteron mass</option>
+<option value="Earth's mass [1.673360107095E-10]">Earth's mass</option>
+<option value="Sun's mass [5.0E-16]">Sun's mass</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular weight and mass unit conversions</h3>
+<div id="toother"><div>
+<a href="weight-and-mass/kg-to-lbs.html">kg to lbs</a></div>
+<div>
+<a href="weight-and-mass/lbs-to-kg.html">lbs to kg</a></div>
+<div>
+<a href="weight-and-mass/grams-to-ounces.html">grams to ounces</a></div>
+<div>
+<a href="weight-and-mass/ounces-to-grams.html">ounces to grams</a></div>
+<div>
+<a href="weight-and-mass/pounds-to-ounces.html">pounds to ounces</a></div>
+<div>
+<a href="weight-and-mass/ounces-to-pounds.html">ounces to pounds</a></div>
+<div>
+<a href="weight-and-mass/grams-to-pounds.html">grams to pounds</a></div>
+<div>
+<a href="weight-and-mass/pounds-to-grams.html">pounds to grams</a></div>
+<div>
+<a href="weight-and-mass/g-to-kg.html">g to kg</a></div>
+<div>
+<a href="weight-and-mass/kg-to-g.html">kg to g</a></div>
+<div>
+<a href="weight-and-mass/grams-to-milligrams.html">grams to milligrams</a></div>
+<div>
+<a href="weight-and-mass/milligrams-to-grams.html">milligrams to grams</a></div>
+<div>
+<a href="weight-and-mass/oz-to-kg.html">oz to kg</a></div>
+<div>
+<a href="weight-and-mass/kg-to-oz.html">kg to oz</a></div>
+<div>
+<a href="weight-and-mass/lbs-to-stone.html">lbs to stone</a></div>
+<div>
+<a href="weight-and-mass/stone-to-lbs.html">stone to lbs</a></div>
+<div>
+<a href="weight-and-mass/ton-to-lbs.html">ton to lbs</a></div>
+<div>
+<a href="weight-and-mass/lbs-to-ton.html">lbs to ton</a></div></div>
+<br>
+<h3>Complete list of weight and mass units for conversion</h3>
+<ul class="allunits"><li>kilogram [kg]</li>
+<li>1 gram [g] = 0.001 kilogram [kg]<div>
+<a href="weight-and-mass/g-to-kg.html">gram to kilogram</a>, &nbsp; <a href="weight-and-mass/kg-to-g.html">kilogram to gram</a></div></li>
+<li>1 milligram [mg] = 1.0E-6 kilogram [kg]<div>
+<a href="weight-and-mass/milligram-to-kilogram.html">milligram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-milligram.html">kilogram to milligram</a></div></li>
+<li>1 ton (metric) [t] = 1000 kilogram [kg]<div>
+<a href="weight-and-mass/ton-metric-to-kilogram.html">ton (metric) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-ton-metric.html">kilogram to ton (metric)</a></div></li>
+<li>1 pound [lbs] = 0.45359237 kilogram [kg]<div>
+<a href="weight-and-mass/lbs-to-kg.html">pound to kilogram</a>, &nbsp; <a href="weight-and-mass/kg-to-lbs.html">kilogram to pound</a></div></li>
+<li>1 ounce [oz] = 0.0283495231 kilogram [kg]<div>
+<a href="weight-and-mass/oz-to-kg.html">ounce to kilogram</a>, &nbsp; <a href="weight-and-mass/kg-to-oz.html">kilogram to ounce</a></div></li>
+<li>1 carat [car, ct] = 0.0002 kilogram [kg]<div>
+<a href="weight-and-mass/carat-to-kilogram.html">carat to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-carat.html">kilogram to carat</a></div></li>
+<li>1 ton (short) [ton (US)] = 907.18474 kilogram [kg]<div>
+<a href="weight-and-mass/ton-short-to-kilogram.html">ton (short) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-ton-short.html">kilogram to ton (short)</a></div></li>
+<li>1 ton (long) [ton (UK)] = 1016.0469088 kilogram [kg]<div>
+<a href="weight-and-mass/ton-long-to-kilogram.html">ton (long) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-ton-long.html">kilogram to ton (long)</a></div></li>
+<li>1 Atomic mass unit [u] = 1.6605402E-27 kilogram [kg]<div>
+<a href="weight-and-mass/atomic-mass-unit-to-kilogram.html">Atomic mass unit to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-atomic-mass-unit.html">kilogram to Atomic mass unit</a></div></li>
+<li>1 exagram [Eg] = 1.0E+15 kilogram [kg]<div>
+<a href="weight-and-mass/exagram-to-kilogram.html">exagram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-exagram.html">kilogram to exagram</a></div></li>
+<li>1 petagram [Pg] = 1000000000000 kilogram [kg]<div>
+<a href="weight-and-mass/petagram-to-kilogram.html">petagram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-petagram.html">kilogram to petagram</a></div></li>
+<li>1 teragram [Tg] = 1000000000 kilogram [kg]<div>
+<a href="weight-and-mass/teragram-to-kilogram.html">teragram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-teragram.html">kilogram to teragram</a></div></li>
+<li>1 gigagram [Gg] = 1000000 kilogram [kg]<div>
+<a href="weight-and-mass/gigagram-to-kilogram.html">gigagram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-gigagram.html">kilogram to gigagram</a></div></li>
+<li>1 megagram [Mg] = 1000 kilogram [kg]<div>
+<a href="weight-and-mass/megagram-to-kilogram.html">megagram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-megagram.html">kilogram to megagram</a></div></li>
+<li>1 hectogram [hg] = 0.1 kilogram [kg]<div>
+<a href="weight-and-mass/hectogram-to-kilogram.html">hectogram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-hectogram.html">kilogram to hectogram</a></div></li>
+<li>1 dekagram [dag] = 0.01 kilogram [kg]<div>
+<a href="weight-and-mass/dekagram-to-kilogram.html">dekagram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-dekagram.html">kilogram to dekagram</a></div></li>
+<li>1 decigram [dg] = 0.0001 kilogram [kg]<div>
+<a href="weight-and-mass/decigram-to-kilogram.html">decigram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-decigram.html">kilogram to decigram</a></div></li>
+<li>1 centigram [cg] = 1.0E-5 kilogram [kg]<div>
+<a href="weight-and-mass/centigram-to-kilogram.html">centigram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-centigram.html">kilogram to centigram</a></div></li>
+<li>1 microgram [&#181;g] = 1.0E-9 kilogram [kg]<div>
+<a href="weight-and-mass/microgram-to-kilogram.html">microgram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-microgram.html">kilogram to microgram</a></div></li>
+<li>1 nanogram [ng] = 1.0E-12 kilogram [kg]<div>
+<a href="weight-and-mass/nanogram-to-kilogram.html">nanogram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-nanogram.html">kilogram to nanogram</a></div></li>
+<li>1 picogram [pg] = 1.0E-15 kilogram [kg]<div>
+<a href="weight-and-mass/picogram-to-kilogram.html">picogram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-picogram.html">kilogram to picogram</a></div></li>
+<li>1 femtogram [fg] = 1.0E-18 kilogram [kg]<div>
+<a href="weight-and-mass/femtogram-to-kilogram.html">femtogram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-femtogram.html">kilogram to femtogram</a></div></li>
+<li>1 attogram [ag] = 1.0E-21 kilogram [kg]<div>
+<a href="weight-and-mass/attogram-to-kilogram.html">attogram to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-attogram.html">kilogram to attogram</a></div></li>
+<li>1 dalton = 1.6605300000013E-27 kilogram [kg]<div>
+<a href="weight-and-mass/dalton-to-kilogram.html">dalton to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-dalton.html">kilogram to dalton</a></div></li>
+<li>1 kilogram-force square second/meter = 9.80665 kilogram [kg]<div>
+<a href="weight-and-mass/kilogram-force-square-second-meter-to-kilogram.html">kilogram-force square second/meter to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-kilogram-force-square-second-meter.html">kilogram to kilogram-force square second/meter</a></div></li>
+<li>1 kilopound [kip] = 453.59237 kilogram [kg]<div>
+<a href="weight-and-mass/kilopound-to-kilogram.html">kilopound to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-kilopound.html">kilogram to kilopound</a></div></li>
+<li>1 kip = 453.59237 kilogram [kg]<div>
+<a href="weight-and-mass/kip-to-kilogram.html">kip to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-kip.html">kilogram to kip</a></div></li>
+<li>1 slug = 14.5939029372 kilogram [kg]<div>
+<a href="weight-and-mass/slug-to-kilogram.html">slug to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-slug.html">kilogram to slug</a></div></li>
+<li>1 pound-force square second/foot = 14.5939029372 kilogram [kg]<div>
+<a href="weight-and-mass/pound-force-square-second-foot-to-kilogram.html">pound-force square second/foot to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-pound-force-square-second-foot.html">kilogram to pound-force square second/foot</a></div></li>
+<li>1 pound (troy or apothecary) = 0.3732417216 kilogram [kg]<div>
+<a href="weight-and-mass/pound-troy-or-apothecary-to-kilogram.html">pound (troy or apothecary) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-pound-troy-or-apothecary.html">kilogram to pound (troy or apothecary)</a></div></li>
+<li>1 poundal [pdl] = 0.0140867196 kilogram [kg]<div>
+<a href="weight-and-mass/poundal-to-kilogram.html">poundal to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-poundal.html">kilogram to poundal</a></div></li>
+<li>1 ton (assay) (US) [AT (US)] = 0.02916667 kilogram [kg]<div>
+<a href="weight-and-mass/ton-assay-us-to-kilogram.html">ton (assay) (US) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-ton-assay-us.html">kilogram to ton (assay) (US)</a></div></li>
+<li>1 ton (assay) (UK) [AT (UK)] = 0.0326666667 kilogram [kg]<div>
+<a href="weight-and-mass/ton-assay-uk-to-kilogram.html">ton (assay) (UK) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-ton-assay-uk.html">kilogram to ton (assay) (UK)</a></div></li>
+<li>1 kiloton (metric) [kt] = 1000000 kilogram [kg]<div>
+<a href="weight-and-mass/kiloton-metric-to-kilogram.html">kiloton (metric) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-kiloton-metric.html">kilogram to kiloton (metric)</a></div></li>
+<li>1 quintal (metric) [cwt] = 100 kilogram [kg]<div>
+<a href="weight-and-mass/quintal-metric-to-kilogram.html">quintal (metric) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-quintal-metric.html">kilogram to quintal (metric)</a></div></li>
+<li>1 hundredweight (US) = 45.359237 kilogram [kg]<div>
+<a href="weight-and-mass/hundredweight-us-to-kilogram.html">hundredweight (US) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-hundredweight-us.html">kilogram to hundredweight (US)</a></div></li>
+<li>1 hundredweight (UK) = 50.80234544 kilogram [kg]<div>
+<a href="weight-and-mass/hundredweight-uk-to-kilogram.html">hundredweight (UK) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-hundredweight-uk.html">kilogram to hundredweight (UK)</a></div></li>
+<li>1 quarter (US) [qr (US)] = 11.33980925 kilogram [kg]<div>
+<a href="weight-and-mass/quarter-us-to-kilogram.html">quarter (US) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-quarter-us.html">kilogram to quarter (US)</a></div></li>
+<li>1 quarter (UK) [qr (UK)] = 12.70058636 kilogram [kg]<div>
+<a href="weight-and-mass/quarter-uk-to-kilogram.html">quarter (UK) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-quarter-uk.html">kilogram to quarter (UK)</a></div></li>
+<li>1 stone (US) = 5.669904625 kilogram [kg]<div>
+<a href="weight-and-mass/stone-us-to-kilogram.html">stone (US) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-stone-us.html">kilogram to stone (US)</a></div></li>
+<li>1 stone (UK) = 6.35029318 kilogram [kg]<div>
+<a href="weight-and-mass/stone-uk-to-kilogram.html">stone (UK) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-stone-uk.html">kilogram to stone (UK)</a></div></li>
+<li>1 tonne [t] = 1000 kilogram [kg]<div>
+<a href="weight-and-mass/tonne-to-kilogram.html">tonne to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-tonne.html">kilogram to tonne</a></div></li>
+<li>1 pennyweight [pwt] = 0.0015551738 kilogram [kg]<div>
+<a href="weight-and-mass/pennyweight-to-kilogram.html">pennyweight to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-pennyweight.html">kilogram to pennyweight</a></div></li>
+<li>1 scruple (apothecary) [s.ap] = 0.0012959782 kilogram [kg]<div>
+<a href="weight-and-mass/scruple-apothecary-to-kilogram.html">scruple (apothecary) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-scruple-apothecary.html">kilogram to scruple (apothecary)</a></div></li>
+<li>1 grain [gr] = 6.47989E-5 kilogram [kg]<div>
+<a href="weight-and-mass/grain-to-kilogram.html">grain to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-grain.html">kilogram to grain</a></div></li>
+<li>1 gamma = 1.0E-9 kilogram [kg]<div>
+<a href="weight-and-mass/gamma-to-kilogram.html">gamma to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-gamma.html">kilogram to gamma</a></div></li>
+<li>1 talent (Biblical Hebrew) = 34.2 kilogram [kg]<div>
+<a href="weight-and-mass/talent-biblical-hebrew-to-kilogram.html">talent (Biblical Hebrew) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-talent-biblical-hebrew.html">kilogram to talent (Biblical Hebrew)</a></div></li>
+<li>1 mina (Biblical Hebrew) = 0.57 kilogram [kg]<div>
+<a href="weight-and-mass/mina-biblical-hebrew-to-kilogram.html">mina (Biblical Hebrew) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-mina-biblical-hebrew.html">kilogram to mina (Biblical Hebrew)</a></div></li>
+<li>1 shekel (Biblical Hebrew) = 0.0114 kilogram [kg]<div>
+<a href="weight-and-mass/shekel-biblical-hebrew-to-kilogram.html">shekel (Biblical Hebrew) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-shekel-biblical-hebrew.html">kilogram to shekel (Biblical Hebrew)</a></div></li>
+<li>1 bekan (Biblical Hebrew) = 0.0057 kilogram [kg]<div>
+<a href="weight-and-mass/bekan-biblical-hebrew-to-kilogram.html">bekan (Biblical Hebrew) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-bekan-biblical-hebrew.html">kilogram to bekan (Biblical Hebrew)</a></div></li>
+<li>1 gerah (Biblical Hebrew) = 0.00057 kilogram [kg]<div>
+<a href="weight-and-mass/gerah-biblical-hebrew-to-kilogram.html">gerah (Biblical Hebrew) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-gerah-biblical-hebrew.html">kilogram to gerah (Biblical Hebrew)</a></div></li>
+<li>1 talent (Biblical Greek) = 20.4 kilogram [kg]<div>
+<a href="weight-and-mass/talent-biblical-greek-to-kilogram.html">talent (Biblical Greek) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-talent-biblical-greek.html">kilogram to talent (Biblical Greek)</a></div></li>
+<li>1 mina (Biblical Greek) = 0.34 kilogram [kg]<div>
+<a href="weight-and-mass/mina-biblical-greek-to-kilogram.html">mina (Biblical Greek) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-mina-biblical-greek.html">kilogram to mina (Biblical Greek)</a></div></li>
+<li>1 tetradrachma (Biblical Greek) = 0.0136 kilogram [kg]<div>
+<a href="weight-and-mass/tetradrachma-biblical-greek-to-kilogram.html">tetradrachma (Biblical Greek) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-tetradrachma-biblical-greek.html">kilogram to tetradrachma (Biblical Greek)</a></div></li>
+<li>1 didrachma (Biblical Greek) = 0.0068 kilogram [kg]<div>
+<a href="weight-and-mass/didrachma-biblical-greek-to-kilogram.html">didrachma (Biblical Greek) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-didrachma-biblical-greek.html">kilogram to didrachma (Biblical Greek)</a></div></li>
+<li>1 drachma (Biblical Greek) = 0.0034 kilogram [kg]<div>
+<a href="weight-and-mass/drachma-biblical-greek-to-kilogram.html">drachma (Biblical Greek) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-drachma-biblical-greek.html">kilogram to drachma (Biblical Greek)</a></div></li>
+<li>1 denarius (Biblical Roman) = 0.00385 kilogram [kg]<div>
+<a href="weight-and-mass/denarius-biblical-roman-to-kilogram.html">denarius (Biblical Roman) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-denarius-biblical-roman.html">kilogram to denarius (Biblical Roman)</a></div></li>
+<li>1 assarion (Biblical Roman) = 0.000240625 kilogram [kg]<div>
+<a href="weight-and-mass/assarion-biblical-roman-to-kilogram.html">assarion (Biblical Roman) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-assarion-biblical-roman.html">kilogram to assarion (Biblical Roman)</a></div></li>
+<li>1 quadrans (Biblical Roman) = 6.01563E-5 kilogram [kg]<div>
+<a href="weight-and-mass/quadrans-biblical-roman-to-kilogram.html">quadrans (Biblical Roman) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-quadrans-biblical-roman.html">kilogram to quadrans (Biblical Roman)</a></div></li>
+<li>1 lepton (Biblical Roman) = 3.00781E-5 kilogram [kg]<div>
+<a href="weight-and-mass/lepton-biblical-roman-to-kilogram.html">lepton (Biblical Roman) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-lepton-biblical-roman.html">kilogram to lepton (Biblical Roman)</a></div></li>
+<li>1 Planck mass = 2.17671E-8 kilogram [kg]<div>
+<a href="weight-and-mass/planck-mass-to-kilogram.html">Planck mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-planck-mass.html">kilogram to Planck mass</a></div></li>
+<li>1 Electron mass (rest) = 9.1093897E-31 kilogram [kg]<div>
+<a href="weight-and-mass/electron-mass-rest-to-kilogram.html">Electron mass (rest) to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-electron-mass-rest.html">kilogram to Electron mass (rest)</a></div></li>
+<li>1 Muon mass = 1.8835327E-28 kilogram [kg]<div>
+<a href="weight-and-mass/muon-mass-to-kilogram.html">Muon mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-muon-mass.html">kilogram to Muon mass</a></div></li>
+<li>1 Proton mass = 1.6726231E-27 kilogram [kg]<div>
+<a href="weight-and-mass/proton-mass-to-kilogram.html">Proton mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-proton-mass.html">kilogram to Proton mass</a></div></li>
+<li>1 Neutron mass = 1.6749286E-27 kilogram [kg]<div>
+<a href="weight-and-mass/neutron-mass-to-kilogram.html">Neutron mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-neutron-mass.html">kilogram to Neutron mass</a></div></li>
+<li>1 Deuteron mass = 3.343586E-27 kilogram [kg]<div>
+<a href="weight-and-mass/deuteron-mass-to-kilogram.html">Deuteron mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-deuteron-mass.html">kilogram to Deuteron mass</a></div></li>
+<li>1 Earth's mass = 5.9760000000002E+24 kilogram [kg]<div>
+<a href="weight-and-mass/earth-s-mass-to-kilogram.html">Earth's mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-earth-s-mass.html">kilogram to Earth's mass</a></div></li>
+<li>1 Sun's mass = 2.0E+30 kilogram [kg]<div>
+<a href="weight-and-mass/sun-s-mass-to-kilogram.html">Sun's mass to kilogram</a>, &nbsp; <a href="weight-and-mass/kilogram-to-sun-s-mass.html">kilogram to Sun's mass</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

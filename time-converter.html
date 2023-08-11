@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Time Converter</title>
+	<meta name="description" content="Free online time converter - converts between 34 units of time, including second [s], millisecond [ms], minute [min], hour [h], etc. Also, explore many other unit converters or learn more about time unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Time Converter</div>
+		<h1>Time Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="second [s] [3.1536E+18]" selected>second [s]</option>
+<option value="millisecond [ms] [3.1536E+21]">millisecond [ms]</option>
+<option value="minute [min] [5.256E+16]">minute [min]</option>
+<option value="hour [h] [8.76E+14]">hour [h]</option>
+<option value="day [d] [36500000000000]">day [d]</option>
+<option value="week [5214285714285.7]">week</option>
+<option value="month [1200000000000]">month</option>
+<option value="year [y] [99931553730.322]">year [y]</option>
+<option value="decade [9993155373.0322]">decade</option>
+<option value="century [999315537.30322]">century</option>
+<option value="millennium [99931553.730322]">millennium</option>
+<option value="microsecond [&#181;s] [3.1536E+24]">microsecond [&#181;s]</option>
+<option value="nanosecond [ns] [3.1536E+27]">nanosecond [ns]</option>
+<option value="picosecond [ps] [3.1536E+30]">picosecond [ps]</option>
+<option value="femtosecond [fs] [3.1536E+33]">femtosecond [fs]</option>
+<option value="attosecond [as] [3.1536E+36]">attosecond [as]</option>
+<option value="shake [3.1536E+26]">shake</option>
+<option value="month (synodic) [1236006041191.2]">month (synodic)</option>
+<option value="year (Julian) [99931553730.322]">year (Julian)</option>
+<option value="year (leap) [99726775956.284]">year (leap)</option>
+<option value="year (tropical) [99933675424.067]">year (tropical)</option>
+<option value="year (sidereal) [99929813565.361]">year (sidereal)</option>
+<option value="day (sidereal) [36599933916786]">day (sidereal)</option>
+<option value="hour (sidereal) [8.7839841400286E+14]">hour (sidereal)</option>
+<option value="minute (sidereal) [5.2703904840172E+16]">minute (sidereal)</option>
+<option value="second (sidereal) [3.1622342904103E+18]">second (sidereal)</option>
+<option value="fortnight [2607142857142.9]">fortnight</option>
+<option value="septennial [14285714285.714]">septennial</option>
+<option value="octennial [12500000000]">octennial</option>
+<option value="novennial [11111111111.111]">novennial</option>
+<option value="quindecennial [6666666666.6667]">quindecennial</option>
+<option value="quinquennial [20000000000]">quinquennial</option>
+<option value="Planck time [5.8502270636075E+61]">Planck time</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="second [s] [3.1536E+18]">second [s]</option>
+<option value="millisecond [ms] [3.1536E+21]" selected>millisecond [ms]</option>
+<option value="minute [min] [5.256E+16]">minute [min]</option>
+<option value="hour [h] [8.76E+14]">hour [h]</option>
+<option value="day [d] [36500000000000]">day [d]</option>
+<option value="week [5214285714285.7]">week</option>
+<option value="month [1200000000000]">month</option>
+<option value="year [y] [99931553730.322]">year [y]</option>
+<option value="decade [9993155373.0322]">decade</option>
+<option value="century [999315537.30322]">century</option>
+<option value="millennium [99931553.730322]">millennium</option>
+<option value="microsecond [&#181;s] [3.1536E+24]">microsecond [&#181;s]</option>
+<option value="nanosecond [ns] [3.1536E+27]">nanosecond [ns]</option>
+<option value="picosecond [ps] [3.1536E+30]">picosecond [ps]</option>
+<option value="femtosecond [fs] [3.1536E+33]">femtosecond [fs]</option>
+<option value="attosecond [as] [3.1536E+36]">attosecond [as]</option>
+<option value="shake [3.1536E+26]">shake</option>
+<option value="month (synodic) [1236006041191.2]">month (synodic)</option>
+<option value="year (Julian) [99931553730.322]">year (Julian)</option>
+<option value="year (leap) [99726775956.284]">year (leap)</option>
+<option value="year (tropical) [99933675424.067]">year (tropical)</option>
+<option value="year (sidereal) [99929813565.361]">year (sidereal)</option>
+<option value="day (sidereal) [36599933916786]">day (sidereal)</option>
+<option value="hour (sidereal) [8.7839841400286E+14]">hour (sidereal)</option>
+<option value="minute (sidereal) [5.2703904840172E+16]">minute (sidereal)</option>
+<option value="second (sidereal) [3.1622342904103E+18]">second (sidereal)</option>
+<option value="fortnight [2607142857142.9]">fortnight</option>
+<option value="septennial [14285714285.714]">septennial</option>
+<option value="octennial [12500000000]">octennial</option>
+<option value="novennial [11111111111.111]">novennial</option>
+<option value="quindecennial [6666666666.6667]">quindecennial</option>
+<option value="quinquennial [20000000000]">quinquennial</option>
+<option value="Planck time [5.8502270636075E+61]">Planck time</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular time unit conversions</h3>
+<div id="toother"><div>
+<a href="time/minutes-to-hours.html">minutes to hours</a></div>
+<div>
+<a href="time/hours-to-minutes.html">hours to minutes</a></div>
+<div>
+<a href="time/hours-to-days.html">hours to days</a></div>
+<div>
+<a href="time/days-to-hours.html">days to hours</a></div>
+<div>
+<a href="time/seconds-to-days.html">seconds to days</a></div>
+<div>
+<a href="time/days-to-seconds.html">days to seconds</a></div>
+<div>
+<a href="time/minutes-to-days.html">minutes to days</a></div>
+<div>
+<a href="time/days-to-minutes.html">days to minutes</a></div>
+<div>
+<a href="time/days-to-months.html">days to months</a></div>
+<div>
+<a href="time/months-to-days.html">months to days</a></div>
+<div>
+<a href="time/days-to-years.html">days to years</a></div>
+<div>
+<a href="time/years-to-days.html">years to days</a></div>
+<div>
+<a href="time/minutes-to-seconds.html">minutes to seconds</a></div>
+<div>
+<a href="time/seconds-to-minutes.html">seconds to minutes</a></div>
+<div>
+<a href="time/milliseconds-to-seconds.html">milliseconds to seconds</a></div>
+<div>
+<a href="time/seconds-to-milliseconds.html">seconds to milliseconds</a></div></div>
+<br>
+<h3>Complete list of time units for conversion</h3>
+<ul class="allunits"><li>second [s]</li>
+<li>1 millisecond [ms] = 0.001 second [s]<div>
+<a href="time/milliseconds-to-seconds.html">millisecond to second</a>, &nbsp; <a href="time/seconds-to-milliseconds.html">second to millisecond</a></div></li>
+<li>1 minute [min] = 60 second [s]<div>
+<a href="time/minutes-to-seconds.html">minute to second</a>, &nbsp; <a href="time/seconds-to-minutes.html">second to minute</a></div></li>
+<li>1 hour [h] = 3600 second [s]<div>
+<a href="time/hour-to-second.html">hour to second</a>, &nbsp; <a href="time/second-to-hour.html">second to hour</a></div></li>
+<li>1 day [d] = 86400 second [s]<div>
+<a href="time/days-to-seconds.html">day to second</a>, &nbsp; <a href="time/seconds-to-days.html">second to day</a></div></li>
+<li>1 week = 604800 second [s]<div>
+<a href="time/week-to-second.html">week to second</a>, &nbsp; <a href="time/second-to-week.html">second to week</a></div></li>
+<li>1 month = 2628000 second [s]<div>
+<a href="time/month-to-second.html">month to second</a>, &nbsp; <a href="time/second-to-month.html">second to month</a></div></li>
+<li>1 year [y] = 31557600 second [s]<div>
+<a href="time/year-to-second.html">year to second</a>, &nbsp; <a href="time/second-to-year.html">second to year</a></div></li>
+<li>1 decade = 315576000 second [s]<div>
+<a href="time/decade-to-second.html">decade to second</a>, &nbsp; <a href="time/second-to-decade.html">second to decade</a></div></li>
+<li>1 century = 3155760000 second [s]<div>
+<a href="time/century-to-second.html">century to second</a>, &nbsp; <a href="time/second-to-century.html">second to century</a></div></li>
+<li>1 millennium = 31557600000 second [s]<div>
+<a href="time/millennium-to-second.html">millennium to second</a>, &nbsp; <a href="time/second-to-millennium.html">second to millennium</a></div></li>
+<li>1 microsecond [&#181;s] = 1.0E-6 second [s]<div>
+<a href="time/microsecond-to-second.html">microsecond to second</a>, &nbsp; <a href="time/second-to-microsecond.html">second to microsecond</a></div></li>
+<li>1 nanosecond [ns] = 1.0E-9 second [s]<div>
+<a href="time/nanosecond-to-second.html">nanosecond to second</a>, &nbsp; <a href="time/second-to-nanosecond.html">second to nanosecond</a></div></li>
+<li>1 picosecond [ps] = 1.0E-12 second [s]<div>
+<a href="time/picosecond-to-second.html">picosecond to second</a>, &nbsp; <a href="time/second-to-picosecond.html">second to picosecond</a></div></li>
+<li>1 femtosecond [fs] = 1.0E-15 second [s]<div>
+<a href="time/femtosecond-to-second.html">femtosecond to second</a>, &nbsp; <a href="time/second-to-femtosecond.html">second to femtosecond</a></div></li>
+<li>1 attosecond [as] = 1.0E-18 second [s]<div>
+<a href="time/attosecond-to-second.html">attosecond to second</a>, &nbsp; <a href="time/second-to-attosecond.html">second to attosecond</a></div></li>
+<li>1 shake = 1.0E-8 second [s]<div>
+<a href="time/shake-to-second.html">shake to second</a>, &nbsp; <a href="time/second-to-shake.html">second to shake</a></div></li>
+<li>1 month (synodic) = 2551443.84 second [s]<div>
+<a href="time/month-synodic-to-second.html">month (synodic) to second</a>, &nbsp; <a href="time/second-to-month-synodic.html">second to month (synodic)</a></div></li>
+<li>1 year (Julian) = 31557600 second [s]<div>
+<a href="time/year-julian-to-second.html">year (Julian) to second</a>, &nbsp; <a href="time/second-to-year-julian.html">second to year (Julian)</a></div></li>
+<li>1 year (leap) = 31622400 second [s]<div>
+<a href="time/year-leap-to-second.html">year (leap) to second</a>, &nbsp; <a href="time/second-to-year-leap.html">second to year (leap)</a></div></li>
+<li>1 year (tropical) = 31556930 second [s]<div>
+<a href="time/year-tropical-to-second.html">year (tropical) to second</a>, &nbsp; <a href="time/second-to-year-tropical.html">second to year (tropical)</a></div></li>
+<li>1 year (sidereal) = 31558149.54 second [s]<div>
+<a href="time/year-sidereal-to-second.html">year (sidereal) to second</a>, &nbsp; <a href="time/second-to-year-sidereal.html">second to year (sidereal)</a></div></li>
+<li>1 day (sidereal) = 86164.09 second [s]<div>
+<a href="time/day-sidereal-to-second.html">day (sidereal) to second</a>, &nbsp; <a href="time/second-to-day-sidereal.html">second to day (sidereal)</a></div></li>
+<li>1 hour (sidereal) = 3590.1704166667 second [s]<div>
+<a href="time/hour-sidereal-to-second.html">hour (sidereal) to second</a>, &nbsp; <a href="time/second-to-hour-sidereal.html">second to hour (sidereal)</a></div></li>
+<li>1 minute (sidereal) = 59.8361736111 second [s]<div>
+<a href="time/minute-sidereal-to-second.html">minute (sidereal) to second</a>, &nbsp; <a href="time/second-to-minute-sidereal.html">second to minute (sidereal)</a></div></li>
+<li>1 second (sidereal) = 0.9972695602 second [s]<div>
+<a href="time/second-sidereal-to-second.html">second (sidereal) to second</a>, &nbsp; <a href="time/second-to-second-sidereal.html">second to second (sidereal)</a></div></li>
+<li>1 fortnight = 1209600 second [s]<div>
+<a href="time/fortnight-to-second.html">fortnight to second</a>, &nbsp; <a href="time/second-to-fortnight.html">second to fortnight</a></div></li>
+<li>1 septennial = 220752000 second [s]<div>
+<a href="time/septennial-to-second.html">septennial to second</a>, &nbsp; <a href="time/second-to-septennial.html">second to septennial</a></div></li>
+<li>1 octennial = 252288000 second [s]<div>
+<a href="time/octennial-to-second.html">octennial to second</a>, &nbsp; <a href="time/second-to-octennial.html">second to octennial</a></div></li>
+<li>1 novennial = 283824000 second [s]<div>
+<a href="time/novennial-to-second.html">novennial to second</a>, &nbsp; <a href="time/second-to-novennial.html">second to novennial</a></div></li>
+<li>1 quindecennial = 473040000 second [s]<div>
+<a href="time/quindecennial-to-second.html">quindecennial to second</a>, &nbsp; <a href="time/second-to-quindecennial.html">second to quindecennial</a></div></li>
+<li>1 quinquennial = 157680000 second [s]<div>
+<a href="time/quinquennial-to-second.html">quinquennial to second</a>, &nbsp; <a href="time/second-to-quinquennial.html">second to quinquennial</a></div></li>
+<li>1 Planck time = 5.39056E-44 second [s]<div>
+<a href="time/planck-time-to-second.html">Planck time to second</a>, &nbsp; <a href="time/second-to-planck-time.html">second to Planck time</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

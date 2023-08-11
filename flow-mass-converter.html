@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Flow - Mass Converter</title>
+	<meta name="description" content="Free online flow - mass converter - converts between 31 units of flow - mass, including kilogram/second [kg/s], gram/second [g/s], gram/minute [g/min], gram/hour [g/h], etc. Also, explore many other unit converters or learn more about flow - mass unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='fluids-converters.html'>Fluids Converters</a> / Flow - Mass Converter</div>
+		<h1>Flow - Mass Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="kilogram/second [kg/s] [1000000000000]" selected>kilogram/second [kg/s]</option>
+<option value="gram/second [g/s] [1.0E+15]">gram/second [g/s]</option>
+<option value="gram/minute [g/min] [6.0E+16]">gram/minute [g/min]</option>
+<option value="gram/hour [g/h] [3.6E+18]">gram/hour [g/h]</option>
+<option value="gram/day [g/d] [8.64E+19]">gram/day [g/d]</option>
+<option value="milligram/minute [mg/min] [6.0E+19]">milligram/minute [mg/min]</option>
+<option value="milligram/hour [mg/h] [3.6E+21]">milligram/hour [mg/h]</option>
+<option value="milligram/day [mg/d] [8.64E+22]">milligram/day [mg/d]</option>
+<option value="kilogram/minute [kg/min] [60000000000000]">kilogram/minute [kg/min]</option>
+<option value="kilogram/hour [kg/h] [3.6E+15]">kilogram/hour [kg/h]</option>
+<option value="kilogram/day [kg/d] [8.64E+16]">kilogram/day [kg/d]</option>
+<option value="exagram/second [Eg/s] [0.001]">exagram/second [Eg/s]</option>
+<option value="petagram/second [Pg/s] [1]">petagram/second [Pg/s]</option>
+<option value="teragram/second [Tg/s] [1000]">teragram/second [Tg/s]</option>
+<option value="gigagram/second [Gg/s] [1000000]">gigagram/second [Gg/s]</option>
+<option value="megagram/second [Mg/s] [1000000000]">megagram/second [Mg/s]</option>
+<option value="hectogram/second [hg/s] [10000000000000]">hectogram/second [hg/s]</option>
+<option value="dekagram/second [dag/s] [1.0E+14]">dekagram/second [dag/s]</option>
+<option value="decigram/second [dg/s] [1.0E+16]">decigram/second [dg/s]</option>
+<option value="centigram/second [cg/s] [1.0E+17]">centigram/second [cg/s]</option>
+<option value="milligram/second [mg/s] [1.0E+18]">milligram/second [mg/s]</option>
+<option value="microgram/second [&#181;g/s] [1.0E+21]">microgram/second [&#181;g/s]</option>
+<option value="ton (metric)/second [t/s] [1000000000]">ton (metric)/second [t/s]</option>
+<option value="ton (metric)/minute [t/min] [60000000000]">ton (metric)/minute [t/min]</option>
+<option value="ton (metric)/hour [t/h] [3600000000000]">ton (metric)/hour [t/h]</option>
+<option value="ton (metric)/day [t/d] [86400000000000]">ton (metric)/day [t/d]</option>
+<option value="ton (short)/hour [ton (US)/h] [3968320719327.8]">ton (short)/hour [ton (US)/h]</option>
+<option value="pound/second [lb/s] [2204622621848.8]">pound/second [lb/s]</option>
+<option value="pound/minute [lb/min] [1.3227735731093E+14]">pound/minute [lb/min]</option>
+<option value="pound/hour [lb/h] [7.9366414386556E+15]">pound/hour [lb/h]</option>
+<option value="pound/day [lb/d] [1.9047939452773E+17]">pound/day [lb/d]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="kilogram/second [kg/s] [1000000000000]">kilogram/second [kg/s]</option>
+<option value="gram/second [g/s] [1.0E+15]" selected>gram/second [g/s]</option>
+<option value="gram/minute [g/min] [6.0E+16]">gram/minute [g/min]</option>
+<option value="gram/hour [g/h] [3.6E+18]">gram/hour [g/h]</option>
+<option value="gram/day [g/d] [8.64E+19]">gram/day [g/d]</option>
+<option value="milligram/minute [mg/min] [6.0E+19]">milligram/minute [mg/min]</option>
+<option value="milligram/hour [mg/h] [3.6E+21]">milligram/hour [mg/h]</option>
+<option value="milligram/day [mg/d] [8.64E+22]">milligram/day [mg/d]</option>
+<option value="kilogram/minute [kg/min] [60000000000000]">kilogram/minute [kg/min]</option>
+<option value="kilogram/hour [kg/h] [3.6E+15]">kilogram/hour [kg/h]</option>
+<option value="kilogram/day [kg/d] [8.64E+16]">kilogram/day [kg/d]</option>
+<option value="exagram/second [Eg/s] [0.001]">exagram/second [Eg/s]</option>
+<option value="petagram/second [Pg/s] [1]">petagram/second [Pg/s]</option>
+<option value="teragram/second [Tg/s] [1000]">teragram/second [Tg/s]</option>
+<option value="gigagram/second [Gg/s] [1000000]">gigagram/second [Gg/s]</option>
+<option value="megagram/second [Mg/s] [1000000000]">megagram/second [Mg/s]</option>
+<option value="hectogram/second [hg/s] [10000000000000]">hectogram/second [hg/s]</option>
+<option value="dekagram/second [dag/s] [1.0E+14]">dekagram/second [dag/s]</option>
+<option value="decigram/second [dg/s] [1.0E+16]">decigram/second [dg/s]</option>
+<option value="centigram/second [cg/s] [1.0E+17]">centigram/second [cg/s]</option>
+<option value="milligram/second [mg/s] [1.0E+18]">milligram/second [mg/s]</option>
+<option value="microgram/second [&#181;g/s] [1.0E+21]">microgram/second [&#181;g/s]</option>
+<option value="ton (metric)/second [t/s] [1000000000]">ton (metric)/second [t/s]</option>
+<option value="ton (metric)/minute [t/min] [60000000000]">ton (metric)/minute [t/min]</option>
+<option value="ton (metric)/hour [t/h] [3600000000000]">ton (metric)/hour [t/h]</option>
+<option value="ton (metric)/day [t/d] [86400000000000]">ton (metric)/day [t/d]</option>
+<option value="ton (short)/hour [ton (US)/h] [3968320719327.8]">ton (short)/hour [ton (US)/h]</option>
+<option value="pound/second [lb/s] [2204622621848.8]">pound/second [lb/s]</option>
+<option value="pound/minute [lb/min] [1.3227735731093E+14]">pound/minute [lb/min]</option>
+<option value="pound/hour [lb/h] [7.9366414386556E+15]">pound/hour [lb/h]</option>
+<option value="pound/day [lb/d] [1.9047939452773E+17]">pound/day [lb/d]</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Complete list of flow - mass units for conversion</h3>
+<ul class="allunits"><li>kilogram/second [kg/s]</li>
+<li>1 gram/second [g/s] = 0.001 kilogram/second [kg/s]<div>
+<a href="flow-mass/gram-second-to-kilogram-second.html">gram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-gram-second.html">kilogram/second to gram/second</a></div></li>
+<li>1 gram/minute [g/min] = 1.66667E-5 kilogram/second [kg/s]<div>
+<a href="flow-mass/gram-minute-to-kilogram-second.html">gram/minute to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-gram-minute.html">kilogram/second to gram/minute</a></div></li>
+<li>1 gram/hour [g/h] = 2.7777777777778E-7 kilogram/second [kg/s]<div>
+<a href="flow-mass/gram-hour-to-kilogram-second.html">gram/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-gram-hour.html">kilogram/second to gram/hour</a></div></li>
+<li>1 gram/day [g/d] = 1.1574074074074E-8 kilogram/second [kg/s]<div>
+<a href="flow-mass/gram-day-to-kilogram-second.html">gram/day to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-gram-day.html">kilogram/second to gram/day</a></div></li>
+<li>1 milligram/minute [mg/min] = 1.6666666666667E-8 kilogram/second [kg/s]<div>
+<a href="flow-mass/milligram-minute-to-kilogram-second.html">milligram/minute to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-milligram-minute.html">kilogram/second to milligram/minute</a></div></li>
+<li>1 milligram/hour [mg/h] = 2.7777777777778E-10 kilogram/second [kg/s]<div>
+<a href="flow-mass/milligram-hour-to-kilogram-second.html">milligram/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-milligram-hour.html">kilogram/second to milligram/hour</a></div></li>
+<li>1 milligram/day [mg/d] = 1.1574074074074E-11 kilogram/second [kg/s]<div>
+<a href="flow-mass/milligram-day-to-kilogram-second.html">milligram/day to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-milligram-day.html">kilogram/second to milligram/day</a></div></li>
+<li>1 kilogram/minute [kg/min] = 0.0166666667 kilogram/second [kg/s]<div>
+<a href="flow-mass/kilogram-minute-to-kilogram-second.html">kilogram/minute to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-kilogram-minute.html">kilogram/second to kilogram/minute</a></div></li>
+<li>1 kilogram/hour [kg/h] = 0.0002777778 kilogram/second [kg/s]<div>
+<a href="flow-mass/kilogram-hour-to-kilogram-second.html">kilogram/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-kilogram-hour.html">kilogram/second to kilogram/hour</a></div></li>
+<li>1 kilogram/day [kg/d] = 1.15741E-5 kilogram/second [kg/s]<div>
+<a href="flow-mass/kilogram-day-to-kilogram-second.html">kilogram/day to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-kilogram-day.html">kilogram/second to kilogram/day</a></div></li>
+<li>1 exagram/second [Eg/s] = 1.0E+15 kilogram/second [kg/s]<div>
+<a href="flow-mass/exagram-second-to-kilogram-second.html">exagram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-exagram-second.html">kilogram/second to exagram/second</a></div></li>
+<li>1 petagram/second [Pg/s] = 1000000000000 kilogram/second [kg/s]<div>
+<a href="flow-mass/petagram-second-to-kilogram-second.html">petagram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-petagram-second.html">kilogram/second to petagram/second</a></div></li>
+<li>1 teragram/second [Tg/s] = 1000000000 kilogram/second [kg/s]<div>
+<a href="flow-mass/teragram-second-to-kilogram-second.html">teragram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-teragram-second.html">kilogram/second to teragram/second</a></div></li>
+<li>1 gigagram/second [Gg/s] = 1000000 kilogram/second [kg/s]<div>
+<a href="flow-mass/gigagram-second-to-kilogram-second.html">gigagram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-gigagram-second.html">kilogram/second to gigagram/second</a></div></li>
+<li>1 megagram/second [Mg/s] = 1000 kilogram/second [kg/s]<div>
+<a href="flow-mass/megagram-second-to-kilogram-second.html">megagram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-megagram-second.html">kilogram/second to megagram/second</a></div></li>
+<li>1 hectogram/second [hg/s] = 0.1 kilogram/second [kg/s]<div>
+<a href="flow-mass/hectogram-second-to-kilogram-second.html">hectogram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-hectogram-second.html">kilogram/second to hectogram/second</a></div></li>
+<li>1 dekagram/second [dag/s] = 0.01 kilogram/second [kg/s]<div>
+<a href="flow-mass/dekagram-second-to-kilogram-second.html">dekagram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-dekagram-second.html">kilogram/second to dekagram/second</a></div></li>
+<li>1 decigram/second [dg/s] = 0.0001 kilogram/second [kg/s]<div>
+<a href="flow-mass/decigram-second-to-kilogram-second.html">decigram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-decigram-second.html">kilogram/second to decigram/second</a></div></li>
+<li>1 centigram/second [cg/s] = 1.0E-5 kilogram/second [kg/s]<div>
+<a href="flow-mass/centigram-second-to-kilogram-second.html">centigram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-centigram-second.html">kilogram/second to centigram/second</a></div></li>
+<li>1 milligram/second [mg/s] = 1.0E-6 kilogram/second [kg/s]<div>
+<a href="flow-mass/milligram-second-to-kilogram-second.html">milligram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-milligram-second.html">kilogram/second to milligram/second</a></div></li>
+<li>1 microgram/second [&#181;g/s] = 1.0E-9 kilogram/second [kg/s]<div>
+<a href="flow-mass/microgram-second-to-kilogram-second.html">microgram/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-microgram-second.html">kilogram/second to microgram/second</a></div></li>
+<li>1 ton (metric)/second [t/s] = 1000 kilogram/second [kg/s]<div>
+<a href="flow-mass/ton-metric-second-to-kilogram-second.html">ton (metric)/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-ton-metric-second.html">kilogram/second to ton (metric)/second</a></div></li>
+<li>1 ton (metric)/minute [t/min] = 16.6666666667 kilogram/second [kg/s]<div>
+<a href="flow-mass/ton-metric-minute-to-kilogram-second.html">ton (metric)/minute to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-ton-metric-minute.html">kilogram/second to ton (metric)/minute</a></div></li>
+<li>1 ton (metric)/hour [t/h] = 0.2777777778 kilogram/second [kg/s]<div>
+<a href="flow-mass/ton-metric-hour-to-kilogram-second.html">ton (metric)/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-ton-metric-hour.html">kilogram/second to ton (metric)/hour</a></div></li>
+<li>1 ton (metric)/day [t/d] = 0.0115740741 kilogram/second [kg/s]<div>
+<a href="flow-mass/ton-metric-day-to-kilogram-second.html">ton (metric)/day to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-ton-metric-day.html">kilogram/second to ton (metric)/day</a></div></li>
+<li>1 ton (short)/hour [ton (US)/h] = 0.2519957611 kilogram/second [kg/s]<div>
+<a href="flow-mass/ton-short-hour-to-kilogram-second.html">ton (short)/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-ton-short-hour.html">kilogram/second to ton (short)/hour</a></div></li>
+<li>1 pound/second [lb/s] = 0.45359237 kilogram/second [kg/s]<div>
+<a href="flow-mass/pound-second-to-kilogram-second.html">pound/second to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-pound-second.html">kilogram/second to pound/second</a></div></li>
+<li>1 pound/minute [lb/min] = 0.0075598728 kilogram/second [kg/s]<div>
+<a href="flow-mass/pound-minute-to-kilogram-second.html">pound/minute to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-pound-minute.html">kilogram/second to pound/minute</a></div></li>
+<li>1 pound/hour [lb/h] = 0.0001259979 kilogram/second [kg/s]<div>
+<a href="flow-mass/pound-hour-to-kilogram-second.html">pound/hour to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-pound-hour.html">kilogram/second to pound/hour</a></div></li>
+<li>1 pound/day [lb/d] = 5.2499116898148E-6 kilogram/second [kg/s]<div>
+<a href="flow-mass/pound-day-to-kilogram-second.html">pound/day to kilogram/second</a>, &nbsp; <a href="flow-mass/kilogram-second-to-pound-day.html">kilogram/second to pound/day</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Fluids Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

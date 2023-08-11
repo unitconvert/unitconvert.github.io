@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Power Converter</title>
+	<meta name="description" content="Free online power converter - converts between 76 units of power, including watt [W], exawatt [EW], petawatt [PW], terawatt [TW], etc. Also, explore many other unit converters or learn more about power unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Power Converter</div>
+		<h1>Power Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="watt [W] [1.0E+18]" selected>watt [W]</option>
+<option value="exawatt [EW] [1]">exawatt [EW]</option>
+<option value="petawatt [PW] [1000]">petawatt [PW]</option>
+<option value="terawatt [TW] [1000000]">terawatt [TW]</option>
+<option value="gigawatt [GW] [1000000000]">gigawatt [GW]</option>
+<option value="megawatt [MW] [1000000000000]">megawatt [MW]</option>
+<option value="kilowatt [kW] [1.0E+15]">kilowatt [kW]</option>
+<option value="hectowatt [hW] [1.0E+16]">hectowatt [hW]</option>
+<option value="dekawatt [daW] [1.0E+17]">dekawatt [daW]</option>
+<option value="deciwatt [dW] [1.0E+19]">deciwatt [dW]</option>
+<option value="centiwatt [cW] [1.0E+20]">centiwatt [cW]</option>
+<option value="milliwatt [mW] [1.0E+21]">milliwatt [mW]</option>
+<option value="microwatt [&#181;W] [1.0E+24]">microwatt [&#181;W]</option>
+<option value="nanowatt [nW] [1.0E+27]">nanowatt [nW]</option>
+<option value="picowatt [pW] [1.0E+30]">picowatt [pW]</option>
+<option value="femtowatt [fW] [1.0E+33]">femtowatt [fW]</option>
+<option value="attowatt [aW] [1.0E+36]">attowatt [aW]</option>
+<option value="horsepower [hp, hp (UK)] [1.341022089595E+15]">horsepower [hp, hp (UK)]</option>
+<option value="horsepower (550 ft*lbf/s) [1.341022089595E+15]">horsepower (550 ft*lbf/s)</option>
+<option value="horsepower (metric) [1.3596216173039E+15]">horsepower (metric)</option>
+<option value="horsepower (boiler) [1.0194199500484E+14]">horsepower (boiler)</option>
+<option value="horsepower (electric) [1.3404825737265E+15]">horsepower (electric)</option>
+<option value="horsepower (water) [1.3404053117582E+15]">horsepower (water)</option>
+<option value="pferdestarke (ps) [1.3596216173039E+15]">pferdestarke (ps)</option>
+<option value="Btu (IT)/hour [Btu/h] [3.4121416331279E+18]">Btu (IT)/hour [Btu/h]</option>
+<option value="Btu (IT)/minute [Btu/min] [5.6869027218799E+16]">Btu (IT)/minute [Btu/min]</option>
+<option value="Btu (IT)/second [Btu/s] [9.4781712031332E+14]">Btu (IT)/second [Btu/s]</option>
+<option value="Btu (th)/hour [Btu (th)/h] [3.41442594972E+18]">Btu (th)/hour [Btu (th)/h]</option>
+<option value="Btu (th)/minute [5.6907099162E+16]">Btu (th)/minute</option>
+<option value="Btu (th)/second [Btu (th)/s] [9.484516527E+14]">Btu (th)/second [Btu (th)/s]</option>
+<option value="MBtu (IT)/hour [MBtu/h] [3412141633127.9]">MBtu (IT)/hour [MBtu/h]</option>
+<option value="MBH [3.4121416331279E+15]">MBH</option>
+<option value="ton (refrigeration) [2.84345136094E+14]">ton (refrigeration)</option>
+<option value="kilocalorie (IT)/hour [kcal/h] [8.5984522785898E+17]">kilocalorie (IT)/hour [kcal/h]</option>
+<option value="kilocalorie (IT)/minute [1.433075379765E+16]">kilocalorie (IT)/minute</option>
+<option value="kilocalorie (IT)/second [2.388458966275E+14]">kilocalorie (IT)/second</option>
+<option value="kilocalorie (th)/hour [8.604206500956E+17]">kilocalorie (th)/hour</option>
+<option value="kilocalorie (th)/minute [1.434034416826E+16]">kilocalorie (th)/minute</option>
+<option value="kilocalorie (th)/second [2.3900573613767E+14]">kilocalorie (th)/second</option>
+<option value="calorie (IT)/hour [cal/h] [8.5984522785898E+20]">calorie (IT)/hour [cal/h]</option>
+<option value="calorie (IT)/minute [cal/min] [1.433075379765E+19]">calorie (IT)/minute [cal/min]</option>
+<option value="calorie (IT)/second [cal/s] [2.388458966275E+17]">calorie (IT)/second [cal/s]</option>
+<option value="calorie (th)/hour [cal (th)/h] [8.604206500956E+20]">calorie (th)/hour [cal (th)/h]</option>
+<option value="calorie (th)/minute [1.434034416826E+19]">calorie (th)/minute</option>
+<option value="calorie (th)/second [2.3900573613767E+17]">calorie (th)/second</option>
+<option value="foot pound-force/hour [2.655223737402E+21]">foot pound-force/hour</option>
+<option value="foot pound-force/minute [4.42537289567E+19]">foot pound-force/minute</option>
+<option value="foot pound-force/second [7.3756214927833E+17]">foot pound-force/second</option>
+<option value="pound-foot/hour [lbf*ft/h] [2.655223737402E+21]">pound-foot/hour [lbf*ft/h]</option>
+<option value="pound-foot/minute [4.42537289567E+19]">pound-foot/minute</option>
+<option value="pound-foot/second [7.3756214927833E+17]">pound-foot/second</option>
+<option value="erg/second [erg/s] [1.0E+25]">erg/second [erg/s]</option>
+<option value="kilovolt ampere [kV*A] [1.0E+15]">kilovolt ampere [kV*A]</option>
+<option value="volt ampere [V*A] [1.0E+18]">volt ampere [V*A]</option>
+<option value="newton meter/second [1.0E+18]">newton meter/second</option>
+<option value="joule/second [J/s] [1.0E+18]">joule/second [J/s]</option>
+<option value="exajoule/second [EJ/s] [1]">exajoule/second [EJ/s]</option>
+<option value="petajoule/second [PJ/s] [1000]">petajoule/second [PJ/s]</option>
+<option value="terajoule/second [TJ/s] [1000000]">terajoule/second [TJ/s]</option>
+<option value="gigajoule/second [GJ/s] [1000000000]">gigajoule/second [GJ/s]</option>
+<option value="megajoule/second [MJ/s] [1000000000000]">megajoule/second [MJ/s]</option>
+<option value="kilojoule/second [kJ/s] [1.0E+15]">kilojoule/second [kJ/s]</option>
+<option value="hectojoule/second [hJ/s] [1.0E+16]">hectojoule/second [hJ/s]</option>
+<option value="dekajoule/second [daJ/s] [1.0E+17]">dekajoule/second [daJ/s]</option>
+<option value="decijoule/second [dJ/s] [1.0E+19]">decijoule/second [dJ/s]</option>
+<option value="centijoule/second [cJ/s] [1.0E+20]">centijoule/second [cJ/s]</option>
+<option value="millijoule/second [mJ/s] [1.0E+21]">millijoule/second [mJ/s]</option>
+<option value="microjoule/second [&#181;J/s] [1.0E+24]">microjoule/second [&#181;J/s]</option>
+<option value="nanojoule/second [nJ/s] [1.0E+27]">nanojoule/second [nJ/s]</option>
+<option value="picojoule/second [pJ/s] [1.0E+30]">picojoule/second [pJ/s]</option>
+<option value="femtojoule/second [fJ/s] [1.0E+33]">femtojoule/second [fJ/s]</option>
+<option value="attojoule/second [aJ/s] [1.0E+36]">attojoule/second [aJ/s]</option>
+<option value="joule/hour [J/h] [3.6E+21]">joule/hour [J/h]</option>
+<option value="joule/minute [J/min] [6.0E+19]">joule/minute [J/min]</option>
+<option value="kilojoule/hour [kJ/h] [3.6E+18]">kilojoule/hour [kJ/h]</option>
+<option value="kilojoule/minute [kJ/min] [6.0E+16]">kilojoule/minute [kJ/min]</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="watt [W] [1.0E+18]">watt [W]</option>
+<option value="exawatt [EW] [1]" selected>exawatt [EW]</option>
+<option value="petawatt [PW] [1000]">petawatt [PW]</option>
+<option value="terawatt [TW] [1000000]">terawatt [TW]</option>
+<option value="gigawatt [GW] [1000000000]">gigawatt [GW]</option>
+<option value="megawatt [MW] [1000000000000]">megawatt [MW]</option>
+<option value="kilowatt [kW] [1.0E+15]">kilowatt [kW]</option>
+<option value="hectowatt [hW] [1.0E+16]">hectowatt [hW]</option>
+<option value="dekawatt [daW] [1.0E+17]">dekawatt [daW]</option>
+<option value="deciwatt [dW] [1.0E+19]">deciwatt [dW]</option>
+<option value="centiwatt [cW] [1.0E+20]">centiwatt [cW]</option>
+<option value="milliwatt [mW] [1.0E+21]">milliwatt [mW]</option>
+<option value="microwatt [&#181;W] [1.0E+24]">microwatt [&#181;W]</option>
+<option value="nanowatt [nW] [1.0E+27]">nanowatt [nW]</option>
+<option value="picowatt [pW] [1.0E+30]">picowatt [pW]</option>
+<option value="femtowatt [fW] [1.0E+33]">femtowatt [fW]</option>
+<option value="attowatt [aW] [1.0E+36]">attowatt [aW]</option>
+<option value="horsepower [hp, hp (UK)] [1.341022089595E+15]">horsepower [hp, hp (UK)]</option>
+<option value="horsepower (550 ft*lbf/s) [1.341022089595E+15]">horsepower (550 ft*lbf/s)</option>
+<option value="horsepower (metric) [1.3596216173039E+15]">horsepower (metric)</option>
+<option value="horsepower (boiler) [1.0194199500484E+14]">horsepower (boiler)</option>
+<option value="horsepower (electric) [1.3404825737265E+15]">horsepower (electric)</option>
+<option value="horsepower (water) [1.3404053117582E+15]">horsepower (water)</option>
+<option value="pferdestarke (ps) [1.3596216173039E+15]">pferdestarke (ps)</option>
+<option value="Btu (IT)/hour [Btu/h] [3.4121416331279E+18]">Btu (IT)/hour [Btu/h]</option>
+<option value="Btu (IT)/minute [Btu/min] [5.6869027218799E+16]">Btu (IT)/minute [Btu/min]</option>
+<option value="Btu (IT)/second [Btu/s] [9.4781712031332E+14]">Btu (IT)/second [Btu/s]</option>
+<option value="Btu (th)/hour [Btu (th)/h] [3.41442594972E+18]">Btu (th)/hour [Btu (th)/h]</option>
+<option value="Btu (th)/minute [5.6907099162E+16]">Btu (th)/minute</option>
+<option value="Btu (th)/second [Btu (th)/s] [9.484516527E+14]">Btu (th)/second [Btu (th)/s]</option>
+<option value="MBtu (IT)/hour [MBtu/h] [3412141633127.9]">MBtu (IT)/hour [MBtu/h]</option>
+<option value="MBH [3.4121416331279E+15]">MBH</option>
+<option value="ton (refrigeration) [2.84345136094E+14]">ton (refrigeration)</option>
+<option value="kilocalorie (IT)/hour [kcal/h] [8.5984522785898E+17]">kilocalorie (IT)/hour [kcal/h]</option>
+<option value="kilocalorie (IT)/minute [1.433075379765E+16]">kilocalorie (IT)/minute</option>
+<option value="kilocalorie (IT)/second [2.388458966275E+14]">kilocalorie (IT)/second</option>
+<option value="kilocalorie (th)/hour [8.604206500956E+17]">kilocalorie (th)/hour</option>
+<option value="kilocalorie (th)/minute [1.434034416826E+16]">kilocalorie (th)/minute</option>
+<option value="kilocalorie (th)/second [2.3900573613767E+14]">kilocalorie (th)/second</option>
+<option value="calorie (IT)/hour [cal/h] [8.5984522785898E+20]">calorie (IT)/hour [cal/h]</option>
+<option value="calorie (IT)/minute [cal/min] [1.433075379765E+19]">calorie (IT)/minute [cal/min]</option>
+<option value="calorie (IT)/second [cal/s] [2.388458966275E+17]">calorie (IT)/second [cal/s]</option>
+<option value="calorie (th)/hour [cal (th)/h] [8.604206500956E+20]">calorie (th)/hour [cal (th)/h]</option>
+<option value="calorie (th)/minute [1.434034416826E+19]">calorie (th)/minute</option>
+<option value="calorie (th)/second [2.3900573613767E+17]">calorie (th)/second</option>
+<option value="foot pound-force/hour [2.655223737402E+21]">foot pound-force/hour</option>
+<option value="foot pound-force/minute [4.42537289567E+19]">foot pound-force/minute</option>
+<option value="foot pound-force/second [7.3756214927833E+17]">foot pound-force/second</option>
+<option value="pound-foot/hour [lbf*ft/h] [2.655223737402E+21]">pound-foot/hour [lbf*ft/h]</option>
+<option value="pound-foot/minute [4.42537289567E+19]">pound-foot/minute</option>
+<option value="pound-foot/second [7.3756214927833E+17]">pound-foot/second</option>
+<option value="erg/second [erg/s] [1.0E+25]">erg/second [erg/s]</option>
+<option value="kilovolt ampere [kV*A] [1.0E+15]">kilovolt ampere [kV*A]</option>
+<option value="volt ampere [V*A] [1.0E+18]">volt ampere [V*A]</option>
+<option value="newton meter/second [1.0E+18]">newton meter/second</option>
+<option value="joule/second [J/s] [1.0E+18]">joule/second [J/s]</option>
+<option value="exajoule/second [EJ/s] [1]">exajoule/second [EJ/s]</option>
+<option value="petajoule/second [PJ/s] [1000]">petajoule/second [PJ/s]</option>
+<option value="terajoule/second [TJ/s] [1000000]">terajoule/second [TJ/s]</option>
+<option value="gigajoule/second [GJ/s] [1000000000]">gigajoule/second [GJ/s]</option>
+<option value="megajoule/second [MJ/s] [1000000000000]">megajoule/second [MJ/s]</option>
+<option value="kilojoule/second [kJ/s] [1.0E+15]">kilojoule/second [kJ/s]</option>
+<option value="hectojoule/second [hJ/s] [1.0E+16]">hectojoule/second [hJ/s]</option>
+<option value="dekajoule/second [daJ/s] [1.0E+17]">dekajoule/second [daJ/s]</option>
+<option value="decijoule/second [dJ/s] [1.0E+19]">decijoule/second [dJ/s]</option>
+<option value="centijoule/second [cJ/s] [1.0E+20]">centijoule/second [cJ/s]</option>
+<option value="millijoule/second [mJ/s] [1.0E+21]">millijoule/second [mJ/s]</option>
+<option value="microjoule/second [&#181;J/s] [1.0E+24]">microjoule/second [&#181;J/s]</option>
+<option value="nanojoule/second [nJ/s] [1.0E+27]">nanojoule/second [nJ/s]</option>
+<option value="picojoule/second [pJ/s] [1.0E+30]">picojoule/second [pJ/s]</option>
+<option value="femtojoule/second [fJ/s] [1.0E+33]">femtojoule/second [fJ/s]</option>
+<option value="attojoule/second [aJ/s] [1.0E+36]">attojoule/second [aJ/s]</option>
+<option value="joule/hour [J/h] [3.6E+21]">joule/hour [J/h]</option>
+<option value="joule/minute [J/min] [6.0E+19]">joule/minute [J/min]</option>
+<option value="kilojoule/hour [kJ/h] [3.6E+18]">kilojoule/hour [kJ/h]</option>
+<option value="kilojoule/minute [kJ/min] [6.0E+16]">kilojoule/minute [kJ/min]</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular power unit conversions</h3>
+<div id="toother"><div>
+<a href="power/hp-to-kw.html">hp to kw</a></div>
+<div>
+<a href="power/kw-to-hp.html">kw to hp</a></div>
+<div>
+<a href="power/hp-to-watts.html">hp to watts</a></div>
+<div>
+<a href="power/watts-to-hp.html">watts to hp</a></div>
+<div>
+<a href="power/btu-to-ton.html">BTU to Ton</a></div>
+<div>
+<a href="power/ton-to-btu.html">Ton to BTU</a></div></div>
+<br>
+<h3>Complete list of power units for conversion</h3>
+<ul class="allunits"><li>watt [W]</li>
+<li>1 exawatt [EW] = 1.0E+18 watt [W]<div>
+<a href="power/exawatt-to-watt.html">exawatt to watt</a>, &nbsp; <a href="power/watt-to-exawatt.html">watt to exawatt</a></div></li>
+<li>1 petawatt [PW] = 1.0E+15 watt [W]<div>
+<a href="power/petawatt-to-watt.html">petawatt to watt</a>, &nbsp; <a href="power/watt-to-petawatt.html">watt to petawatt</a></div></li>
+<li>1 terawatt [TW] = 1000000000000 watt [W]<div>
+<a href="power/terawatt-to-watt.html">terawatt to watt</a>, &nbsp; <a href="power/watt-to-terawatt.html">watt to terawatt</a></div></li>
+<li>1 gigawatt [GW] = 1000000000 watt [W]<div>
+<a href="power/gigawatt-to-watt.html">gigawatt to watt</a>, &nbsp; <a href="power/watt-to-gigawatt.html">watt to gigawatt</a></div></li>
+<li>1 megawatt [MW] = 1000000 watt [W]<div>
+<a href="power/megawatt-to-watt.html">megawatt to watt</a>, &nbsp; <a href="power/watt-to-megawatt.html">watt to megawatt</a></div></li>
+<li>1 kilowatt [kW] = 1000 watt [W]<div>
+<a href="power/kilowatt-to-watt.html">kilowatt to watt</a>, &nbsp; <a href="power/watt-to-kilowatt.html">watt to kilowatt</a></div></li>
+<li>1 hectowatt [hW] = 100 watt [W]<div>
+<a href="power/hectowatt-to-watt.html">hectowatt to watt</a>, &nbsp; <a href="power/watt-to-hectowatt.html">watt to hectowatt</a></div></li>
+<li>1 dekawatt [daW] = 10 watt [W]<div>
+<a href="power/dekawatt-to-watt.html">dekawatt to watt</a>, &nbsp; <a href="power/watt-to-dekawatt.html">watt to dekawatt</a></div></li>
+<li>1 deciwatt [dW] = 0.1 watt [W]<div>
+<a href="power/deciwatt-to-watt.html">deciwatt to watt</a>, &nbsp; <a href="power/watt-to-deciwatt.html">watt to deciwatt</a></div></li>
+<li>1 centiwatt [cW] = 0.01 watt [W]<div>
+<a href="power/centiwatt-to-watt.html">centiwatt to watt</a>, &nbsp; <a href="power/watt-to-centiwatt.html">watt to centiwatt</a></div></li>
+<li>1 milliwatt [mW] = 0.001 watt [W]<div>
+<a href="power/milliwatt-to-watt.html">milliwatt to watt</a>, &nbsp; <a href="power/watt-to-milliwatt.html">watt to milliwatt</a></div></li>
+<li>1 microwatt [&#181;W] = 1.0E-6 watt [W]<div>
+<a href="power/microwatt-to-watt.html">microwatt to watt</a>, &nbsp; <a href="power/watt-to-microwatt.html">watt to microwatt</a></div></li>
+<li>1 nanowatt [nW] = 1.0E-9 watt [W]<div>
+<a href="power/nanowatt-to-watt.html">nanowatt to watt</a>, &nbsp; <a href="power/watt-to-nanowatt.html">watt to nanowatt</a></div></li>
+<li>1 picowatt [pW] = 1.0E-12 watt [W]<div>
+<a href="power/picowatt-to-watt.html">picowatt to watt</a>, &nbsp; <a href="power/watt-to-picowatt.html">watt to picowatt</a></div></li>
+<li>1 femtowatt [fW] = 1.0E-15 watt [W]<div>
+<a href="power/femtowatt-to-watt.html">femtowatt to watt</a>, &nbsp; <a href="power/watt-to-femtowatt.html">watt to femtowatt</a></div></li>
+<li>1 attowatt [aW] = 1.0E-18 watt [W]<div>
+<a href="power/attowatt-to-watt.html">attowatt to watt</a>, &nbsp; <a href="power/watt-to-attowatt.html">watt to attowatt</a></div></li>
+<li>1 horsepower [hp, hp (UK)] = 745.6998715823 watt [W]<div>
+<a href="power/horsepower-to-watt.html">horsepower to watt</a>, &nbsp; <a href="power/watt-to-horsepower.html">watt to horsepower</a></div></li>
+<li>1 horsepower (550 ft*lbf/s) = 745.6998715823 watt [W]<div>
+<a href="power/horsepower-550-ft-lbf-s-to-watt.html">horsepower (550 ft*lbf/s) to watt</a>, &nbsp; <a href="power/watt-to-horsepower-550-ft-lbf-s.html">watt to horsepower (550 ft*lbf/s)</a></div></li>
+<li>1 horsepower (metric) = 735.49875 watt [W]<div>
+<a href="power/hp-to-watts.html">horsepower (metric) to watt</a>, &nbsp; <a href="power/watts-to-hp.html">watt to horsepower (metric)</a></div></li>
+<li>1 horsepower (boiler) = 9809.5000000002 watt [W]<div>
+<a href="power/horsepower-boiler-to-watt.html">horsepower (boiler) to watt</a>, &nbsp; <a href="power/watt-to-horsepower-boiler.html">watt to horsepower (boiler)</a></div></li>
+<li>1 horsepower (electric) = 746 watt [W]<div>
+<a href="power/horsepower-electric-to-watt.html">horsepower (electric) to watt</a>, &nbsp; <a href="power/watt-to-horsepower-electric.html">watt to horsepower (electric)</a></div></li>
+<li>1 horsepower (water) = 746.043 watt [W]<div>
+<a href="power/horsepower-water-to-watt.html">horsepower (water) to watt</a>, &nbsp; <a href="power/watt-to-horsepower-water.html">watt to horsepower (water)</a></div></li>
+<li>1 pferdestarke (ps) = 735.49875 watt [W]<div>
+<a href="power/pferdestarke-ps-to-watt.html">pferdestarke (ps) to watt</a>, &nbsp; <a href="power/watt-to-pferdestarke-ps.html">watt to pferdestarke (ps)</a></div></li>
+<li>1 Btu (IT)/hour [Btu/h] = 0.2930710702 watt [W]<div>
+<a href="power/btu-it-hour-to-watt.html">Btu (IT)/hour to watt</a>, &nbsp; <a href="power/watt-to-btu-it-hour.html">watt to Btu (IT)/hour</a></div></li>
+<li>1 Btu (IT)/minute [Btu/min] = 17.5842642103 watt [W]<div>
+<a href="power/btu-it-minute-to-watt.html">Btu (IT)/minute to watt</a>, &nbsp; <a href="power/watt-to-btu-it-minute.html">watt to Btu (IT)/minute</a></div></li>
+<li>1 Btu (IT)/second [Btu/s] = 1055.05585262 watt [W]<div>
+<a href="power/btu-it-second-to-watt.html">Btu (IT)/second to watt</a>, &nbsp; <a href="power/watt-to-btu-it-second.html">watt to Btu (IT)/second</a></div></li>
+<li>1 Btu (th)/hour [Btu (th)/h] = 0.292875 watt [W]<div>
+<a href="power/btu-th-hour-to-watt.html">Btu (th)/hour to watt</a>, &nbsp; <a href="power/watt-to-btu-th-hour.html">watt to Btu (th)/hour</a></div></li>
+<li>1 Btu (th)/minute = 17.5724999996 watt [W]<div>
+<a href="power/btu-th-minute-to-watt.html">Btu (th)/minute to watt</a>, &nbsp; <a href="power/watt-to-btu-th-minute.html">watt to Btu (th)/minute</a></div></li>
+<li>1 Btu (th)/second [Btu (th)/s] = 1054.3499999744 watt [W]<div>
+<a href="power/btu-th-second-to-watt.html">Btu (th)/second to watt</a>, &nbsp; <a href="power/watt-to-btu-th-second.html">watt to Btu (th)/second</a></div></li>
+<li>1 MBtu (IT)/hour [MBtu/h] = 293071.07017222 watt [W]<div>
+<a href="power/mbtu-it-hour-to-watt.html">MBtu (IT)/hour to watt</a>, &nbsp; <a href="power/watt-to-mbtu-it-hour.html">watt to MBtu (IT)/hour</a></div></li>
+<li>1 MBH = 293.0710701722 watt [W]<div>
+<a href="power/mbh-to-watt.html">MBH to watt</a>, &nbsp; <a href="power/watt-to-mbh.html">watt to MBH</a></div></li>
+<li>1 ton (refrigeration) = 3516.8528420667 watt [W]<div>
+<a href="power/ton-refrigeration-to-watt.html">ton (refrigeration) to watt</a>, &nbsp; <a href="power/watt-to-ton-refrigeration.html">watt to ton (refrigeration)</a></div></li>
+<li>1 kilocalorie (IT)/hour [kcal/h] = 1.163 watt [W]<div>
+<a href="power/kilocalorie-it-hour-to-watt.html">kilocalorie (IT)/hour to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-it-hour.html">watt to kilocalorie (IT)/hour</a></div></li>
+<li>1 kilocalorie (IT)/minute = 69.78 watt [W]<div>
+<a href="power/kilocalorie-it-minute-to-watt.html">kilocalorie (IT)/minute to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-it-minute.html">watt to kilocalorie (IT)/minute</a></div></li>
+<li>1 kilocalorie (IT)/second = 4186.8 watt [W]<div>
+<a href="power/kilocalorie-it-second-to-watt.html">kilocalorie (IT)/second to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-it-second.html">watt to kilocalorie (IT)/second</a></div></li>
+<li>1 kilocalorie (th)/hour = 1.1622222222 watt [W]<div>
+<a href="power/kilocalorie-th-hour-to-watt.html">kilocalorie (th)/hour to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-th-hour.html">watt to kilocalorie (th)/hour</a></div></li>
+<li>1 kilocalorie (th)/minute = 69.7333333333 watt [W]<div>
+<a href="power/kilocalorie-th-minute-to-watt.html">kilocalorie (th)/minute to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-th-minute.html">watt to kilocalorie (th)/minute</a></div></li>
+<li>1 kilocalorie (th)/second = 4184 watt [W]<div>
+<a href="power/kilocalorie-th-second-to-watt.html">kilocalorie (th)/second to watt</a>, &nbsp; <a href="power/watt-to-kilocalorie-th-second.html">watt to kilocalorie (th)/second</a></div></li>
+<li>1 calorie (IT)/hour [cal/h] = 0.001163 watt [W]<div>
+<a href="power/calorie-it-hour-to-watt.html">calorie (IT)/hour to watt</a>, &nbsp; <a href="power/watt-to-calorie-it-hour.html">watt to calorie (IT)/hour</a></div></li>
+<li>1 calorie (IT)/minute [cal/min] = 0.06978 watt [W]<div>
+<a href="power/calorie-it-minute-to-watt.html">calorie (IT)/minute to watt</a>, &nbsp; <a href="power/watt-to-calorie-it-minute.html">watt to calorie (IT)/minute</a></div></li>
+<li>1 calorie (IT)/second [cal/s] = 4.1868 watt [W]<div>
+<a href="power/calorie-it-second-to-watt.html">calorie (IT)/second to watt</a>, &nbsp; <a href="power/watt-to-calorie-it-second.html">watt to calorie (IT)/second</a></div></li>
+<li>1 calorie (th)/hour [cal (th)/h] = 0.0011622222 watt [W]<div>
+<a href="power/calorie-th-hour-to-watt.html">calorie (th)/hour to watt</a>, &nbsp; <a href="power/watt-to-calorie-th-hour.html">watt to calorie (th)/hour</a></div></li>
+<li>1 calorie (th)/minute = 0.0697333333 watt [W]<div>
+<a href="power/calorie-th-minute-to-watt.html">calorie (th)/minute to watt</a>, &nbsp; <a href="power/watt-to-calorie-th-minute.html">watt to calorie (th)/minute</a></div></li>
+<li>1 calorie (th)/second = 4.184 watt [W]<div>
+<a href="power/calorie-th-second-to-watt.html">calorie (th)/second to watt</a>, &nbsp; <a href="power/watt-to-calorie-th-second.html">watt to calorie (th)/second</a></div></li>
+<li>1 foot pound-force/hour = 0.0003766161 watt [W]<div>
+<a href="power/foot-pound-force-hour-to-watt.html">foot pound-force/hour to watt</a>, &nbsp; <a href="power/watt-to-foot-pound-force-hour.html">watt to foot pound-force/hour</a></div></li>
+<li>1 foot pound-force/minute = 0.0225969658 watt [W]<div>
+<a href="power/foot-pound-force-minute-to-watt.html">foot pound-force/minute to watt</a>, &nbsp; <a href="power/watt-to-foot-pound-force-minute.html">watt to foot pound-force/minute</a></div></li>
+<li>1 foot pound-force/second = 1.3558179483 watt [W]<div>
+<a href="power/foot-pound-force-second-to-watt.html">foot pound-force/second to watt</a>, &nbsp; <a href="power/watt-to-foot-pound-force-second.html">watt to foot pound-force/second</a></div></li>
+<li>1 pound-foot/hour [lbf*ft/h] = 0.0003766161 watt [W]<div>
+<a href="power/pound-foot-hour-to-watt.html">pound-foot/hour to watt</a>, &nbsp; <a href="power/watt-to-pound-foot-hour.html">watt to pound-foot/hour</a></div></li>
+<li>1 pound-foot/minute = 0.0225969658 watt [W]<div>
+<a href="power/pound-foot-minute-to-watt.html">pound-foot/minute to watt</a>, &nbsp; <a href="power/watt-to-pound-foot-minute.html">watt to pound-foot/minute</a></div></li>
+<li>1 pound-foot/second = 1.3558179483 watt [W]<div>
+<a href="power/pound-foot-second-to-watt.html">pound-foot/second to watt</a>, &nbsp; <a href="power/watt-to-pound-foot-second.html">watt to pound-foot/second</a></div></li>
+<li>1 erg/second [erg/s] = 1.0E-7 watt [W]<div>
+<a href="power/erg-second-to-watt.html">erg/second to watt</a>, &nbsp; <a href="power/watt-to-erg-second.html">watt to erg/second</a></div></li>
+<li>1 kilovolt ampere [kV*A] = 1000 watt [W]<div>
+<a href="power/kilovolt-ampere-to-watt.html">kilovolt ampere to watt</a>, &nbsp; <a href="power/watt-to-kilovolt-ampere.html">watt to kilovolt ampere</a></div></li>
+<li>1 volt ampere [V*A] = 1 watt [W]<div>
+<a href="power/volt-ampere-to-watt.html">volt ampere to watt</a>, &nbsp; <a href="power/watt-to-volt-ampere.html">watt to volt ampere</a></div></li>
+<li>1 newton meter/second = 1 watt [W]<div>
+<a href="power/newton-meter-second-to-watt.html">newton meter/second to watt</a>, &nbsp; <a href="power/watt-to-newton-meter-second.html">watt to newton meter/second</a></div></li>
+<li>1 joule/second [J/s] = 1 watt [W]<div>
+<a href="power/joule-second-to-watt.html">joule/second to watt</a>, &nbsp; <a href="power/watt-to-joule-second.html">watt to joule/second</a></div></li>
+<li>1 exajoule/second [EJ/s] = 1.0E+18 watt [W]<div>
+<a href="power/exajoule-second-to-watt.html">exajoule/second to watt</a>, &nbsp; <a href="power/watt-to-exajoule-second.html">watt to exajoule/second</a></div></li>
+<li>1 petajoule/second [PJ/s] = 1.0E+15 watt [W]<div>
+<a href="power/petajoule-second-to-watt.html">petajoule/second to watt</a>, &nbsp; <a href="power/watt-to-petajoule-second.html">watt to petajoule/second</a></div></li>
+<li>1 terajoule/second [TJ/s] = 1000000000000 watt [W]<div>
+<a href="power/terajoule-second-to-watt.html">terajoule/second to watt</a>, &nbsp; <a href="power/watt-to-terajoule-second.html">watt to terajoule/second</a></div></li>
+<li>1 gigajoule/second [GJ/s] = 1000000000 watt [W]<div>
+<a href="power/gigajoule-second-to-watt.html">gigajoule/second to watt</a>, &nbsp; <a href="power/watt-to-gigajoule-second.html">watt to gigajoule/second</a></div></li>
+<li>1 megajoule/second [MJ/s] = 1000000 watt [W]<div>
+<a href="power/megajoule-second-to-watt.html">megajoule/second to watt</a>, &nbsp; <a href="power/watt-to-megajoule-second.html">watt to megajoule/second</a></div></li>
+<li>1 kilojoule/second [kJ/s] = 1000 watt [W]<div>
+<a href="power/kilojoule-second-to-watt.html">kilojoule/second to watt</a>, &nbsp; <a href="power/watt-to-kilojoule-second.html">watt to kilojoule/second</a></div></li>
+<li>1 hectojoule/second [hJ/s] = 100 watt [W]<div>
+<a href="power/hectojoule-second-to-watt.html">hectojoule/second to watt</a>, &nbsp; <a href="power/watt-to-hectojoule-second.html">watt to hectojoule/second</a></div></li>
+<li>1 dekajoule/second [daJ/s] = 10 watt [W]<div>
+<a href="power/dekajoule-second-to-watt.html">dekajoule/second to watt</a>, &nbsp; <a href="power/watt-to-dekajoule-second.html">watt to dekajoule/second</a></div></li>
+<li>1 decijoule/second [dJ/s] = 0.1 watt [W]<div>
+<a href="power/decijoule-second-to-watt.html">decijoule/second to watt</a>, &nbsp; <a href="power/watt-to-decijoule-second.html">watt to decijoule/second</a></div></li>
+<li>1 centijoule/second [cJ/s] = 0.01 watt [W]<div>
+<a href="power/centijoule-second-to-watt.html">centijoule/second to watt</a>, &nbsp; <a href="power/watt-to-centijoule-second.html">watt to centijoule/second</a></div></li>
+<li>1 millijoule/second [mJ/s] = 0.001 watt [W]<div>
+<a href="power/millijoule-second-to-watt.html">millijoule/second to watt</a>, &nbsp; <a href="power/watt-to-millijoule-second.html">watt to millijoule/second</a></div></li>
+<li>1 microjoule/second [&#181;J/s] = 1.0E-6 watt [W]<div>
+<a href="power/microjoule-second-to-watt.html">microjoule/second to watt</a>, &nbsp; <a href="power/watt-to-microjoule-second.html">watt to microjoule/second</a></div></li>
+<li>1 nanojoule/second [nJ/s] = 1.0E-9 watt [W]<div>
+<a href="power/nanojoule-second-to-watt.html">nanojoule/second to watt</a>, &nbsp; <a href="power/watt-to-nanojoule-second.html">watt to nanojoule/second</a></div></li>
+<li>1 picojoule/second [pJ/s] = 1.0E-12 watt [W]<div>
+<a href="power/picojoule-second-to-watt.html">picojoule/second to watt</a>, &nbsp; <a href="power/watt-to-picojoule-second.html">watt to picojoule/second</a></div></li>
+<li>1 femtojoule/second [fJ/s] = 1.0E-15 watt [W]<div>
+<a href="power/femtojoule-second-to-watt.html">femtojoule/second to watt</a>, &nbsp; <a href="power/watt-to-femtojoule-second.html">watt to femtojoule/second</a></div></li>
+<li>1 attojoule/second [aJ/s] = 1.0E-18 watt [W]<div>
+<a href="power/attojoule-second-to-watt.html">attojoule/second to watt</a>, &nbsp; <a href="power/watt-to-attojoule-second.html">watt to attojoule/second</a></div></li>
+<li>1 joule/hour [J/h] = 0.0002777778 watt [W]<div>
+<a href="power/joule-hour-to-watt.html">joule/hour to watt</a>, &nbsp; <a href="power/watt-to-joule-hour.html">watt to joule/hour</a></div></li>
+<li>1 joule/minute [J/min] = 0.0166666667 watt [W]<div>
+<a href="power/joule-minute-to-watt.html">joule/minute to watt</a>, &nbsp; <a href="power/watt-to-joule-minute.html">watt to joule/minute</a></div></li>
+<li>1 kilojoule/hour [kJ/h] = 0.2777777778 watt [W]<div>
+<a href="power/kilojoule-hour-to-watt.html">kilojoule/hour to watt</a>, &nbsp; <a href="power/watt-to-kilojoule-hour.html">watt to kilojoule/hour</a></div></li>
+<li>1 kilojoule/minute [kJ/min] = 16.6666666667 watt [W]<div>
+<a href="power/kilojoule-minute-to-watt.html">kilojoule/minute to watt</a>, &nbsp; <a href="power/watt-to-kilojoule-minute.html">watt to kilojoule/minute</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

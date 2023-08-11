@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Numbers Converter</title>
+	<meta name="description" content="Free online numbers converter - converts between 40 units of numbers, including binary, octal, decimal, hexadecimal, etc. Also, explore many other unit converters or learn more about numbers unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Numbers Converter</div>
+		<h1>Numbers Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="binary [3:2]" selected>binary</option>
+<option value="octal [3:8]">octal</option>
+<option value="decimal [3:10]">decimal</option>
+<option value="hexadecimal [3:16]">hexadecimal</option>
+<option value="base-2 [3:2]">base-2</option>
+<option value="base-3 [3:3]">base-3</option>
+<option value="base-4 [3:4]">base-4</option>
+<option value="base-5 [3:5]">base-5</option>
+<option value="base-6 [3:6]">base-6</option>
+<option value="base-7 [3:7]">base-7</option>
+<option value="base-8 [3:8]">base-8</option>
+<option value="base-9 [3:9]">base-9</option>
+<option value="base-10 [3:10]">base-10</option>
+<option value="base-11 [3:11]">base-11</option>
+<option value="base-12 [3:12]">base-12</option>
+<option value="base-13 [3:13]">base-13</option>
+<option value="base-14 [3:14]">base-14</option>
+<option value="base-15 [3:15]">base-15</option>
+<option value="base-16 [3:16]">base-16</option>
+<option value="base-17 [3:17]">base-17</option>
+<option value="base-18 [3:18]">base-18</option>
+<option value="base-19 [3:19]">base-19</option>
+<option value="base-20 [3:20]">base-20</option>
+<option value="base-21 [3:21]">base-21</option>
+<option value="base-22 [3:22]">base-22</option>
+<option value="base-23 [3:23]">base-23</option>
+<option value="base-24 [3:24]">base-24</option>
+<option value="base-25 [3:25]">base-25</option>
+<option value="base-26 [3:26]">base-26</option>
+<option value="base-27 [3:27]">base-27</option>
+<option value="base-28 [3:28]">base-28</option>
+<option value="base-29 [3:29]">base-29</option>
+<option value="base-30 [3:30]">base-30</option>
+<option value="base-31 [3:31]">base-31</option>
+<option value="base-32 [3:32]">base-32</option>
+<option value="base-33 [3:33]">base-33</option>
+<option value="base-34 [3:34]">base-34</option>
+<option value="base-35 [3:35]">base-35</option>
+<option value="base-36 [3:36]">base-36</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="binary [3:2]">binary</option>
+<option value="octal [3:8]" selected>octal</option>
+<option value="decimal [3:10]">decimal</option>
+<option value="hexadecimal [3:16]">hexadecimal</option>
+<option value="base-2 [3:2]">base-2</option>
+<option value="base-3 [3:3]">base-3</option>
+<option value="base-4 [3:4]">base-4</option>
+<option value="base-5 [3:5]">base-5</option>
+<option value="base-6 [3:6]">base-6</option>
+<option value="base-7 [3:7]">base-7</option>
+<option value="base-8 [3:8]">base-8</option>
+<option value="base-9 [3:9]">base-9</option>
+<option value="base-10 [3:10]">base-10</option>
+<option value="base-11 [3:11]">base-11</option>
+<option value="base-12 [3:12]">base-12</option>
+<option value="base-13 [3:13]">base-13</option>
+<option value="base-14 [3:14]">base-14</option>
+<option value="base-15 [3:15]">base-15</option>
+<option value="base-16 [3:16]">base-16</option>
+<option value="base-17 [3:17]">base-17</option>
+<option value="base-18 [3:18]">base-18</option>
+<option value="base-19 [3:19]">base-19</option>
+<option value="base-20 [3:20]">base-20</option>
+<option value="base-21 [3:21]">base-21</option>
+<option value="base-22 [3:22]">base-22</option>
+<option value="base-23 [3:23]">base-23</option>
+<option value="base-24 [3:24]">base-24</option>
+<option value="base-25 [3:25]">base-25</option>
+<option value="base-26 [3:26]">base-26</option>
+<option value="base-27 [3:27]">base-27</option>
+<option value="base-28 [3:28]">base-28</option>
+<option value="base-29 [3:29]">base-29</option>
+<option value="base-30 [3:30]">base-30</option>
+<option value="base-31 [3:31]">base-31</option>
+<option value="base-32 [3:32]">base-32</option>
+<option value="base-33 [3:33]">base-33</option>
+<option value="base-34 [3:34]">base-34</option>
+<option value="base-35 [3:35]">base-35</option>
+<option value="base-36 [3:36]">base-36</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=1;</script>
+<br>
+<h3>Popular numbers unit conversions</h3>
+<div id="toother"><div>
+<a href="numbers/binary-to-decimal.html">binary to decimal</a></div>
+<div>
+<a href="numbers/decimal-to-binary.html">decimal to binary</a></div>
+<div>
+<a href="numbers/decimal-to-hex.html">decimal to hex</a></div>
+<div>
+<a href="numbers/hex-to-decimal.html">hex to decimal</a></div>
+<div>
+<a href="numbers/binary-to-hex.html">binary to hex</a></div>
+<div>
+<a href="numbers/hex-to-binary.html">hex to binary</a></div></div>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

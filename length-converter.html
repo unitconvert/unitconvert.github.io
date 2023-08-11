@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Length Converter</title>
+	<meta name="description" content="Free online length converter - converts between 93 units of length, including meter [m], kilometer [km], decimeter [dm], centimeter [cm], etc. Also, explore many other unit converters or learn more about length unit conversions." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Length Converter</div>
+		<h1>Length Converter</h1>
+<div id="unquickcalc" style="display:none;"></div>
+
+<div id="ucresult" class="ucresulttext"></div>
+<form>
+<table id="uctable">
+	<tr>
+		<td class="uccell"><label for="ucfrom">From:</label>
+<br>
+<input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus></td>
+		<td class="uccell"><label for="ucto">To:</label>
+<br>
+<input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly></td>
+	</tr>
+	<tr>
+		<td class="uccell">
+			<select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="meter [m] [1.0E+31]" selected>meter [m]</option>
+<option value="kilometer [km] [1.0E+28]">kilometer [km]</option>
+<option value="decimeter [dm] [1.0E+32]">decimeter [dm]</option>
+<option value="centimeter [cm] [1.0E+33]">centimeter [cm]</option>
+<option value="millimeter [mm] [1.0E+34]">millimeter [mm]</option>
+<option value="micrometer [&#181;m] [1.0E+37]">micrometer [&#181;m]</option>
+<option value="nanometer [nm] [1.0E+40]">nanometer [nm]</option>
+<option value="mile [mi, mi(Int)] [6.2137119223733E+27]">mile [mi, mi(Int)]</option>
+<option value="yard [yd] [1.0936132983377E+31]">yard [yd]</option>
+<option value="foot [ft] [3.2808398950131E+31]">foot [ft]</option>
+<option value="inch [in] [3.9370078740157E+32]">inch [in]</option>
+<option value="light year [ly] [1.0570008340247E+15]">light year [ly]</option>
+<option value="exameter [Em] [10000000000000]">exameter [Em]</option>
+<option value="petameter [Pm] [1.0E+16]">petameter [Pm]</option>
+<option value="terameter [Tm] [1.0E+19]">terameter [Tm]</option>
+<option value="gigameter [Gm] [1.0E+22]">gigameter [Gm]</option>
+<option value="megameter [Mm] [1.0E+25]">megameter [Mm]</option>
+<option value="hectometer [hm] [1.0E+29]">hectometer [hm]</option>
+<option value="dekameter [dam] [1.0E+30]">dekameter [dam]</option>
+<option value="micron [&#181;] [1.0E+37]">micron [&#181;]</option>
+<option value="picometer [pm] [1.0E+43]">picometer [pm]</option>
+<option value="femtometer [fm] [1.0E+46]">femtometer [fm]</option>
+<option value="attometer [am] [1.0E+49]">attometer [am]</option>
+<option value="megaparsec [Mpc] [324077928.96664]">megaparsec [Mpc]</option>
+<option value="kiloparsec [kpc] [324077928966.64]">kiloparsec [kpc]</option>
+<option value="parsec [pc] [3.2407792896664E+14]">parsec [pc]</option>
+<option value="astronomical unit [AU, UA] [6.6845871226706E+19]">astronomical unit [AU, UA]</option>
+<option value="league [lea] [2.0712373074578E+27]">league [lea]</option>
+<option value="nautical league (UK) [1.7987060827923E+27]">nautical league (UK)</option>
+<option value="nautical league (int.) [1.7998560115191E+27]">nautical league (int.)</option>
+<option value="league (statute) [st.league] [2.0712331649832E+27]">league (statute) [st.league]</option>
+<option value="nautical mile (UK) [NM (UK)] [5.3961182483768E+27]">nautical mile (UK) [NM (UK)]</option>
+<option value="nautical mile (international) [5.3995680345572E+27]">nautical mile (international)</option>
+<option value="mile (statute) [mi, mi (US)] [6.2136994949495E+27]">mile (statute) [mi, mi (US)]</option>
+<option value="mile (US survey) [mi] [6.2136994949495E+27]">mile (US survey) [mi]</option>
+<option value="mile (Roman) [6.7576516890075E+27]">mile (Roman)</option>
+<option value="kiloyard [kyd] [1.0936132983377E+28]">kiloyard [kyd]</option>
+<option value="furlong [fur] [4.9709695378987E+28]">furlong [fur]</option>
+<option value="furlong (US survey) [fur] [4.9709595959596E+28]">furlong (US survey) [fur]</option>
+<option value="chain [ch] [4.9709695378987E+29]">chain [ch]</option>
+<option value="chain (US survey) [ch] [4.9709595959596E+29]">chain (US survey) [ch]</option>
+<option value="rope [1.6404199475066E+30]">rope</option>
+<option value="rod [rd] [1.9883878151595E+30]">rod [rd]</option>
+<option value="rod (US survey) [rd] [1.9883838383838E+30]">rod (US survey) [rd]</option>
+<option value="perch [1.9883878151595E+30]">perch</option>
+<option value="pole [1.9883878151595E+30]">pole</option>
+<option value="fathom [fath] [5.4680664916885E+30]">fathom [fath]</option>
+<option value="fathom (US survey) [fath] [5.4680555555556E+30]">fathom (US survey) [fath]</option>
+<option value="ell [8.7489063867017E+30]">ell</option>
+<option value="foot (US survey) [ft] [3.2808333333333E+31]">foot (US survey) [ft]</option>
+<option value="link [li] [4.9709695378987E+31]">link [li]</option>
+<option value="link (US survey) [li] [4.9709595959596E+31]">link (US survey) [li]</option>
+<option value="cubit (UK) [2.1872265966754E+31]">cubit (UK)</option>
+<option value="hand [9.8425196850394E+31]">hand</option>
+<option value="span (cloth) [4.3744531933508E+31]">span (cloth)</option>
+<option value="finger (cloth) [8.7489063867017E+31]">finger (cloth)</option>
+<option value="nail (cloth) [1.7497812773403E+32]">nail (cloth)</option>
+<option value="inch (US survey) [in] [3.937E+32]">inch (US survey) [in]</option>
+<option value="barleycorn [1.1811023622047E+33]">barleycorn</option>
+<option value="mil [mil, thou] [3.9370078740158E+35]">mil [mil, thou]</option>
+<option value="microinch [3.9370078740157E+38]">microinch</option>
+<option value="angstrom [A] [1.0E+41]">angstrom [A]</option>
+<option value="a.u. of length [a.u., b] [1.8897259885789E+41]">a.u. of length [a.u., b]</option>
+<option value="X-unit [X] [9.9792431741977E+43]">X-unit [X]</option>
+<option value="fermi [F, f] [1.0E+46]">fermi [F, f]</option>
+<option value="arpent [1.7087707786527E+29]">arpent</option>
+<option value="pica [2.3622047244095E+33]">pica</option>
+<option value="point [2.8346456692913E+34]">point</option>
+<option value="twip [5.6692913385827E+35]">twip</option>
+<option value="aln [1.684131736527E+31]">aln</option>
+<option value="famn [5.6137724550898E+30]">famn</option>
+<option value="caliber [cl] [3.9370078740158E+34]">caliber [cl]</option>
+<option value="centiinch [cin] [3.9370078740158E+34]">centiinch [cin]</option>
+<option value="ken [4.7206329424649E+30]">ken</option>
+<option value="Russian archin [1.4060742407199E+31]">Russian archin</option>
+<option value="Roman actus [2.8185909750972E+29]">Roman actus</option>
+<option value="vara de tarea [3.9912894099916E+30]">vara de tarea</option>
+<option value="vara conuquera [3.9912894099916E+30]">vara conuquera</option>
+<option value="vara castellana [1.1973868229975E+31]">vara castellana</option>
+<option value="cubit (Greek) [2.1608166158155E+31]">cubit (Greek)</option>
+<option value="long reed [3.124609423822E+30]">long reed</option>
+<option value="reed [3.6453776611257E+30]">reed</option>
+<option value="long cubit [1.8747656542932E+31]">long cubit</option>
+<option value="handbreadth [1.3123359580052E+32]">handbreadth</option>
+<option value="fingerbreadth [5.249343832021E+32]">fingerbreadth</option>
+<option value="Planck length [6.1879273537329E+65]">Planck length</option>
+<option value="Electron radius (classical) [3.5486904388329E+45]">Electron radius (classical)</option>
+<option value="Bohr radius [b, a.u.] [1.8897259885789E+41]">Bohr radius [b, a.u.]</option>
+<option value="Earth's equatorial radius [1.5678502891116E+24]">Earth's equatorial radius</option>
+<option value="Earth's polar radius [1.5731242420491E+24]">Earth's polar radius</option>
+<option value="Earth's distance from sun [6.6844919786096E+19]">Earth's distance from sun</option>
+<option value="Sun's radius [1.4367816091954E+22]">Sun's radius</option></select>
+		</td>
+		<td class="uccell">
+			<select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect"><option value="meter [m] [1.0E+31]">meter [m]</option>
+<option value="kilometer [km] [1.0E+28]" selected>kilometer [km]</option>
+<option value="decimeter [dm] [1.0E+32]">decimeter [dm]</option>
+<option value="centimeter [cm] [1.0E+33]">centimeter [cm]</option>
+<option value="millimeter [mm] [1.0E+34]">millimeter [mm]</option>
+<option value="micrometer [&#181;m] [1.0E+37]">micrometer [&#181;m]</option>
+<option value="nanometer [nm] [1.0E+40]">nanometer [nm]</option>
+<option value="mile [mi, mi(Int)] [6.2137119223733E+27]">mile [mi, mi(Int)]</option>
+<option value="yard [yd] [1.0936132983377E+31]">yard [yd]</option>
+<option value="foot [ft] [3.2808398950131E+31]">foot [ft]</option>
+<option value="inch [in] [3.9370078740157E+32]">inch [in]</option>
+<option value="light year [ly] [1.0570008340247E+15]">light year [ly]</option>
+<option value="exameter [Em] [10000000000000]">exameter [Em]</option>
+<option value="petameter [Pm] [1.0E+16]">petameter [Pm]</option>
+<option value="terameter [Tm] [1.0E+19]">terameter [Tm]</option>
+<option value="gigameter [Gm] [1.0E+22]">gigameter [Gm]</option>
+<option value="megameter [Mm] [1.0E+25]">megameter [Mm]</option>
+<option value="hectometer [hm] [1.0E+29]">hectometer [hm]</option>
+<option value="dekameter [dam] [1.0E+30]">dekameter [dam]</option>
+<option value="micron [&#181;] [1.0E+37]">micron [&#181;]</option>
+<option value="picometer [pm] [1.0E+43]">picometer [pm]</option>
+<option value="femtometer [fm] [1.0E+46]">femtometer [fm]</option>
+<option value="attometer [am] [1.0E+49]">attometer [am]</option>
+<option value="megaparsec [Mpc] [324077928.96664]">megaparsec [Mpc]</option>
+<option value="kiloparsec [kpc] [324077928966.64]">kiloparsec [kpc]</option>
+<option value="parsec [pc] [3.2407792896664E+14]">parsec [pc]</option>
+<option value="astronomical unit [AU, UA] [6.6845871226706E+19]">astronomical unit [AU, UA]</option>
+<option value="league [lea] [2.0712373074578E+27]">league [lea]</option>
+<option value="nautical league (UK) [1.7987060827923E+27]">nautical league (UK)</option>
+<option value="nautical league (int.) [1.7998560115191E+27]">nautical league (int.)</option>
+<option value="league (statute) [st.league] [2.0712331649832E+27]">league (statute) [st.league]</option>
+<option value="nautical mile (UK) [NM (UK)] [5.3961182483768E+27]">nautical mile (UK) [NM (UK)]</option>
+<option value="nautical mile (international) [5.3995680345572E+27]">nautical mile (international)</option>
+<option value="mile (statute) [mi, mi (US)] [6.2136994949495E+27]">mile (statute) [mi, mi (US)]</option>
+<option value="mile (US survey) [mi] [6.2136994949495E+27]">mile (US survey) [mi]</option>
+<option value="mile (Roman) [6.7576516890075E+27]">mile (Roman)</option>
+<option value="kiloyard [kyd] [1.0936132983377E+28]">kiloyard [kyd]</option>
+<option value="furlong [fur] [4.9709695378987E+28]">furlong [fur]</option>
+<option value="furlong (US survey) [fur] [4.9709595959596E+28]">furlong (US survey) [fur]</option>
+<option value="chain [ch] [4.9709695378987E+29]">chain [ch]</option>
+<option value="chain (US survey) [ch] [4.9709595959596E+29]">chain (US survey) [ch]</option>
+<option value="rope [1.6404199475066E+30]">rope</option>
+<option value="rod [rd] [1.9883878151595E+30]">rod [rd]</option>
+<option value="rod (US survey) [rd] [1.9883838383838E+30]">rod (US survey) [rd]</option>
+<option value="perch [1.9883878151595E+30]">perch</option>
+<option value="pole [1.9883878151595E+30]">pole</option>
+<option value="fathom [fath] [5.4680664916885E+30]">fathom [fath]</option>
+<option value="fathom (US survey) [fath] [5.4680555555556E+30]">fathom (US survey) [fath]</option>
+<option value="ell [8.7489063867017E+30]">ell</option>
+<option value="foot (US survey) [ft] [3.2808333333333E+31]">foot (US survey) [ft]</option>
+<option value="link [li] [4.9709695378987E+31]">link [li]</option>
+<option value="link (US survey) [li] [4.9709595959596E+31]">link (US survey) [li]</option>
+<option value="cubit (UK) [2.1872265966754E+31]">cubit (UK)</option>
+<option value="hand [9.8425196850394E+31]">hand</option>
+<option value="span (cloth) [4.3744531933508E+31]">span (cloth)</option>
+<option value="finger (cloth) [8.7489063867017E+31]">finger (cloth)</option>
+<option value="nail (cloth) [1.7497812773403E+32]">nail (cloth)</option>
+<option value="inch (US survey) [in] [3.937E+32]">inch (US survey) [in]</option>
+<option value="barleycorn [1.1811023622047E+33]">barleycorn</option>
+<option value="mil [mil, thou] [3.9370078740158E+35]">mil [mil, thou]</option>
+<option value="microinch [3.9370078740157E+38]">microinch</option>
+<option value="angstrom [A] [1.0E+41]">angstrom [A]</option>
+<option value="a.u. of length [a.u., b] [1.8897259885789E+41]">a.u. of length [a.u., b]</option>
+<option value="X-unit [X] [9.9792431741977E+43]">X-unit [X]</option>
+<option value="fermi [F, f] [1.0E+46]">fermi [F, f]</option>
+<option value="arpent [1.7087707786527E+29]">arpent</option>
+<option value="pica [2.3622047244095E+33]">pica</option>
+<option value="point [2.8346456692913E+34]">point</option>
+<option value="twip [5.6692913385827E+35]">twip</option>
+<option value="aln [1.684131736527E+31]">aln</option>
+<option value="famn [5.6137724550898E+30]">famn</option>
+<option value="caliber [cl] [3.9370078740158E+34]">caliber [cl]</option>
+<option value="centiinch [cin] [3.9370078740158E+34]">centiinch [cin]</option>
+<option value="ken [4.7206329424649E+30]">ken</option>
+<option value="Russian archin [1.4060742407199E+31]">Russian archin</option>
+<option value="Roman actus [2.8185909750972E+29]">Roman actus</option>
+<option value="vara de tarea [3.9912894099916E+30]">vara de tarea</option>
+<option value="vara conuquera [3.9912894099916E+30]">vara conuquera</option>
+<option value="vara castellana [1.1973868229975E+31]">vara castellana</option>
+<option value="cubit (Greek) [2.1608166158155E+31]">cubit (Greek)</option>
+<option value="long reed [3.124609423822E+30]">long reed</option>
+<option value="reed [3.6453776611257E+30]">reed</option>
+<option value="long cubit [1.8747656542932E+31]">long cubit</option>
+<option value="handbreadth [1.3123359580052E+32]">handbreadth</option>
+<option value="fingerbreadth [5.249343832021E+32]">fingerbreadth</option>
+<option value="Planck length [6.1879273537329E+65]">Planck length</option>
+<option value="Electron radius (classical) [3.5486904388329E+45]">Electron radius (classical)</option>
+<option value="Bohr radius [b, a.u.] [1.8897259885789E+41]">Bohr radius [b, a.u.]</option>
+<option value="Earth's equatorial radius [1.5678502891116E+24]">Earth's equatorial radius</option>
+<option value="Earth's polar radius [1.5731242420491E+24]">Earth's polar radius</option>
+<option value="Earth's distance from sun [6.6844919786096E+19]">Earth's distance from sun</option>
+<option value="Sun's radius [1.4367816091954E+22]">Sun's radius</option></select>
+		</td>
+	</tr>
+</table>
+</form>
+<script>noValidation=0;</script>
+<br>
+<h3>Popular length unit conversions</h3>
+<div id="toother"><div>
+<a href="length/cm-to-inches.html">cm to inches</a></div>
+<div>
+<a href="length/inches-to-cm.html">inches to cm</a></div>
+<div>
+<a href="length/mm-to-inches.html">mm to inches</a></div>
+<div>
+<a href="length/inches-to-mm.html">inches to mm</a></div>
+<div>
+<a href="length/meters-to-feet.html">meters to feet</a></div>
+<div>
+<a href="length/feet-to-meters.html">feet to meters</a></div>
+<div>
+<a href="length/km-to-miles.html">km to miles</a></div>
+<div>
+<a href="length/miles-to-km.html">miles to km</a></div>
+<div>
+<a href="length/cm-to-feet.html">cm to feet</a></div>
+<div>
+<a href="length/feet-to-cm.html">feet to cm</a></div>
+<div>
+<a href="length/inches-to-feet.html">inches to feet</a></div>
+<div>
+<a href="length/feet-to-inches.html">feet to inches</a></div>
+<div>
+<a href="length/meters-to-yards.html">meters to yards</a></div>
+<div>
+<a href="length/yards-to-meters.html">yards to meters</a></div>
+<div>
+<a href="length/mm-to-cm.html">mm to cm</a></div>
+<div>
+<a href="length/cm-to-mm.html">cm to mm</a></div>
+<div>
+<a href="length/cm-to-m.html">cm to m</a></div>
+<div>
+<a href="length/m-to-cm.html">m to cm</a></div>
+<div>
+<a href="length/cm-to-km.html">cm to km</a></div>
+<div>
+<a href="length/km-to-cm.html">km to cm</a></div>
+<div>
+<a href="length/mm-to-feet.html">mm to feet</a></div>
+<div>
+<a href="length/feet-to-mm.html">feet to mm</a></div>
+<div>
+<a href="length/meters-to-miles.html">meters to miles</a></div>
+<div>
+<a href="length/miles-to-meters.html">miles to meters</a></div>
+<div>
+<a href="length/feet-to-miles.html">feet to miles</a></div>
+<div>
+<a href="length/miles-to-feet.html">miles to feet</a></div>
+<div>
+<a href="length/yards-to-feet.html">yards to feet</a></div>
+<div>
+<a href="length/feet-to-yards.html">feet to yards</a></div>
+<div>
+<a href="length/inches-to-meters.html">inches to meters</a></div>
+<div>
+<a href="length/meters-to-inches.html">meters to inches</a></div>
+<div>
+<a href="length/mm-to-m.html">mm to m</a></div>
+<div>
+<a href="length/m-to-mm.html">m to mm</a></div>
+<div>
+<a href="length/km-to-m.html">km to m</a></div>
+<div>
+<a href="length/m-to-km.html">m to km</a></div>
+<div>
+<a href="length/inches-to-yards.html">inches to yards</a></div>
+<div>
+<a href="length/yards-to-inches.html">yards to inches</a></div>
+<div>
+<a href="length/yards-to-miles.html">yards to miles</a></div>
+<div>
+<a href="length/miles-to-yards.html">miles to yards</a></div></div>
+<br>
+<h3>Complete list of length units for conversion</h3>
+<ul class="allunits"><li>meter [m]</li>
+<li>1 kilometer [km] = 1000 meter [m]<div>
+<a href="length/km-to-m.html">kilometer to meter</a>, &nbsp; <a href="length/m-to-km.html">meter to kilometer</a></div></li>
+<li>1 decimeter [dm] = 0.1 meter [m]<div>
+<a href="length/decimeter-to-meter.html">decimeter to meter</a>, &nbsp; <a href="length/meter-to-decimeter.html">meter to decimeter</a></div></li>
+<li>1 centimeter [cm] = 0.01 meter [m]<div>
+<a href="length/cm-to-m.html">centimeter to meter</a>, &nbsp; <a href="length/m-to-cm.html">meter to centimeter</a></div></li>
+<li>1 millimeter [mm] = 0.001 meter [m]<div>
+<a href="length/mm-to-m.html">millimeter to meter</a>, &nbsp; <a href="length/m-to-mm.html">meter to millimeter</a></div></li>
+<li>1 micrometer [&#181;m] = 1.0E-6 meter [m]<div>
+<a href="length/micrometer-to-meter.html">micrometer to meter</a>, &nbsp; <a href="length/meter-to-micrometer.html">meter to micrometer</a></div></li>
+<li>1 nanometer [nm] = 1.0E-9 meter [m]<div>
+<a href="length/nanometer-to-meter.html">nanometer to meter</a>, &nbsp; <a href="length/meter-to-nanometer.html">meter to nanometer</a></div></li>
+<li>1 mile [mi, mi(Int)] = 1609.344 meter [m]<div>
+<a href="length/miles-to-meters.html">mile to meter</a>, &nbsp; <a href="length/meters-to-miles.html">meter to mile</a></div></li>
+<li>1 yard [yd] = 0.9144 meter [m]<div>
+<a href="length/yards-to-meters.html">yard to meter</a>, &nbsp; <a href="length/meters-to-yards.html">meter to yard</a></div></li>
+<li>1 foot [ft] = 0.3048 meter [m]<div>
+<a href="length/feet-to-meters.html">foot to meter</a>, &nbsp; <a href="length/meters-to-feet.html">meter to foot</a></div></li>
+<li>1 inch [in] = 0.0254 meter [m]<div>
+<a href="length/inches-to-meters.html">inch to meter</a>, &nbsp; <a href="length/meters-to-inches.html">meter to inch</a></div></li>
+<li>1 light year [ly] = 9.46073047258E+15 meter [m]<div>
+<a href="length/light-year-to-meter.html">light year to meter</a>, &nbsp; <a href="length/meter-to-light-year.html">meter to light year</a></div></li>
+<li>1 exameter [Em] = 1.0E+18 meter [m]<div>
+<a href="length/exameter-to-meter.html">exameter to meter</a>, &nbsp; <a href="length/meter-to-exameter.html">meter to exameter</a></div></li>
+<li>1 petameter [Pm] = 1.0E+15 meter [m]<div>
+<a href="length/petameter-to-meter.html">petameter to meter</a>, &nbsp; <a href="length/meter-to-petameter.html">meter to petameter</a></div></li>
+<li>1 terameter [Tm] = 1000000000000 meter [m]<div>
+<a href="length/terameter-to-meter.html">terameter to meter</a>, &nbsp; <a href="length/meter-to-terameter.html">meter to terameter</a></div></li>
+<li>1 gigameter [Gm] = 1000000000 meter [m]<div>
+<a href="length/gigameter-to-meter.html">gigameter to meter</a>, &nbsp; <a href="length/meter-to-gigameter.html">meter to gigameter</a></div></li>
+<li>1 megameter [Mm] = 1000000 meter [m]<div>
+<a href="length/megameter-to-meter.html">megameter to meter</a>, &nbsp; <a href="length/meter-to-megameter.html">meter to megameter</a></div></li>
+<li>1 hectometer [hm] = 100 meter [m]<div>
+<a href="length/hectometer-to-meter.html">hectometer to meter</a>, &nbsp; <a href="length/meter-to-hectometer.html">meter to hectometer</a></div></li>
+<li>1 dekameter [dam] = 10 meter [m]<div>
+<a href="length/dekameter-to-meter.html">dekameter to meter</a>, &nbsp; <a href="length/meter-to-dekameter.html">meter to dekameter</a></div></li>
+<li>1 micron [&#181;] = 1.0E-6 meter [m]<div>
+<a href="length/micron-to-meter.html">micron to meter</a>, &nbsp; <a href="length/meter-to-micron.html">meter to micron</a></div></li>
+<li>1 picometer [pm] = 1.0E-12 meter [m]<div>
+<a href="length/picometer-to-meter.html">picometer to meter</a>, &nbsp; <a href="length/meter-to-picometer.html">meter to picometer</a></div></li>
+<li>1 femtometer [fm] = 1.0E-15 meter [m]<div>
+<a href="length/femtometer-to-meter.html">femtometer to meter</a>, &nbsp; <a href="length/meter-to-femtometer.html">meter to femtometer</a></div></li>
+<li>1 attometer [am] = 1.0E-18 meter [m]<div>
+<a href="length/attometer-to-meter.html">attometer to meter</a>, &nbsp; <a href="length/meter-to-attometer.html">meter to attometer</a></div></li>
+<li>1 megaparsec [Mpc] = 3.08567758128E+22 meter [m]<div>
+<a href="length/megaparsec-to-meter.html">megaparsec to meter</a>, &nbsp; <a href="length/meter-to-megaparsec.html">meter to megaparsec</a></div></li>
+<li>1 kiloparsec [kpc] = 3.08567758128E+19 meter [m]<div>
+<a href="length/kiloparsec-to-meter.html">kiloparsec to meter</a>, &nbsp; <a href="length/meter-to-kiloparsec.html">meter to kiloparsec</a></div></li>
+<li>1 parsec [pc] = 3.08567758128E+16 meter [m]<div>
+<a href="length/parsec-to-meter.html">parsec to meter</a>, &nbsp; <a href="length/meter-to-parsec.html">meter to parsec</a></div></li>
+<li>1 astronomical unit [AU, UA] = 149597870691 meter [m]<div>
+<a href="length/astronomical-unit-to-meter.html">astronomical unit to meter</a>, &nbsp; <a href="length/meter-to-astronomical-unit.html">meter to astronomical unit</a></div></li>
+<li>1 league [lea] = 4828.032 meter [m]<div>
+<a href="length/league-to-meter.html">league to meter</a>, &nbsp; <a href="length/meter-to-league.html">meter to league</a></div></li>
+<li>1 nautical league (UK) = 5559.552 meter [m]<div>
+<a href="length/nautical-league-uk-to-meter.html">nautical league (UK) to meter</a>, &nbsp; <a href="length/meter-to-nautical-league-uk.html">meter to nautical league (UK)</a></div></li>
+<li>1 nautical league (int.) = 5556 meter [m]<div>
+<a href="length/nautical-league-int-to-meter.html">nautical league (int.) to meter</a>, &nbsp; <a href="length/meter-to-nautical-league-int.html">meter to nautical league (int.)</a></div></li>
+<li>1 league (statute) [st.league] = 4828.0416560833 meter [m]<div>
+<a href="length/league-statute-to-meter.html">league (statute) to meter</a>, &nbsp; <a href="length/meter-to-league-statute.html">meter to league (statute)</a></div></li>
+<li>1 nautical mile (UK) [NM (UK)] = 1853.184 meter [m]<div>
+<a href="length/nautical-mile-uk-to-meter.html">nautical mile (UK) to meter</a>, &nbsp; <a href="length/meter-to-nautical-mile-uk.html">meter to nautical mile (UK)</a></div></li>
+<li>1 nautical mile (international) = 1852 meter [m]<div>
+<a href="length/nautical-mile-international-to-meter.html">nautical mile (international) to meter</a>, &nbsp; <a href="length/meter-to-nautical-mile-international.html">meter to nautical mile (international)</a></div></li>
+<li>1 mile (statute) [mi, mi (US)] = 1609.3472186944 meter [m]<div>
+<a href="length/mile-statute-to-meter.html">mile (statute) to meter</a>, &nbsp; <a href="length/meter-to-mile-statute.html">meter to mile (statute)</a></div></li>
+<li>1 mile (US survey) [mi] = 1609.3472186944 meter [m]<div>
+<a href="length/mile-us-survey-to-meter.html">mile (US survey) to meter</a>, &nbsp; <a href="length/meter-to-mile-us-survey.html">meter to mile (US survey)</a></div></li>
+<li>1 mile (Roman) = 1479.804 meter [m]<div>
+<a href="length/mile-roman-to-meter.html">mile (Roman) to meter</a>, &nbsp; <a href="length/meter-to-mile-roman.html">meter to mile (Roman)</a></div></li>
+<li>1 kiloyard [kyd] = 914.4 meter [m]<div>
+<a href="length/kiloyard-to-meter.html">kiloyard to meter</a>, &nbsp; <a href="length/meter-to-kiloyard.html">meter to kiloyard</a></div></li>
+<li>1 furlong [fur] = 201.168 meter [m]<div>
+<a href="length/furlong-to-meter.html">furlong to meter</a>, &nbsp; <a href="length/meter-to-furlong.html">meter to furlong</a></div></li>
+<li>1 furlong (US survey) [fur] = 201.1684023368 meter [m]<div>
+<a href="length/furlong-us-survey-to-meter.html">furlong (US survey) to meter</a>, &nbsp; <a href="length/meter-to-furlong-us-survey.html">meter to furlong (US survey)</a></div></li>
+<li>1 chain [ch] = 20.1168 meter [m]<div>
+<a href="length/chain-to-meter.html">chain to meter</a>, &nbsp; <a href="length/meter-to-chain.html">meter to chain</a></div></li>
+<li>1 chain (US survey) [ch] = 20.1168402337 meter [m]<div>
+<a href="length/chain-us-survey-to-meter.html">chain (US survey) to meter</a>, &nbsp; <a href="length/meter-to-chain-us-survey.html">meter to chain (US survey)</a></div></li>
+<li>1 rope = 6.096 meter [m]<div>
+<a href="length/rope-to-meter.html">rope to meter</a>, &nbsp; <a href="length/meter-to-rope.html">meter to rope</a></div></li>
+<li>1 rod [rd] = 5.0292 meter [m]<div>
+<a href="length/rod-to-meter.html">rod to meter</a>, &nbsp; <a href="length/meter-to-rod.html">meter to rod</a></div></li>
+<li>1 rod (US survey) [rd] = 5.0292100584 meter [m]<div>
+<a href="length/rod-us-survey-to-meter.html">rod (US survey) to meter</a>, &nbsp; <a href="length/meter-to-rod-us-survey.html">meter to rod (US survey)</a></div></li>
+<li>1 perch = 5.0292 meter [m]<div>
+<a href="length/perch-to-meter.html">perch to meter</a>, &nbsp; <a href="length/meter-to-perch.html">meter to perch</a></div></li>
+<li>1 pole = 5.0292 meter [m]<div>
+<a href="length/pole-to-meter.html">pole to meter</a>, &nbsp; <a href="length/meter-to-pole.html">meter to pole</a></div></li>
+<li>1 fathom [fath] = 1.8288 meter [m]<div>
+<a href="length/fathom-to-meter.html">fathom to meter</a>, &nbsp; <a href="length/meter-to-fathom.html">meter to fathom</a></div></li>
+<li>1 fathom (US survey) [fath] = 1.8288036576 meter [m]<div>
+<a href="length/fathom-us-survey-to-meter.html">fathom (US survey) to meter</a>, &nbsp; <a href="length/meter-to-fathom-us-survey.html">meter to fathom (US survey)</a></div></li>
+<li>1 ell = 1.143 meter [m]<div>
+<a href="length/ell-to-meter.html">ell to meter</a>, &nbsp; <a href="length/meter-to-ell.html">meter to ell</a></div></li>
+<li>1 foot (US survey) [ft] = 0.3048006096 meter [m]<div>
+<a href="length/foot-us-survey-to-meter.html">foot (US survey) to meter</a>, &nbsp; <a href="length/meter-to-foot-us-survey.html">meter to foot (US survey)</a></div></li>
+<li>1 link [li] = 0.201168 meter [m]<div>
+<a href="length/link-to-meter.html">link to meter</a>, &nbsp; <a href="length/meter-to-link.html">meter to link</a></div></li>
+<li>1 link (US survey) [li] = 0.2011684023 meter [m]<div>
+<a href="length/link-us-survey-to-meter.html">link (US survey) to meter</a>, &nbsp; <a href="length/meter-to-link-us-survey.html">meter to link (US survey)</a></div></li>
+<li>1 cubit (UK) = 0.4572 meter [m]<div>
+<a href="length/cubit-uk-to-meter.html">cubit (UK) to meter</a>, &nbsp; <a href="length/meter-to-cubit-uk.html">meter to cubit (UK)</a></div></li>
+<li>1 hand = 0.1016 meter [m]<div>
+<a href="length/hand-to-meter.html">hand to meter</a>, &nbsp; <a href="length/meter-to-hand.html">meter to hand</a></div></li>
+<li>1 span (cloth) = 0.2286 meter [m]<div>
+<a href="length/span-cloth-to-meter.html">span (cloth) to meter</a>, &nbsp; <a href="length/meter-to-span-cloth.html">meter to span (cloth)</a></div></li>
+<li>1 finger (cloth) = 0.1143 meter [m]<div>
+<a href="length/finger-cloth-to-meter.html">finger (cloth) to meter</a>, &nbsp; <a href="length/meter-to-finger-cloth.html">meter to finger (cloth)</a></div></li>
+<li>1 nail (cloth) = 0.05715 meter [m]<div>
+<a href="length/nail-cloth-to-meter.html">nail (cloth) to meter</a>, &nbsp; <a href="length/meter-to-nail-cloth.html">meter to nail (cloth)</a></div></li>
+<li>1 inch (US survey) [in] = 0.0254000508 meter [m]<div>
+<a href="length/inch-us-survey-to-meter.html">inch (US survey) to meter</a>, &nbsp; <a href="length/meter-to-inch-us-survey.html">meter to inch (US survey)</a></div></li>
+<li>1 barleycorn = 0.0084666667 meter [m]<div>
+<a href="length/barleycorn-to-meter.html">barleycorn to meter</a>, &nbsp; <a href="length/meter-to-barleycorn.html">meter to barleycorn</a></div></li>
+<li>1 mil [mil, thou] = 2.54E-5 meter [m]<div>
+<a href="length/mil-to-meter.html">mil to meter</a>, &nbsp; <a href="length/meter-to-mil.html">meter to mil</a></div></li>
+<li>1 microinch = 2.54E-8 meter [m]<div>
+<a href="length/microinch-to-meter.html">microinch to meter</a>, &nbsp; <a href="length/meter-to-microinch.html">meter to microinch</a></div></li>
+<li>1 angstrom [A] = 1.0E-10 meter [m]<div>
+<a href="length/angstrom-to-meter.html">angstrom to meter</a>, &nbsp; <a href="length/meter-to-angstrom.html">meter to angstrom</a></div></li>
+<li>1 a.u. of length [a.u., b] = 5.2917724900001E-11 meter [m]<div>
+<a href="length/a-u-of-length-to-meter.html">a.u. of length to meter</a>, &nbsp; <a href="length/meter-to-a-u-of-length.html">meter to a.u. of length</a></div></li>
+<li>1 X-unit [X] = 1.00208E-13 meter [m]<div>
+<a href="length/x-unit-to-meter.html">X-unit to meter</a>, &nbsp; <a href="length/meter-to-x-unit.html">meter to X-unit</a></div></li>
+<li>1 fermi [F, f] = 1.0E-15 meter [m]<div>
+<a href="length/fermi-to-meter.html">fermi to meter</a>, &nbsp; <a href="length/meter-to-fermi.html">meter to fermi</a></div></li>
+<li>1 arpent = 58.5216 meter [m]<div>
+<a href="length/arpent-to-meter.html">arpent to meter</a>, &nbsp; <a href="length/meter-to-arpent.html">meter to arpent</a></div></li>
+<li>1 pica = 0.0042333333 meter [m]<div>
+<a href="length/pica-to-meter.html">pica to meter</a>, &nbsp; <a href="length/meter-to-pica.html">meter to pica</a></div></li>
+<li>1 point = 0.0003527778 meter [m]<div>
+<a href="length/point-to-meter.html">point to meter</a>, &nbsp; <a href="length/meter-to-point.html">meter to point</a></div></li>
+<li>1 twip = 1.76389E-5 meter [m]<div>
+<a href="length/twip-to-meter.html">twip to meter</a>, &nbsp; <a href="length/meter-to-twip.html">meter to twip</a></div></li>
+<li>1 aln = 0.5937777778 meter [m]<div>
+<a href="length/aln-to-meter.html">aln to meter</a>, &nbsp; <a href="length/meter-to-aln.html">meter to aln</a></div></li>
+<li>1 famn = 1.7813333333 meter [m]<div>
+<a href="length/famn-to-meter.html">famn to meter</a>, &nbsp; <a href="length/meter-to-famn.html">meter to famn</a></div></li>
+<li>1 caliber [cl] = 0.000254 meter [m]<div>
+<a href="length/caliber-to-meter.html">caliber to meter</a>, &nbsp; <a href="length/meter-to-caliber.html">meter to caliber</a></div></li>
+<li>1 centiinch [cin] = 0.000254 meter [m]<div>
+<a href="length/centiinch-to-meter.html">centiinch to meter</a>, &nbsp; <a href="length/meter-to-centiinch.html">meter to centiinch</a></div></li>
+<li>1 ken = 2.11836 meter [m]<div>
+<a href="length/ken-to-meter.html">ken to meter</a>, &nbsp; <a href="length/meter-to-ken.html">meter to ken</a></div></li>
+<li>1 Russian archin = 0.7112 meter [m]<div>
+<a href="length/russian-archin-to-meter.html">Russian archin to meter</a>, &nbsp; <a href="length/meter-to-russian-archin.html">meter to Russian archin</a></div></li>
+<li>1 Roman actus = 35.47872 meter [m]<div>
+<a href="length/roman-actus-to-meter.html">Roman actus to meter</a>, &nbsp; <a href="length/meter-to-roman-actus.html">meter to Roman actus</a></div></li>
+<li>1 vara de tarea = 2.505456 meter [m]<div>
+<a href="length/vara-de-tarea-to-meter.html">vara de tarea to meter</a>, &nbsp; <a href="length/meter-to-vara-de-tarea.html">meter to vara de tarea</a></div></li>
+<li>1 vara conuquera = 2.505456 meter [m]<div>
+<a href="length/vara-conuquera-to-meter.html">vara conuquera to meter</a>, &nbsp; <a href="length/meter-to-vara-conuquera.html">meter to vara conuquera</a></div></li>
+<li>1 vara castellana = 0.835152 meter [m]<div>
+<a href="length/vara-castellana-to-meter.html">vara castellana to meter</a>, &nbsp; <a href="length/meter-to-vara-castellana.html">meter to vara castellana</a></div></li>
+<li>1 cubit (Greek) = 0.462788 meter [m]<div>
+<a href="length/cubit-greek-to-meter.html">cubit (Greek) to meter</a>, &nbsp; <a href="length/meter-to-cubit-greek.html">meter to cubit (Greek)</a></div></li>
+<li>1 long reed = 3.2004 meter [m]<div>
+<a href="length/long-reed-to-meter.html">long reed to meter</a>, &nbsp; <a href="length/meter-to-long-reed.html">meter to long reed</a></div></li>
+<li>1 reed = 2.7432 meter [m]<div>
+<a href="length/reed-to-meter.html">reed to meter</a>, &nbsp; <a href="length/meter-to-reed.html">meter to reed</a></div></li>
+<li>1 long cubit = 0.5334 meter [m]<div>
+<a href="length/long-cubit-to-meter.html">long cubit to meter</a>, &nbsp; <a href="length/meter-to-long-cubit.html">meter to long cubit</a></div></li>
+<li>1 handbreadth = 0.0762 meter [m]<div>
+<a href="length/handbreadth-to-meter.html">handbreadth to meter</a>, &nbsp; <a href="length/meter-to-handbreadth.html">meter to handbreadth</a></div></li>
+<li>1 fingerbreadth = 0.01905 meter [m]<div>
+<a href="length/fingerbreadth-to-meter.html">fingerbreadth to meter</a>, &nbsp; <a href="length/meter-to-fingerbreadth.html">meter to fingerbreadth</a></div></li>
+<li>1 Planck length = 1.61605E-35 meter [m]<div>
+<a href="length/planck-length-to-meter.html">Planck length to meter</a>, &nbsp; <a href="length/meter-to-planck-length.html">meter to Planck length</a></div></li>
+<li>1 Electron radius (classical) = 2.81794092E-15 meter [m]<div>
+<a href="length/electron-radius-classical-to-meter.html">Electron radius (classical) to meter</a>, &nbsp; <a href="length/meter-to-electron-radius-classical.html">meter to Electron radius (classical)</a></div></li>
+<li>1 Bohr radius [b, a.u.] = 5.2917724900001E-11 meter [m]<div>
+<a href="length/bohr-radius-to-meter.html">Bohr radius to meter</a>, &nbsp; <a href="length/meter-to-bohr-radius.html">meter to Bohr radius</a></div></li>
+<li>1 Earth's equatorial radius = 6378160 meter [m]<div>
+<a href="length/earth-s-equatorial-radius-to-meter.html">Earth's equatorial radius to meter</a>, &nbsp; <a href="length/meter-to-earth-s-equatorial-radius.html">meter to Earth's equatorial radius</a></div></li>
+<li>1 Earth's polar radius = 6356776.9999999 meter [m]<div>
+<a href="length/earth-s-polar-radius-to-meter.html">Earth's polar radius to meter</a>, &nbsp; <a href="length/meter-to-earth-s-polar-radius.html">meter to Earth's polar radius</a></div></li>
+<li>1 Earth's distance from sun = 149600000000 meter [m]<div>
+<a href="length/earth-s-distance-from-sun-to-meter.html">Earth's distance from sun to meter</a>, &nbsp; <a href="length/meter-to-earth-s-distance-from-sun.html">meter to Earth's distance from sun</a></div></li>
+<li>1 Sun's radius = 696000000 meter [m]<div>
+<a href="length/sun-s-radius-to-meter.html">Sun's radius to meter</a>, &nbsp; <a href="length/meter-to-sun-s-radius.html">meter to Sun's radius</a></div></li></ul>	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>

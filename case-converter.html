@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Case Converter</title>
+	<meta name="description" content="Free online case converter to convert any text to uppercase, lowercase, sentence case, title case, capitalized case, or inverse case. Also count words or characters, normalize text with single or double space, and explore many other converters." />
+	<link rel="stylesheet" type="text/css" href="/lib/cmtoin.css"> 
+    <link rel="stylesheet" type="text/css" href="/lib/ads.css"> 
+    <script src="/lib/unit1.js" async></script> 
+    <meta property="og:locale" content="en_US" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Unit Converter UPBoardMaster.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/lib/unit.js" async></script>  
+<meta name="google-site-verification" content="RS8p_JYF3bcPz5e6poTIPaDq__iGgZiCSdE8JrnsEd4" />  
+<meta name="msvalidate.01" content="33C277F60E5781A34351C1996A18BF54" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/lib/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/lib/icon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo">  <a href="/"> <span class="panelmsg" translate="no"> <font style="color:#0637ef;font-size: 25px;">Unit</font><strong style="color:#000;font-size: 25px;">Converter</strong><font style="color: #807070;font-size: 25px;">.UPBoardMaster.com</font></span></a></div>
+	</div>
+</div>
+<div id="clear"></div>
+<div id="contentout">
+	<div id="content">
+					<img src="../images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+				<div class="topnav"><a href="index.html">Home</a> / <a href='common-converters.html'>Common Converters</a> / Case Converter</div>
+		<h1>Case Converter</h1>
+<div id="undctable" style="text-align:center;">
+<div id="ccmsg">Please paste or type text below to convert.</div>
+<div>
+<form>
+<textarea name="textinput" id="textinput" onkeyup="document.getElementById('ccmsg').innerHTML=cvWordCounter();" style="width:95%;height:220px;text-align:left;padding:8px; border: 1px solid #000;border-radius: 4px;box-shadow: 2px 2px 3px #666;font-size: 16px;"></textarea></form></div>
+
+<div style="padding-top:10px;">
+<span class="ccbtn" value="" onClick="return cvUpper();">UPPER CASE</span>
+<span class="ccbtn" onClick="return cvLower();">lower case</span>
+<span class="ccbtn" onClick="return cvTitle();">Title Case</span>
+<span class="ccbtn" onClick="return cvSentence();">Sentence case</span>
+<span class="ccbtn" onClick="return cvCap();">Capitalized Case</span>
+</div>
+<div style="padding-top:15px;">
+<span class="ccbtn" onClick="return cvInv();">Inverse Case</span>
+<span class="ccbtn" onClick="return cvNormalizeSingle();">Normalized with Single Space</span>
+<span class="ccbtn" onClick="return cvNormalizeDouble();">Normalized with Double Space</span>
+</div>
+<style>
+.ccbtn{
+	-webkit-appearance: none;
+	font-size: 15px;
+	padding: 6px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px #666;
+	background-color: #006633;
+	color: #ffffff;
+	display: inline-block;
+	white-space: nowrap;
+}
+.ccbtn:hover{
+	background-color: #fff;
+	color: #006633;
+}
+</style>
+</div>
+<script>
+var cvTextIn = document.getElementById('textinput');
+function cvWordCounter(){
+	var inVal = (cvTextIn.value+"");
+	var inArray = inVal.split(/[\s\t\n\r?,:;\(\)\[\]|#*!]+/);
+	var cvCounter = 0;
+	for (i = 0; i < inArray.length; i++) {
+		if ((inArray[i]+"").length>0) cvCounter++;
+	}
+	return "Character Count: " + inVal.length  + " | Word Count: " + cvCounter;
+}
+function cvSelect(cvInstr){
+	document.getElementById('ccmsg').innerHTML = cvInstr + " " + cvWordCounter();
+	return false;
+}
+function cvtArray(gaTxt, gaSep){
+	var gaOutput = [];
+	var gaSepArrayRaw = gaSep.split("");
+	var gaSepArray = [];
+	for (i = 0; i < gaSepArrayRaw.length; i++) {
+		var tempVar = gaSepArrayRaw[i];
+		if (tempVar=="d"){
+			tempVar = gaSepArrayRaw[i+1]+gaSepArrayRaw[i+2];
+			i = i+2;
+		}
+		if (tempVar=="l") tempVar = "\n";
+		gaSepArray.push(tempVar);
+	}
+
+	var gaPStr = gaTxt+"";
+	if (gaPStr.length<1) return gaOutput;
+	var gaStopLoop = 0;
+	while (gaStopLoop==0){
+		var lowerIndex = -2;
+		var tempIndex = -1;
+		for (i = 0; i < gaSepArray.length; i++) {
+			tempIndex = gaPStr.indexOf(gaSepArray[i]);
+			if (tempIndex>=0){
+				if (lowerIndex>=0){
+					if (lowerIndex>tempIndex) lowerIndex = tempIndex;
+				}else{
+					lowerIndex = tempIndex;
+				}
+			}
+		}
+		if (lowerIndex>=0){
+			if (lowerIndex>0){
+				gaOutput.push(gaPStr.substring(0,lowerIndex));
+				gaPStr = gaPStr.substring(lowerIndex);
+			}
+			gaOutput.push(gaPStr.substring(0,1));
+			gaPStr = gaPStr.substring(1);
+			if (gaPStr.length<1) gaStopLoop = 1;
+		}else{
+			gaOutput.push(gaPStr);
+			gaStopLoop = 1;
+		}
+	}
+	return gaOutput;
+}
+function cvLower(){
+	cvTextIn.value = (cvTextIn.value+"").toLowerCase();
+	return cvSelect('Converted to lower case.');
+}
+function cvUpper(){
+	cvTextIn.value = (cvTextIn.value+"").toUpperCase();
+	return cvSelect('Converted to upper case.');
+}
+function cvCap(){
+	var tempArray = cvtArray((cvTextIn.value+""), " 	;:|#*,.!?/()[]l");
+	for (i = 0; i < tempArray.length; i++) {
+		var tempSV = tempArray[i]+"";
+		if (tempSV.length>1){
+			tempArray[i] = tempSV.substring(0,1).toUpperCase() + tempSV.substring(1).toLowerCase();
+		}else if (tempSV.length>0){
+			tempArray[i] = tempSV.toUpperCase();
+		}
+	}
+	cvTextIn.value = tempArray.join("");
+	return cvSelect('Converted to capitalized case.');
+}
+function cvTitle(){
+	var cvExclude = ["and","but","for","or","nor","as","at","a","an","the","by","of","off","on","to","in","yet","if","up","via"];
+	var tempArray = cvtArray((cvTextIn.value+""), " 	;:|#*,.!?/()[]l");
+	for (i = 0; i < tempArray.length; i++) {
+		var tempSV = (tempArray[i]+"").toLowerCase();
+		if (tempSV.length>1){
+			if (cvExclude.indexOf(tempSV) > -1){
+				tempArray[i] = tempSV;
+			}else{
+				tempArray[i] = tempSV.substring(0,1).toUpperCase() + tempSV.substring(1);
+			}
+		}else if (tempSV.length>0){
+			if (cvExclude.indexOf(tempSV) > -1){
+				tempArray[i] = tempSV;
+			}else{
+				tempArray[i] = tempSV.toUpperCase();
+			}
+		}
+	}
+	cvTextIn.value = tempArray.join("");
+	return cvSelect('Converted to title case.');
+}
+function cvCapFirstnoneSpace(cvInstr){
+	var cvToProc = (cvInstr+"").toLowerCase();
+	if (cvToProc.length<1){
+		return "";
+	}else if (cvToProc.length==1){
+		return cvToProc.toUpperCase();
+	}
+	var firstCharPos = -1;
+	for (j = 0; j < cvToProc.length; j++) {
+		  if ((cvToProc.charAt(j)!=' ')&&(cvToProc.charAt(j)!='	')&&(firstCharPos<0)){
+		  	firstCharPos = j;
+		  }
+	}
+	if (cvToProc.length>(firstCharPos+1)){
+		return cvToProc.substring(0, firstCharPos) + cvToProc.substring(firstCharPos, (firstCharPos+1)).toUpperCase() + cvToProc.substring(firstCharPos+1);
+	}else if (cvToProc.length==(firstCharPos+1)){
+		return cvToProc.substring(0, firstCharPos) + cvToProc.substring(firstCharPos).toUpperCase();
+	}else{
+		return cvToProc;
+	}
+}
+function cvSentence(){
+	var tempArray = cvtArray((cvTextIn.value+""), "d. d.	!?l");
+	for (i = 0; i < tempArray.length; i++) {
+		tempArray[i] = cvCapFirstnoneSpace(tempArray[i]);
+	}
+
+	cvTextIn.value = tempArray.join("");
+	return cvSelect('Converted to sentence case.');
+}
+function cvInv(){
+	var tempArray = (cvTextIn.value+"").split("");
+	for (i = 0; i < tempArray.length; i++) {
+		if (tempArray[i]==tempArray[i].toUpperCase()){
+			tempArray[i] = tempArray[i].toLowerCase();
+		}else{
+			tempArray[i] = tempArray[i].toUpperCase();
+		}
+	}
+	cvTextIn.value = tempArray.join("");
+	return cvSelect('Converted to inverse case.');
+}
+function cvNormalize(){
+	var cvnStr = (cvTextIn.value+"");
+	cvnStr = cvnStr.replace(/\t/g, " ");
+	cvnStr = cvnStr.replace(/;/g, "; ");
+	cvnStr = cvnStr.replace(/!/g, "! ");
+	cvnStr = cvnStr.replace(/,/g, ", ");
+	cvnStr = cvnStr.replace(/\./g, ". ");
+	cvnStr = cvnStr.replace(/\?/g, "? ");
+	cvnStr = cvnStr.replace(/\(/g, " ( ");
+	cvnStr = cvnStr.replace(/\)/g, " ) ");
+	cvnStr = cvnStr.replace(/\[/g, " [ ");
+	cvnStr = cvnStr.replace(/\]/g, " ] ");
+	while (cvnStr.indexOf("  ")>=0) cvnStr = cvnStr.replace("  ", " ");
+	cvnStr = cvnStr.replace(/\.\s\"/g, ".\" ");
+	cvnStr = cvnStr.replace(/\.\s'/g, ".' ");
+	cvnStr = cvnStr.replace(/\?\s"/g, "?\" ");
+	cvnStr = cvnStr.replace(/\?\s'/g, "?' ");
+	cvnStr = cvnStr.replace(/!\s"/g, "!\" ");
+	cvnStr = cvnStr.replace(/!\s'/g, "!' ");
+	while (cvnStr.indexOf("  ")>=0) cvnStr = cvnStr.replace("  ", " ");
+	cvnStr = cvnStr.replace(/\s;/g, ";");
+	cvnStr = cvnStr.replace(/\s!/g, "!");
+	cvnStr = cvnStr.replace(/\s,/g, ",");
+	cvnStr = cvnStr.replace(/\s\./g, ".");
+	cvnStr = cvnStr.replace(/\s\?/g, "?");
+	cvnStr = cvnStr.replace(/\(\s/g, "(");
+	cvnStr = cvnStr.replace(/\s\)/g, ")");
+	cvnStr = cvnStr.replace(/\[\s/g, "[");
+	cvnStr = cvnStr.replace(/\s\]/g, "]");
+	cvnStr = cvnStr.replace(/\.\s'/g, ".'");
+	cvnStr = cvnStr.replace(/\.\s"/g, ".\"");
+	while (cvnStr.indexOf("\n ")>=0) cvnStr = cvnStr.replace("\n ", "\n");
+	return trimAll(cvnStr);
+}
+
+function cvNormalizeSingle(){
+	cvTextIn.value = cvNormalize();
+	return cvSelect('Normalized with single space after sentence.');
+}
+function cvNormalizeDouble(){
+	cvTextIn.value = cvNormalize().replace(/\.\s/g, ".  ").replace(/\?\s/g, "?  ").replace(/\!\s/g, "!  ").replace(/\."\s/g, ".\"  ").replace(/\?"\s/g, "?\"  ").replace(/\!"\s/g, "!\"  ").replace(/\.'\s/g, ".'  ").replace(/\?'\s/g, "?'  ").replace(/\!\'s/g, "!'  ");
+	return cvSelect('Normalized with double space after sentence.');
+}
+</script>
+
+<br>
+<br>
+<p>The "UPPER CASE" button converts all the inputted characters into capital letters, as shown in the text on the button.</p>
+<p>The "lower case" button converts all the inputted characters into small, or lower-case letters, as shown in the text on the button.</p>
+<p>The "Title Case" button converts all the inputted characters such that the first letter of every word that is not a preposition, conjunction, or article, and has fewer than four letters, is capitalized.</p>
+<p>The "Sentence Case" button converts all the inputted characters to resemble a conventional sentence, where the first letter at the beginning of each sentence is capitalized. Note that "Sentence Case" cannot account for proper nouns. Names such as "jamie" or places like "the united states of america" for example, would need to be manually capitalized. Punctuation is also not added to the end of the sentence, and extra white space, or lack of spaces, is not accounted for. Refer to "Normalized with Single Space" or "Normalized with Double Space" to handle some of these cases.</p>
+<p>The "Capitalized Case" button capitalizes the first letter of every word, including prepositions, conjunctions, and articles (unlike Title Case).</p>
+<p>The "Inverse Case" switches between upper case and lower case of all the inputted characters.</p>
+<p>The "Normalized with Single Space" button "normalizes" inputted text and characters. The purpose of the converter is to "clean up" a text input by removing awkward formatting or white space, as well as adding spaces where necessary. It removes additional white space between characters and certain punctuation. It also adds a single space after punctuation markers that end a sentence (period, exclamation mark, question mark). In addition, it generally converts inputted characters to a sentence format without changing case (while ignoring line breaks). The only difference between the "Normalized with Single Space" and "Normalized with Double Space" option is the number of spaces added after punctuation that ends a sentence.</p>
+<p>The "Normalized with Single Space" button "normalizes" inputted text and characters. The purpose of the converter is to "clean up" a text input by removing awkward formatting or white space, as well as adding spaces where necessary. It removes additional white space between characters and certain punctuation. It also adds two spaces after punctuation markers (for more formal writing) that end a sentence (period, exclamation mark, question mark). In addition, it generally converts inputted characters to a sentence format without changing case (while ignoring line breaks). The only difference between the "Normalized with Double Space" and "Normalized with Single Space" option is the number of spaces added after punctuation that ends a sentence.</p>
+
+
+	</div>
+	<div id="right">
+		<div id="rightAdUnit" style="text-align:center;">	<p style="text-align: center;font-size: 13px;">Advertising</p> <ins class="adsbygoogle" style="display:block"   data-ad-client="ca-pub-1499277905602809" data-ad-slot="5056649317"  data-ad-format="auto" data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br></div>
+<br>
+<div id="othercalc"></div>
+<script>var navSectionName = "Common Converters";</script>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer">
+	<div id="footerin">
+		<div id="footernav"><a href="about-us.php.html">About US</a> | <a href="about-us.php.html#terms">Terms of Use</a> | <a href="about-us.php.html#privacy">Privacy Policy</a> | <a href="sitemap.php.html">Sitemap</a> &nbsp; &copy; 2020 - 2023 <a href="index.html">UnitConverter.UPBoardMaster.com</a></div>
+	</div>
+</div>
+<div class='sticky-ads' id='sticky-ads'> 
+ <div class='sticky-ads-close' onclick='document.getElementById("sticky-ads").style.display="none"'><svg viewbox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div> 
+ <div class='sticky-ads-content'> 
+ 
+ <ins class="adsbygoogle" style="display:block"   
+ data-ad-client="ca-pub-3409854325148278" 
+ data-ad-slot="5333562747"  
+ data-ad-format="auto" 
+ data-full-width-responsive="true"></ins> <script>  (adsbygoogle = window.adsbygoogle || []).push({}); </script>  
+ 
+ </div></div> 
+ 
+ </body>
+</html>
