@@ -1,4 +1,14 @@
 User-Agent:  *
+Disallow: /en/
+Disallow: /ar/
+Disallow: /hi/
+Disallow: /fr/
+Disallow: /ru/
+Disallow: /de/
+Disallow: /ja/
+Disallow: /pt/
+Disallow: /zh-Hant/
+Disallow: /zh-Hans/
 Sitemap: https://unitconverter.upboardmaster.com/sitemap.xml
 Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0001.xml
 Sitemap: https://unitconverter.upboardmaster.com/sitemap-results-0002.xml
